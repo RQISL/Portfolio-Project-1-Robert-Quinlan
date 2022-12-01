@@ -1,4 +1,8 @@
-p{
+body {
+    background-color: aqua;
+}
+
+p {
     font-size: x-large;
     color: blue;
 }
