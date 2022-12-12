@@ -1,37 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    background-color: #f5f1e4;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f3f3;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Menu */
+
 #menupage {
-    text-align: center;
+    width: 100%;
+    height: 200px;
+    border: solid 1px blue;
 }
 
 #menupage ul {
-
-    width: 50%;
-    height: 6vh;
-    text-align: center;
-    list-style-type: none;
-    border: solid 1px blue;
     background-color: #7a7a7a;
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    z-index: 1;
+    text-align: right;
+    list-style-type: none;
+    height: 200px;
 }
 
 #menupage li {
-
     display: inline-block;
-    float: left;
+    float: none;
     margin: 10px;
+    vertical-align: middle;
 }
 
 #menupage a {
     text-decoration: none;
-    color: white;
+    color: #f5f1e4;
+    padding: 10px 20px 10px 20px;
+}
 
+#menupage a:hover {
+    background-color: #f5f1e4;
+    color: #7a7a7a;
+}
+
+/* need fix this one */
+#menupage a.active {
+    border-bottom: 3px solid #f5f1e4;
+}
+
+/* Head logo */
+#menupage img {
+    float: left;
+    margin-top: 20px;
+}
+
+#menupage #head_logo {
+    width: 450px;
+    height: 180px;
+    float: left;
+    border: solid 1px red;
+}
+
+/* Selection of pages */
+#content {
+    background-color: #f4f3f3;
+    top: 0;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    border: solid 2px blue;
+
+}
+
+.circle_img {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    border-radius: 50%;
+    border: solid 1px red;
+}
+
+#line {
+    border: solid 3px white;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+p.text_timeline {
+    width: 200px;
+    height: 300px;
 }
 
 p {
