@@ -1,8 +1,40 @@
 body {
-    background-color: aqua;
+    background-color: #f5f1e4;
+}
+
+/* Menu */
+#menupage {
+    text-align: center;
+}
+
+#menupage ul {
+
+    width: 50%;
+    height: 6vh;
+    text-align: center;
+    list-style-type: none;
+    border: solid 1px blue;
+    background-color: #7a7a7a;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    z-index: 1;
+}
+
+#menupage li {
+
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+#menupage a {
+    text-decoration: none;
+    color: white;
+
 }
 
 p {
-    font-size: x-large;
-    color: blue;
+    font-size: 18px;
+    color: black;
 }
