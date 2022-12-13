@@ -71,6 +71,41 @@ section {
 
 }
 
+/* Home Section */
+section#home {
+    height: 800px;
+}
+
+section#home h2 {
+    text-align: center;
+}
+
+#home_wrapper {
+    width: 80%;
+    height: 800px;
+    clear: both;
+    margin: auto;
+    border: solid 1px red;
+}
+
+#home_wrapper .Michael_art {
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+
+}
+
+#home_wrapper .text_Michael_legacy {
+    float: right;
+    width: 600px;
+    height: 300px;
+    margin-top: 60px;
+    margin-right: 150px;
+    border: solid 1px red;
+
+}
+
 /* Timeline Style section */
 section#timelines {
     height: 800px;
@@ -81,10 +116,37 @@ section#timelines h2 {
 }
 
 .container {
-    width: 1200px;
+    width: 95%;
     height: 600px;
     margin: auto;
-    border: solid 2px red;
+    border: solid 1px red;
+}
+
+.fa-circle {
+    font-size: 40px;
+    border: solid 1px red;
+    text-align: center;
+}
+
+.line_border {
+    width: 100%;
+    border: solid 4px black;
+    margin-top: 258px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.timeline li {
+    list-style: none;
+    float: left;
+    width: 330px;
+    height: 600px;
+    text-align: center;
+    border: solid 1px red;
+    margin: -259px 0 0 10px;
+
 }
 
 .circle_img {
@@ -92,66 +154,15 @@ section#timelines h2 {
     height: 180px;
     border-radius: 50%;
     border: solid 1px red;
-    margin: 12px auto 0 70px;
+    margin-bottom: 5px;
 }
 
-.timeline {
-    border: solid 2px black;
-    width: 90%;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.timeline li {
-    list-style: none;
-    float: left;
-    width: 230px;
-    text-align: center;
-}
-
-ul:nth-child(1) {
-    color: black;
-}
-
-.timeline li:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border: 3px solid black;
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    margin: -12px auto 10px auto;
-    background: black;
-    color: #000;
-
-}
-
-.timeline li:after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: grey;
-    top: 0;
-    left: -50%;
-}
-
-.timeline li:first-child:after {
-    content: none;
-}
-
-.text_timeline {
-    width: 200px;
-    height: 300px;
-    margin-left: 20px;
-    overflow: hidden;
-    border: solid 1px red;
-    float: left;
-    display: block;
-}
-
-p {
-    font-size: 18px;
-    color: black;
+.timeline li .text_timeline {
+    width: 250px;
+    height: 200px;
+    overflow: scroll;
+    padding: 10px;
+    border: inset 2px black;
+    clear: both;
+    margin: auto;
 }
