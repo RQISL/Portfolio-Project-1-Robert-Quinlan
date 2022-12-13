@@ -8,25 +8,26 @@ body {
 }
 
 /* Menu */
-
 #menupage {
+    background-color: #7a7a7a;
+    text-align: center;
     width: 100%;
-    height: 200px;
-    border: solid 1px blue;
+    height: 153px;
+    position: fixed;
+    display: block;
 }
 
 #menupage ul {
-    background-color: #7a7a7a;
-    text-align: right;
     list-style-type: none;
-    height: 200px;
+    margin: auto;
+
 }
 
 #menupage li {
     display: inline-block;
     float: none;
-    margin: 10px;
-    vertical-align: middle;
+    font-size: 24px;
+    padding-top: 60px;
 }
 
 #menupage a {
@@ -48,20 +49,19 @@ body {
 /* Head logo */
 #menupage img {
     float: left;
-    margin-top: 20px;
+    width: 155px;
+    height: 153px;
 }
 
 #menupage #head_logo {
-    width: 450px;
-    height: 180px;
     float: left;
-    border: solid 1px red;
 }
 
 /* Selection of pages */
 #content {
     background-color: #f4f3f3;
-    top: 0;
+    display: block;
+    padding-top: 153px;
 }
 
 section {
@@ -71,23 +71,84 @@ section {
 
 }
 
+/* Timeline Style section */
+section#timelines {
+    height: 800px;
+}
+
+section#timelines h2 {
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    border: solid 2px red;
+}
+
 .circle_img {
-    width: 150px;
-    height: 150px;
-    margin: 30px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: solid 1px red;
+    margin: 12px auto 0 70px;
 }
 
-#line {
-    border: solid 3px white;
-    border-radius: 5px;
-    max-width: 80%;
+.timeline {
+    border: solid 2px black;
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
 }
 
-p.text_timeline {
+.timeline li {
+    list-style: none;
+    float: left;
+    width: 230px;
+    text-align: center;
+}
+
+ul:nth-child(1) {
+    color: black;
+}
+
+.timeline li:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: -12px auto 10px auto;
+    background: black;
+    color: #000;
+
+}
+
+.timeline li:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    top: 0;
+    left: -50%;
+}
+
+.timeline li:first-child:after {
+    content: none;
+}
+
+.text_timeline {
     width: 200px;
     height: 300px;
+    margin-left: 20px;
+    overflow: hidden;
+    border: solid 1px red;
+    float: left;
+    display: block;
 }
 
 p {
