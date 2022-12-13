@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/15ddf10dff.js" crossorigin="anonymous"></script>
     <!-- Titles -->
     <title>Michael Collins's Legacy</title>
 </head>
@@ -41,19 +42,27 @@
     <div id="content">
 
         <section id="home">
-            <h2>Michael Collins's Legacy</h2>
-            <img class="Michael_art" src="https://pbs.twimg.com/profile_images/1543180608653901824/cct_9Hsu_400x400.jpg"
-                alt="Michael Collins face with art of history">
-            <p class="text_Michael_legacy"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus sit
-                amet justo sollicitudin
-                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan feugiat sapien
-                ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a ullamcorper
-                velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat dui ac,
-                dignissim neque. Cras quis pretium mauris. Nam ullamcorper felis ac ligula elementum, a viverra dui
-                pharetra. Sed luctus placerat ex sed pulvinar. Suspendisse dapibus venenatis porta. Pellentesque
-                vehicula fermentum lacus quis placerat. Ut ut nisl vitae nisi sagittis laoreet. Morbi faucibus felis ut
-                elit suscipit, ac porta nibh elementum.
-            </p>
+            <div id="home_wrapper">
+                <h2>Michael Collins's Legacy</h2>
+                <img class="Michael_art"
+                    src="https://pbs.twimg.com/profile_images/1543180608653901824/cct_9Hsu_400x400.jpg"
+                    alt="Michael Collins face with art of history">
+                <p class="text_Michael_legacy"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus
+                    sit
+                    amet justo sollicitudin
+                    auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan feugiat
+                    sapien
+                    ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
+                    ullamcorper
+                    velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat dui ac,
+                    dignissim neque. Cras quis pretium mauris. Nam ullamcorper felis ac ligula elementum, a viverra dui
+                    pharetra. Sed luctus placerat ex sed pulvinar. Suspendisse dapibus venenatis porta. Pellentesque
+                    vehicula fermentum lacus quis placerat. Ut ut nisl vitae nisi sagittis laoreet. Morbi faucibus felis
+                    ut
+                    elit suscipit, ac porta nibh elementum.
+                </p>
+            </div>
+            <!--closed home_wrapper -->
         </section>
 
         <section id="about">
@@ -76,26 +85,44 @@
         <!-- Section Timeline -->
         <section id="timelines">
             <h2>Michael Collins History Timeline</h2>
+            <!-- <img class="circle_img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+
+            <img class="circle_img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+
+            <img class="circle_img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                alt="Collins was in the jail and he is fifth from the right with an 'x' over his head"> -->
+
             <div class="container">
-                <img class="circle_img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
-                    alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                <div class="line_border"></div>
                 <ul class="timeline">
-                    <li>1890s
+                    <li>
+                        <img class="circle_img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                        <p><i class="fa-solid fa-circle"></i></p>
+
+                        <h3>1890s</h3>
                         <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                             et purus sit amet justo sollicitudin
                             auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
-                            feugiat<input type="checkbox" id="button" name="button">
-                            sapien
-                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
-                            ullamcorper
-                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
-                            dui
-                            ac,
-                            dignissim neque. Cras quis pretium mauris.</p>
-
+                            feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
+                            ultricies cursus. Nam a
+                            ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
+                            iaculis, consequat
+                            dui ac, dignissim neque. Cras quis pretium mauris.</p>
                     </li>
-                    <li>1890s
+                    <li>
+                        <img class="circle_img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                        <p><i class="fa-solid fa-circle"></i></p>
+
+                        <h3>1890s</h3>
                         <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                             et purus sit amet justo sollicitudin
                             auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
@@ -109,7 +136,52 @@
                             dignissim neque. Cras quis pretium mauris.</p>
 
                     </li>
-                    <li>1890s
+                    <li> <img class="circle_img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                        <p><i class="fa-solid fa-circle"></i></p>
+
+                        <h3>1890s</h3>
+                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                            et purus sit amet justo sollicitudin
+                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                            feugiat
+                            sapien
+                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
+                            ullamcorper
+                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
+                            dui
+                            ac,
+                            dignissim neque. Cras quis pretium mauris.</p>
+
+                    </li>
+
+                    <li> <img class="circle_img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                        <p><i class="fa-solid fa-circle"></i></p>
+
+                        <h3>1890s</h3>
+                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                            et purus sit amet justo sollicitudin
+                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                            feugiat
+                            sapien
+                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
+                            ullamcorper
+                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
+                            dui
+                            ac,
+                            dignissim neque. Cras quis pretium mauris.</p>
+
+                    </li>
+
+                    <li> <img class="circle_img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                        <p><i class="fa-solid fa-circle"></i></p>
+
+                        <h3>1890s</h3>
                         <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                             et purus sit amet justo sollicitudin
                             auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
@@ -126,10 +198,32 @@
                 </ul>
 
             </div>
+            <!--closed container -->
         </section>
-
+        <!-- Section Museum -->
         <section id="museum">
-            <p> Musesum</p>
+            <div id="home_wrapper">
+                <h2>Michael Collins's Legacy</h2>
+                <img class="Michael_art"
+                    src="https://pbs.twimg.com/profile_images/1543180608653901824/cct_9Hsu_400x400.jpg"
+                    alt="Michael Collins face with art of history">
+                <p class="text_Michael_legacy"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus
+                    sit
+                    amet justo sollicitudin
+                    auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan feugiat
+                    sapien
+                    ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
+                    ullamcorper
+                    velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat dui ac,
+                    dignissim neque. Cras quis pretium mauris. Nam ullamcorper felis ac ligula elementum, a viverra dui
+                    pharetra. Sed luctus placerat ex sed pulvinar. Suspendisse dapibus venenatis porta. Pellentesque
+                    vehicula fermentum lacus quis placerat. Ut ut nisl vitae nisi sagittis laoreet. Morbi faucibus
+                    felis
+                    ut
+                    elit suscipit, ac porta nibh elementum.
+                </p>
+            </div>
+            <!--closed home_wrapper -->
         </section>
         <section id="accessibility">
             <p> Accessibility</p>
