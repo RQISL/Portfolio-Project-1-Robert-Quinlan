@@ -11,13 +11,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Menu */
-/* #hidden_behind_menu {
-    background-color: blue;
-    width: 100%;
-    height: 200px;
-} */
-
 #menupage {
     background-color: #7a7a7a;
     text-align: center;
@@ -69,23 +62,16 @@ body {
 }
 
 /* Selection of pages */
-#content {
-    background-color: #f4f3f3;
-}
-
 section {
     width: 100%;
     height: auto;
-    border: solid 2px blue;
+    padding-top: 153px;
+
 }
 
 /* Home Section */
-/* section#home {
-    height: 800px;
-} */
-
-section#home h2 {
-    text-align: center;
+section#home {
+    background-color: #cdc3c3;
 }
 
 #home_wrapper {
@@ -93,34 +79,35 @@ section#home h2 {
     height: 800px;
     clear: both;
     margin: auto;
+    margin-top: 120px;
 }
 
 #home_wrapper .Michael_art {
     float: left;
-    width: 500px;
-    height: 500px;
+    width: 34vw;
+    height: 55vh;
     margin-left: 50px;
 
 }
 
 #home_wrapper .text_Michael_legacy {
     float: right;
-    width: 600px;
-    height: 300px;
+    width: 30vw;
+    height: 30vh;
+    margin-top: 10px;
+    margin-right: 150px;
+}
+
+#home_wrapper h2 {
+    float: right;
+    width: 30vw;
     margin-top: 60px;
     margin-right: 150px;
-    border: solid 1px red;
-
 }
 
 /* About section */
-
-/* section#about {
-    height: 800px;
-} */
-
-section#about h2 {
-    text-align: center;
+section#about {
+    background-color: #f4f3f3;
 }
 
 #about_wrapper {
@@ -128,49 +115,37 @@ section#about h2 {
     height: 800px;
     clear: both;
     margin: auto;
-    border: solid 1px red;
+    margin-top: 120px;
 }
 
 #about_wrapper .head_Store_Michael {
-    width: 600px;
-    height: 400px;
+    width: 35vw;
+    height: 50vh;
     float: left;
     margin-left: 50px;
+    margin-top: 10px;
+}
+
+#about_wrapper h2 {
+    float: right;
+    width: 30vw;
+    margin-top: 30px;
+    margin-right: 150px;
 }
 
 #about_wrapper .text_about_Michael {
     float: right;
-    width: 600px;
-    height: 300px;
-    margin-top: 60px;
+    width: 30vw;
+    height: 30vh;
+    margin-top: 10px;
     margin-right: 150px;
-    border: solid 1px red;
-
 }
-
-/* 
-.arrow_to_timeline {
-    margin-bottom: 0;
-    margin-right: 40px;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: solid 2px black;
-    border-radius: 50%;
-    text-align: center;
-    transform: rotate(90deg);
-    font-size: 30px;
-}
-
-
-
- */
 
 
 /* Timeline Style section */
-/* section#timelines {
-    height: 800px;
-} */
+section#timelines {
+    background-color: #a2a888;
+}
 
 section#timelines h2 {
     text-align: center;
