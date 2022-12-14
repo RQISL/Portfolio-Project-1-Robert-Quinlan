@@ -25,6 +25,7 @@
 
     <header>
         <!-- Menu -->
+
         <nav id="menupage">
             <img id="head_logo" src="CSS/images/Head-Gold_White.png" alt="Michael Collins head logo">
             <ul>
@@ -39,6 +40,7 @@
 
     </header>
     <!-- Main the page with sections -->
+    <div id="hidden_behind_menu"></div>
     <div id="content">
 
         <section id="home">
@@ -66,37 +68,34 @@
         </section>
 
         <section id="about">
-            <h2>About Michael Collins of the site</h2>
+            <div id="about_wrapper">
+                <h2>About Michael Collins of the site</h2>
 
-            <img class="about_Michael"
-                src="https://scontent.fdub5-1.fna.fbcdn.net/v/t39.30808-6/317934748_554940596643313_1044214334908555422_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=bgyuT-Jtzn0AX-WRG3t&_nc_ht=scontent.fdub5-1.fna&oh=00_AfCXjXW2tskzr6inY-Or4zQ1YTU2SmQUXju-yghGDGEqLw&oe=639CAF73"
-                alt="head store of Michael Collins">
+                <img class="head_Store_Michael"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bust_of_Michael_Collins_at_Merrion_Square_Park%2C_Dublin%2C_Ireland..JPG/1920px-Bust_of_Michael_Collins_at_Merrion_Square_Park%2C_Dublin%2C_Ireland..JPG"
+                    alt="head store of Michael Collins">
 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et purus sit amet justo sollicitudin
-                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan feugiat sapien
-                ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a ullamcorper
-                velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat dui ac,
-                dignissim neque. Cras quis pretium mauris. Nam ullamcorper felis ac ligula elementum, a viverra dui
-                pharetra. Sed luctus placerat ex sed pulvinar. Suspendisse dapibus venenatis porta. Pellentesque
-                vehicula fermentum lacus quis placerat. Ut ut nisl vitae nisi sagittis laoreet. Morbi faucibus felis ut
-                elit suscipit, ac porta nibh elementum.</p>
+                <p class="text_about_Michael"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                    et purus sit amet justo sollicitudin
+                    auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan feugiat
+                    sapien
+                    ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
+                    ullamcorper
+                    velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat dui ac,
+                    dignissim neque. Cras quis pretium mauris. Nam ullamcorper felis ac ligula elementum, a viverra dui
+                    pharetra. Sed luctus placerat ex sed pulvinar. Suspendisse dapibus venenatis porta. Pellentesque
+                    vehicula fermentum lacus quis placerat. Ut ut nisl vitae nisi sagittis laoreet. Morbi faucibus felis
+                    ut
+                    elit suscipit, ac porta nibh elementum. <span class="arrow_to_timeline"><i
+                            class="fa-solid fa-angles-right"></i></span></p>
+            </div>
+
+            <!-- closed about_wrapper -->
         </section>
+
         <!-- Section Timeline -->
         <section id="timelines">
             <h2>Michael Collins History Timeline</h2>
-            <!-- <img class="circle_img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
-                alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
-
-            <img class="circle_img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
-                alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
-
-            <img class="circle_img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
-                alt="Collins was in the jail and he is fifth from the right with an 'x' over his head"> -->
-
             <div class="container">
                 <div class="line_border"></div>
                 <ul class="timeline">
@@ -107,14 +106,17 @@
                         <p><i class="fa-solid fa-circle"></i></p>
 
                         <h3>1890s</h3>
-                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                            et purus sit amet justo sollicitudin
-                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
-                            feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
-                            ultricies cursus. Nam a
-                            ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
-                            iaculis, consequat
-                            dui ac, dignissim neque. Cras quis pretium mauris.</p>
+                        <div id="textbox">
+                            <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                et purus sit amet justo sollicitudin
+                                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                                feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
+                                ultricies cursus. Nam a
+                                ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
+                                iaculis, consequat
+                                dui ac, dignissim neque. Cras quis pretium mauris.</p>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                        </div>
                     </li>
                     <li>
                         <img class="circle_img"
@@ -123,17 +125,17 @@
                         <p><i class="fa-solid fa-circle"></i></p>
 
                         <h3>1890s</h3>
-                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                            et purus sit amet justo sollicitudin
-                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
-                            feugiat
-                            sapien
-                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
-                            ullamcorper
-                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
-                            dui
-                            ac,
-                            dignissim neque. Cras quis pretium mauris.</p>
+                        <div id="textbox">
+                            <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                et purus sit amet justo sollicitudin
+                                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                                feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
+                                ultricies cursus. Nam a
+                                ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
+                                iaculis, consequat
+                                dui ac, dignissim neque. Cras quis pretium mauris.</p>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                        </div>
 
                     </li>
                     <li> <img class="circle_img"
@@ -142,37 +144,17 @@
                         <p><i class="fa-solid fa-circle"></i></p>
 
                         <h3>1890s</h3>
-                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                            et purus sit amet justo sollicitudin
-                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
-                            feugiat
-                            sapien
-                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
-                            ullamcorper
-                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
-                            dui
-                            ac,
-                            dignissim neque. Cras quis pretium mauris.</p>
-
-                    </li>
-
-                    <li> <img class="circle_img"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
-                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
-                        <p><i class="fa-solid fa-circle"></i></p>
-
-                        <h3>1890s</h3>
-                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                            et purus sit amet justo sollicitudin
-                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
-                            feugiat
-                            sapien
-                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
-                            ullamcorper
-                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
-                            dui
-                            ac,
-                            dignissim neque. Cras quis pretium mauris.</p>
+                        <div id="textbox">
+                            <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                et purus sit amet justo sollicitudin
+                                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                                feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
+                                ultricies cursus. Nam a
+                                ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
+                                iaculis, consequat
+                                dui ac, dignissim neque. Cras quis pretium mauris.</p>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                        </div>
 
                     </li>
 
@@ -182,23 +164,42 @@
                         <p><i class="fa-solid fa-circle"></i></p>
 
                         <h3>1890s</h3>
-                        <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                            et purus sit amet justo sollicitudin
-                            auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
-                            feugiat
-                            sapien
-                            ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
-                            ullamcorper
-                            velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat
-                            dui
-                            ac,
-                            dignissim neque. Cras quis pretium mauris.</p>
+                        <div id="textbox">
+                            <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                et purus sit amet justo sollicitudin
+                                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                                feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
+                                ultricies cursus. Nam a
+                                ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
+                                iaculis, consequat
+                                dui ac, dignissim neque. Cras quis pretium mauris.</p>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                        </div>
 
+                    </li>
+
+                    <li> <img class="circle_img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/1920px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg"
+                            alt="Collins was in the jail and he is fifth from the right with an 'x' over his head">
+                        <p><i class="fa-solid fa-circle"></i></p>
+
+                        <h3>1890s</h3>
+                        <div id="textbox">
+                            <p class="text_timeline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                et purus sit amet justo sollicitudin
+                                auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan
+                                feugiat. sapien ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo
+                                ultricies cursus. Nam a
+                                ullamcorper velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante
+                                iaculis, consequat
+                                dui ac, dignissim neque. Cras quis pretium mauris.</p>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                        </div>
                     </li>
                 </ul>
-
             </div>
             <!--closed container -->
+
         </section>
         <!-- Section Museum -->
         <section id="museum">
