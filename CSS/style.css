@@ -17,21 +17,19 @@ body {
     width: 100%;
     height: 153px;
     position: fixed;
-    display: block;
     z-index: 1;
 }
 
 #menupage ul {
     list-style-type: none;
     margin: auto;
-
 }
 
 #menupage li {
     display: inline-block;
     float: none;
     font-size: 24px;
-    padding-top: 60px;
+    padding-top: 65px;
 }
 
 #menupage a {
@@ -61,20 +59,27 @@ body {
     float: left;
 }
 
+#menupage .logo_text {
+    float: left;
+    font-size: 2em;
+    margin-top: 3%;
+    color: #f5f1e4;
+}
+
 /* Selection of pages */
 section {
     width: 100%;
-    height: auto;
-    padding-top: 153px;
-
+    height: 1000px;
+    padding-top: 160px;
 }
 
 /* Home Section */
 section#home {
     background-color: #cdc3c3;
+
 }
 
-#home_wrapper {
+.home_wrapper {
     width: 80%;
     height: 800px;
     clear: both;
@@ -82,7 +87,7 @@ section#home {
     margin-top: 120px;
 }
 
-#home_wrapper .Michael_art {
+.home_wrapper .Michael_art {
     float: left;
     width: 34vw;
     height: 55vh;
@@ -90,7 +95,7 @@ section#home {
 
 }
 
-#home_wrapper .text_Michael_legacy {
+.home_wrapper .text_Michael_legacy {
     float: right;
     width: 30vw;
     height: 30vh;
@@ -98,7 +103,7 @@ section#home {
     margin-right: 150px;
 }
 
-#home_wrapper h2 {
+.home_wrapper h2 {
     float: right;
     width: 30vw;
     margin-top: 60px;
@@ -112,7 +117,7 @@ section#about {
 
 #about_wrapper {
     width: 80%;
-    height: 800px;
+    height: 200px;
     clear: both;
     margin: auto;
     margin-top: 120px;
@@ -188,7 +193,7 @@ section#timelines h2 {
     margin-bottom: 5px;
 }
 
-#textbox {
+.textbox {
 
     width: 250px;
     height: 300px;
@@ -202,13 +207,13 @@ section#timelines h2 {
     z-index: 1000;
 }
 
-#textbox>span {
+.textbox>span {
     margin-top: 0;
     margin-left: -30px;
     position: absolute;
 }
 
-#textbox:hover {
+.textbox:hover {
     width: 500px;
     position: relative;
     z-index: 1000;
@@ -218,4 +223,121 @@ section#timelines h2 {
     text-align: left;
     float: left;
     padding-top: 20px;
+}
+
+/* Section Museum */
+
+#museum {
+    background-image: url("https://scontent.fdub5-1.fna.fbcdn.net/v/t1.6435-9/165215227_125522859583778_5199776069317048256_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=RhuweWCyItcAX-oD6nj&_nc_ht=scontent.fdub5-1.fna&oh=00_AfD9cOhWpUgyw7n0wGzw6ZOlneVUzSrsdRCJnU7-bdb2KQ&oe=63C2D974");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.museum_wrapper {
+    width: 90%;
+    height: 700px;
+    background-color: #7a7a7a;
+    margin: auto;
+    clear: both;
+}
+
+/* Contct form  */
+section#contact {
+    background-color: #cdc3c3;
+    height: 900px;
+    padding-top: 250px;
+}
+
+/* content form centre both of the form and image */
+.contact_and_img {
+    width: 70%;
+    height: 620px;
+    margin: auto;
+    clear: both;
+    padding: 50px 50px 80px 50px;
+    background-color: #231f20;
+    border-radius: 25px;
+}
+
+.contact_img {
+    width: 48%;
+    height: 500px;
+    float: right;
+    margin-top: 80px;
+}
+
+/* form */
+.contact-form {
+    margin-top: 0;
+    color: black;
+    background-color: #a2a888;
+    max-width: 500px;
+    border-radius: 5%;
+    left: 20%;
+    padding: 30px;
+    float: left;
+}
+
+.contact-form>h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    color: #fafafa;
+    width: 95%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+
+}
+
+.text-input:hover {
+    border-color: #7a7a7a;
+}
+
+.message_box {
+    color: black;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.message_box:hover {
+    border-color: #7a7a7a;
+}
+
+/* button */
+.join-button {
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+    clear: both;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #7a7a7a;
+    color: #f5f1e4;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #7a7a7a;
+    color: black;
+}
+
+/* Footer section */
+
+footer {
+    font-size: 1em;
+    text-align: center;
+    background-color: #7a7a7a;
+    color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+    border: solid 1px #7a7a7a
 }
