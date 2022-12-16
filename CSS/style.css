@@ -91,23 +91,34 @@ section#home {
     float: left;
     width: 34vw;
     height: 55vh;
-    margin-left: 50px;
+    border: solid 1em #a2a888;
 
+}
+
+.home_wrapper .background_text {
+    background-color: #a2a888;
+    width: 45%;
+    height: 50%;
+    float: right;
+    margin-top: 5%;
+    border: solid 1em #f4f3f3;
+}
+
+.home_wrapper .background_text p {
+    font: 1.5em;
 }
 
 .home_wrapper .text_Michael_legacy {
     float: right;
-    width: 30vw;
-    height: 30vh;
-    margin-top: 10px;
-    margin-right: 150px;
+    margin: 2em 3em 0 3em;
+
+
 }
 
 .home_wrapper h2 {
-    float: right;
+    float: left;
     width: 30vw;
-    margin-top: 60px;
-    margin-right: 150px;
+    margin: 2em 0 0 2em;
 }
 
 /* About section */
@@ -339,18 +350,36 @@ footer {
     width: 100%;
     height: 30vh;
     margin-top: 0;
-    border: solid 1px #7a7a7a
+    border: solid 1px purple;
 }
 
+/* Head logo */
+.site_map img {
+    float: left;
+    margin-top: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+.site_map .logo_text {
+    float: left;
+    font-size: 2em;
+    margin-top: 7%;
+    color: #f5f1e4;
+}
+
+/* site maps links */
 .site_map ul {
     list-style-type: none;
-    margin: 2em 0 0 35em;
-    width: 20%;
+    margin: 2em 4em 0 0em;
+    width: 10%;
+    border: solid 1px blue;
+    float: right;
 }
 
 .site_map li {
     float: none;
-    font-size: 1em;
+    font-size: 1.1em;
     padding-top: 0.3em;
 }
 
@@ -359,6 +388,7 @@ footer {
     margin-bottom: 0.3em;
     font-weight: bolder;
     text-decoration: underline;
+    font-size: 1.2em;
 
 }
 
@@ -373,22 +403,66 @@ footer {
     color: #7a7a7a;
 }
 
-/* need fix this one */
-.site_map a.active {
-    border-bottom: 3px solid #f5f1e4;
+/* Social media icons */
+.social_media_icons {
+    background-color: #f5f1e4;
+    width: 30%;
+    height: 42%;
+    margin: 5% 0 0 40%;
+    border-radius: 80px;
+    border: solid 1px red;
+
 }
 
-/* Head logo */
-.site_map img {
-    float: left;
-    margin-top: 1%;
-    width: 10%;
-    height: 10%;
+.social_media_icons span {
+    color: #7a7a7a;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 2% 0 30% 0;
 }
 
-.site_map .logo_text {
-    float: left;
-    font-size: 2em;
-    margin-top: 5%;
-    color: #f5f1e4;
+.social_media_icons ul {
+    list-style-type: none;
+    margin-left: 3%;
+
+}
+
+.social_media_icons li {
+    float: none;
+    display: inline-block;
+    margin: 1% 3% 0 0;
+}
+
+.social_media_icons li .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
