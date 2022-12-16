@@ -333,11 +333,62 @@ section#contact {
 
 footer {
     font-size: 1em;
-    text-align: center;
+    text-align: left;
     background-color: #7a7a7a;
     color: black;
     width: 100%;
-    height: 200px;
+    height: 30vh;
     margin-top: 0;
     border: solid 1px #7a7a7a
+}
+
+.site_map ul {
+    list-style-type: none;
+    margin: 2em 0 0 35em;
+    width: 20%;
+}
+
+.site_map li {
+    float: none;
+    font-size: 1em;
+    padding-top: 0.3em;
+}
+
+.site_map p {
+    color: #f5f1e4;
+    margin-bottom: 0.3em;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+
+.site_map a {
+    text-decoration: none;
+    color: #f5f1e4;
+    padding: 0.3em 0.2em 0.3em 0.2em;
+}
+
+.site_map a:hover {
+    background-color: #f5f1e4;
+    color: #7a7a7a;
+}
+
+/* need fix this one */
+.site_map a.active {
+    border-bottom: 3px solid #f5f1e4;
+}
+
+/* Head logo */
+.site_map img {
+    float: left;
+    margin-top: 1%;
+    width: 10%;
+    height: 10%;
+}
+
+.site_map .logo_text {
+    float: left;
+    font-size: 2em;
+    margin-top: 5%;
+    color: #f5f1e4;
 }
