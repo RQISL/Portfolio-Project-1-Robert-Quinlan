@@ -98,21 +98,18 @@ section#home {
 .home_wrapper .background_text {
     background-color: #a2a888;
     width: 45%;
-    height: 50%;
+    height: 70%;
     float: right;
-    margin-top: 5%;
+    margin-top: 0.5%;
     border: solid 1em #f4f3f3;
 }
 
-.home_wrapper .background_text p {
-    font: 1.5em;
-}
-
 .home_wrapper .text_Michael_legacy {
+    font-size: 1em;
+    word-spacing: 2px;
+    line-height: 1.6;
     float: right;
     margin: 2em 3em 0 3em;
-
-
 }
 
 .home_wrapper h2 {
@@ -128,33 +125,37 @@ section#about {
 
 #about_wrapper {
     width: 80%;
-    height: 200px;
-    clear: both;
+    height: 600px;
     margin: auto;
+    clear: both;
     margin-top: 120px;
 }
 
 #about_wrapper .head_Store_Michael {
-    width: 35vw;
+    width: 30vw;
     height: 50vh;
     float: left;
     margin-left: 50px;
     margin-top: 10px;
+    border: solid 1em #7a7a7a;
 }
 
 #about_wrapper h2 {
-    float: right;
     width: 30vw;
-    margin-top: 30px;
-    margin-right: 150px;
+    text-align: left;
 }
 
 #about_wrapper .text_about_Michael {
+    background-color: #a2a888;
     float: right;
-    width: 30vw;
-    height: 30vh;
-    margin-top: 10px;
-    margin-right: 150px;
+    width: 35vw;
+    height: 40vh;
+    font-size: 1em;
+    border: solid 1em #7a7a7a;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 1em 0 0 3em;
+    padding: 2em;
 }
 
 
@@ -260,7 +261,7 @@ section#contact {
 }
 
 /* content form centre both of the form and image */
-.contact_and_img {
+.contact_and_img_wrapper {
     width: 70%;
     height: 620px;
     margin: auto;
@@ -270,11 +271,32 @@ section#contact {
     border-radius: 25px;
 }
 
-.contact_img {
-    width: 48%;
-    height: 500px;
+.head_logo_contact_wrapper {
+    width: 30vw;
+    height: 65vh;
     float: right;
-    margin-top: 80px;
+    display: flexbox;
+
+}
+
+.contact_head_Michael_logo {
+    width: 15%;
+    height: 265px;
+    margin-top: 130px;
+    margin: 0 8%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.contact_Doric_logo {
+    width: 30%;
+    height: 450px;
+    padding-top: 150px;
+    display: block;
+    margin: 0 1%;
+    position: absolute;
+    z-index: -.5;
 }
 
 /* form */
@@ -289,7 +311,7 @@ section#contact {
     float: left;
 }
 
-.contact-form>h2 {
+.contact-form h2 {
     color: black;
     margin-bottom: 20px;
 }
@@ -343,14 +365,11 @@ section#contact {
 /* Footer section */
 
 footer {
-    font-size: 1em;
-    text-align: left;
     background-color: #7a7a7a;
-    color: black;
     width: 100%;
     height: 30vh;
     margin-top: 0;
-    border: solid 1px purple;
+    border: solid 1px #7a7a7a;
 }
 
 /* Head logo */
@@ -373,7 +392,6 @@ footer {
     list-style-type: none;
     margin: 2em 4em 0 0em;
     width: 10%;
-    border: solid 1px blue;
     float: right;
 }
 
@@ -387,7 +405,6 @@ footer {
     color: #f5f1e4;
     margin-bottom: 0.3em;
     font-weight: bolder;
-    text-decoration: underline;
     font-size: 1.2em;
 
 }
@@ -405,32 +422,27 @@ footer {
 
 /* Social media icons */
 .social_media_icons {
-    background-color: #f5f1e4;
-    width: 30%;
+    width: 25%;
     height: 42%;
-    margin: 5% 0 0 40%;
-    border-radius: 80px;
-    border: solid 1px red;
-
+    text-align: center;
+    margin: 5% 0 0 35%;
 }
 
 .social_media_icons span {
-    color: #7a7a7a;
+    color: #f5f1e4;
     font-size: 1.2em;
-    text-align: center;
-    margin: 2% 0 30% 0;
+    font-weight: bolder;
 }
 
 .social_media_icons ul {
     list-style-type: none;
-    margin-left: 3%;
-
+    max-width: 80%;
 }
 
 .social_media_icons li {
     float: none;
     display: inline-block;
-    margin: 1% 3% 0 0;
+    margin-left: 15px;
 }
 
 .social_media_icons li .fa {
@@ -439,7 +451,6 @@ footer {
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
     border-radius: 50%;
 }
 
