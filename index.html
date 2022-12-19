@@ -22,6 +22,11 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/15ddf10dff.js" crossorigin="anonymous"></script>
 
+    <!-- Active click meun to visited.
+    I copied a part of script from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide to add here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Titles -->
     <title>Michael Collins's legend</title>
 </head>
@@ -34,8 +39,8 @@
         <nav id="menupage">
             <img id="head_logo" src="CSS/images/Head-Gold_White.png" alt="Michael Collins head logo">
             <h2 class="logo_text">Michael Collins Legend</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <ul class="nav">
+                <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#timelines">Timelines</a></li>
                 <li><a href="#museum">Museum</a></li>
@@ -205,23 +210,48 @@
         <section id="museum">
             <div class="museum_wrapper">
                 <h2> Museums</h2>
-                <p class="text_Michael_legacy"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus
-                    sit
-                    amet justo sollicitudin
-                    auctor in id erat. Nunc eu accumsan dolor, ac eleifend leo. Etiam neque metus, accumsan feugiat
-                    sapien
-                    ac, semper consequat lectus. Nulla luctus est metus, in laoreet leo ultricies cursus. Nam a
-                    ullamcorper
-                    velit. Cras elementum pulvinar vehicula. Suspendisse potenti. In et ante iaculis, consequat dui ac,
-                    dignissim neque. Cras quis pretium mauris. Nam ullamcorper felis ac ligula elementum, a viverra dui
-                    pharetra. Sed luctus placerat ex sed pulvinar. Suspendisse dapibus venenatis porta. Pellentesque
-                    vehicula fermentum lacus quis placerat. Ut ut nisl vitae nisi sagittis laoreet. Morbi faucibus
-                    felis
-                    ut
-                    elit suscipit, ac porta nibh elementum.
-                </p>
+                <div class="img_and_text">
+                    <img
+                        src="https://scontent.fdub5-1.fna.fbcdn.net/v/t1.6435-9/165215227_125522859583778_5199776069317048256_n.jpg?stp=dst-jpg_p640x640&_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=N4qT_7VCW3MAX97t2gL&_nc_ht=scontent.fdub5-1.fna&oh=00_AfBj92pOJst9bHIgoMTIV4BeF-Z5h4ZTYrDnqXP_k0sVFg&oe=63C7E734">
+                    <h3>Opening hours</h3>
+                    <p>October - April</p>
+                    <p>Wednesday to Saturday</p>
+                    <p>10AM TO 5PM</p>
+                    <p>(LAST ENTRY 4PM)</p>
+                    <p><a class=" outsite_site" href="https://www.michaelcollinshouse.ie/" target="_blank">Michael
+                            Collins House Museum</a></p>
+                </div>
+                <!-- closed img_and_text -->
+
+                <div class="img_and_text">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/58/08/0c/michael-collins-memorial.jpg">
+                    <h3>Opening hours</h3>
+                    <p>October - April</p>
+                    <p>Wednesday to Saturday</p>
+                    <p>10AM TO 5PM</p>
+                    <p>(LAST ENTRY 4PM)</p>
+                    <p><a class="outsite_site" href="https://michaelcollinscentre.com/" target="_blank">Michael
+                            Collins Cetre Musesum</a></p>
+                </div>
+                <!-- closed img_and_text -->
+
+                <div class="img_and_text">
+                    <img
+                        src="https://openhousedublin.com/wp-content/uploads/2022/09/20180813_7799_v3b-cde808510ece8e062ec1990da5a2df0a-scaled.jpg">
+                    <h3>Opening hours</h3>
+                    <p> Tuesday to Saturday 10am - 5pm</p>
+                    <p> Sunday and Monday 1pm - 5pm</p>
+                    <p>Christmas Eve 10am - 12pm</p>
+                    <p>Closed Christmas Day, St. Stephen's Day</p>
+                    <p><a class="outsite_site"
+                            href="https://www.museum.ie/en-IE/Museums/Decorative-Arts-History/Events/2022/122022/Public-Tour-Centenary-of-Handover-of-Collins-Barra"
+                            target="_blank">Collins
+                            Barracks Musesum</a></p>
+                </div>
+                <!-- closed img_and_text -->
             </div>
-            <!--closed home_wrapper -->
+            <!--closed museum_wrapper -->
+
         </section>
 
         <!-- <section id="accessibility">
@@ -261,7 +291,7 @@
         <!-- Footer -->
         <footer>
 
-            <!-- head logo and site maps -->
+            <!-- head logo, social media and site maps -->
             <nav class="site_map">
                 <img id="head_logo" src="CSS/images/Head-Gold_White.png" alt="Michael Collins head logo">
                 <h2 class="logo_text">Michael Collins Legend</h2>
@@ -273,16 +303,18 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#timelines">Timelines</a></li>
                     <li><a href="#museum">Museum</a></li>
-                    <!-- <li><a href="#accessibility">Accessibility</a></li> -->
+                    <li><a href="#accessibility">Accessibility</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
             <!-- Social Media -->
             <div class="social_media_icons">
                 <span>Social Media</span>
                 <ul>
                     <li><a href="https://www.facebook.com/michaelcollinscentre/" class="fa fa-facebook"
-                            target="_blank"></a></li>
+                            target="_blank"></a>
+                    </li>
                     <li><a href="https://twitter.com/generalmichael4" class="fa fa-twitter" target="_blank"></a></li>
                     <li><a href="https://www.instagram.com/michaelcollinshouse/?hl=en" class="fa fa-instagram"
                             target="_blank"></a></li>
@@ -294,6 +326,16 @@
         </footer>
     </div><!-- closed content -->
 
+    <!-- Active click meun to visited.
+    I copied a part of script from https://codepen.io/arjunamgain/pen/RwWoQM to add here -->
+    <script>
+        $(document).ready(function () {
+            $('ul li a').click(function () {
+                $('li a').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
 </body>
 
 </html>
