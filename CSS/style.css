@@ -17,12 +17,13 @@ body {
     width: 100%;
     height: 153px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 #menupage ul {
     list-style-type: none;
     margin: auto;
+
 }
 
 #menupage li {
@@ -35,18 +36,18 @@ body {
 #menupage a {
     text-decoration: none;
     color: #f5f1e4;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 0 20px;
 }
 
 #menupage a:hover {
-    background-color: #f5f1e4;
-    color: #7a7a7a;
-}
-
-/* need fix this one */
-#menupage a.active {
     border-bottom: 3px solid #f5f1e4;
 }
+
+.active {
+    border-bottom: 3px solid #f5f1e4;
+}
+
+
 
 /* Head logo */
 #menupage img {
@@ -242,15 +243,54 @@ section#timelines h2 {
 #museum {
     background-image: url("https://scontent.fdub5-1.fna.fbcdn.net/v/t1.6435-9/165215227_125522859583778_5199776069317048256_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=RhuweWCyItcAX-oD6nj&_nc_ht=scontent.fdub5-1.fna&oh=00_AfD9cOhWpUgyw7n0wGzw6ZOlneVUzSrsdRCJnU7-bdb2KQ&oe=63C2D974");
     background-repeat: no-repeat;
-    opacity: 0.8;
 }
 
 .museum_wrapper {
     width: 90%;
-    height: 700px;
+    height: 850px;
     background-color: #7a7a7a;
     margin: auto;
     clear: both;
+}
+
+.museum_wrapper h2 {
+    text-align: center;
+    padding-top: 1em;
+    color: #f5f1e4;
+    font-size: 2em;
+}
+
+.img_and_text {
+    width: 28%;
+    height: 650px;
+    display: block;
+    background-color: #cdc3c3;
+    text-align: center;
+    display: inline-block;
+    float: none;
+    margin: 0 0.5em 0 3em;
+}
+
+.img_and_text h3 {
+    font-size: 1.2em;
+}
+
+.img_and_text img {
+    width: 100%;
+    height: 290px;
+}
+
+/* button active outside site */
+.outsite_site {
+    text-decoration: none;
+    color: #f5f1e4;
+    padding: 0.5em;
+    background-color: #7a7a7a;
+}
+
+.outsite_site:hover {
+    color: black;
+    background-color: #a2a888;
 }
 
 /* Contct form  */
