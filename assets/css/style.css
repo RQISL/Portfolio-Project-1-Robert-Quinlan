@@ -527,7 +527,7 @@ footer {
     /* head logo vector */
 
     #menupage img {
-        width: 15%;
+        width: 20%;
     }
 
     /* beside head logo with the text*/
@@ -541,7 +541,7 @@ footer {
         float: right;
         position: relative;
         z-index: 4;
-        margin: 4% 5% 0 0;
+        margin: 4% 5% 0 10%;
 
     }
 
@@ -554,41 +554,43 @@ footer {
     }
 
     /* #menupage ul {
-        float: left;
-        overflow: visible;
+        float: right;
         width: 100%;
         border: solid 1px red;
     } */
-
-    #menupage li {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        padding: 0;
-        z-index: 1;
+    .dropdown {
+        position: relative;
+        display: block;
     }
 
-    #menupage a {
-        float: none;
+    .dropdown-content {
+        display: none;
+        position: relative;
         background-color: #7a7a7a;
-        color: #f5f1e4;
-        padding: 16px;
+        z-index: 1;
+        width: 50%;
+        float: right;
+    }
+
+    .dropdown-content a {
         text-decoration: none;
         display: block;
-        text-align: center;
+        text-align: left;
     }
 
-    #menupage a:hover {
+
+    .dropdown-content a:hover {
         background-color: #f5f1e4;
         color: #7a7a7a;
     }
 
-    #menu-wrapper {
-        cursor: pointer;
-    }
-
-    #menupage li:hover {
+    .dropdown:hover .dropdown-content {
         display: block;
-
     }
+
+    .active {
+        border-bottom: none;
+    }
+
+
 }
