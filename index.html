@@ -36,29 +36,34 @@
 
     <header>
         <!-- Menu -->
-
-        <nav id="menupage">
-
-            <!-- for the dash menu in responsiveness -->
-            <div id="menu-wrapper">
-                <div class="dash-menu"></div>
-                <div class="dash-menu"></div>
-                <div class="dash-menu"></div>
-            </div>
-            <!-- closed menu-wrapper -->
-
-            <!-- Head logo vector and text behind of logo -->
-            <img id="head_logo" src="assets/images/Head-Gold_White.png" alt="Michael Collins head logo">
-            <h2 class="logo_text">Michael Collins Legend</h2>
-            <ul class="nav">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#timelines">Timelines</a></li>
-                <li><a href="#museum">Museum</a></li>
-                <!-- <li><a href="#accessibility">Accessibility</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="dropdown">
+            <!--button dropdown hover -->
+            <nav id="menupage">
+                <!-- Head logo vector and text behind of logo -->
+                <img id="head_logo" src="assets/images/Head-Gold_White.png" alt="Michael Collins head logo">
+                <h2 class="logo_text">Michael Collins Legend</h2>
+                <!-- for the dash menu in responsiveness -->
+                <div id="menu-wrapper">
+                    <div class="dash-menu"></div>
+                    <div class="dash-menu"></div>
+                    <div class="dash-menu"></div>
+                </div>
+                <!-- closed menu-wrapper -->
+                <div class="dropdown-content">
+                    <!-- dropdown content the menu -->
+                    <ul class="nav">
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#timelines">Timelines</a></li>
+                        <li><a href="#museum">Museum</a></li>
+                        <!-- <li><a href="#accessibility">Accessibility</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <!-- closed dropdown-content -->
+        </div>
+        <!-- closed dropdown -->
     </header>
     <!-- Main the page with sections -->
     <div id="content">
@@ -340,14 +345,14 @@
 
     <!-- Active click meun to visited.
     I copied a part of script from https://codepen.io/arjunamgain/pen/RwWoQM to add here -->
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $('ul li a').click(function () {
                 $('li a').removeClass("active");
                 $(this).addClass("active");
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
