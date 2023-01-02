@@ -177,8 +177,6 @@ section#about {
 section#timelines {
     background-color: #a2a888;
     height: fit-content;
-    display: inline-block;
-    padding-bottom: 5%;
 }
 
 section#timelines h2 {
@@ -186,14 +184,16 @@ section#timelines h2 {
 }
 
 .container {
-    width: 95%;
-    height: 600px;
+    width: 98%;
     margin: auto;
-
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .fa-circle {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .line_border {
@@ -209,50 +209,55 @@ section#timelines h2 {
 
 .timeline li {
     list-style: none;
-    float: left;
-    width: 280px;
-    height: 600px;
-    margin: 19px 0 0 10px;
+    width: 15%;
+    height: fit-content;
+    display: inline-block;
+    padding: 2%;
 }
 
 .circle_img {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     margin-bottom: 5px;
+    border: solid 5px black;
+    padding: 3%;
 }
 
-.textbox {
+.timeline .textbox {
 
-    width: 80%;
-    height: 300px;
+    width: 100%;
+    height: fit-content;
     background-color: #f5f1e4;
-    overflow-y: hidden;
     padding: 10px;
     border: inset 2px black;
-    clear: both;
-    margin: auto;
-    transition: all 1s ease;
-    z-index: 1000;
-}
-
-.textbox>span {
-    margin-top: 0;
-    margin-left: -30px;
-    position: absolute;
-}
-
-.textbox:hover {
-    width: 80%;
-    position: relative;
-    z-index: 1000;
-}
-
-.text_timeline {
     text-align: left;
     float: left;
-    padding-top: 20px;
+    margin: -5% 0 0 0;
 }
+
+
+
+.timeline .textbox h3 {
+    text-decoration: underline;
+}
+
+/* link outside site to Wiki for further information */
+.timeline .textbox a {
+    text-decoration: none;
+    color: #f5f1e4;
+    background-color: #7a7a7a;
+    font-weight: 600;
+    margin-top: 50%;
+    padding: 2.2%;
+    line-height: 1.6;
+}
+
+.timeline .textbox a:hover {
+    background-color: #a2a888;
+}
+
+
 
 /* Section Museum */
 
@@ -1354,7 +1359,7 @@ footer {
         height: 120px;
         border-radius: 50%;
         margin-bottom: 5px;
-        border: solid 2px #f5f1e4;
+        border: solid 2px black;
         padding: 2%;
     }
 
@@ -1369,18 +1374,6 @@ footer {
         clear: both;
         margin: auto;
         transition: all 1s ease;
-    }
-
-    .textbox>span {
-        margin-top: 0;
-        margin-left: -30px;
-        position: absolute;
-        rotate: 90deg;
-    }
-
-    .textbox:hover {
-        width: 250px;
-        height: 500px;
     }
 
     .text_timeline {
@@ -1496,7 +1489,6 @@ footer {
 
     .container {
         margin: 0;
-
     }
 
     section#timelines h2 {
@@ -1505,11 +1497,21 @@ footer {
         font-size: 1.2em;
     }
 
+    .timeline li {
+        padding-bottom: 30%;
+    }
+
+    .timeline .textbox {
+
+        width: 92%;
+        margin-left: -5%;
+    }
+
     /* Museum section resposiveness */
     section#museum {
         background-image: none;
         padding-bottom: 5%;
-        background-color: #a2a888;
+        background-color: #f4f3f3;
     }
 
     .img_and_text {
