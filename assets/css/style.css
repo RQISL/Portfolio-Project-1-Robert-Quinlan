@@ -16,12 +16,14 @@ body {
     width: 100%
 }
 
+/* hide for dah menu button, will be show when responsive is active */
 #dash-menu-wrapper {
     display: none;
 }
 
+/* top navbar menu */
 #menupage {
-    background-color: #7a7a7a;
+    background-color: #252424;
     text-align: center;
     width: 100%;
     height: 153px;
@@ -245,7 +247,7 @@ and paste it here. I had a few modifications to make the position fit the screen
 
 /* Place the container to the right */
 .right {
-    left: 31.2%;
+    left: 33%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -396,8 +398,8 @@ section#contact {
 
 /* content form centre both of the form and image */
 .contact_and_img_wrapper {
-    width: 70%;
-    height: 620px;
+    width: 80%;
+    height: 650px;
     margin: auto;
     clear: both;
     padding: 50px 50px 80px 50px;
@@ -405,32 +407,10 @@ section#contact {
     border-radius: 30px;
 }
 
-.head_logo_contact_wrapper {
-    width: 30vw;
-    height: 65vh;
-    float: right;
-    display: flexbox;
-
-}
-
-.contact_head_Michael_logo {
-    width: 15%;
-    height: 265px;
-    margin-top: 130px;
-    margin: 0 8%;
-    display: block;
-    position: absolute;
-    z-index: 1;
-}
-
-.contact_Doric_logo {
-    width: 30%;
-    height: 450px;
-    padding-top: 150px;
-    display: block;
-    margin: 0 1%;
-    position: absolute;
-    z-index: -.5;
+.head_logo_contact_wrapper img {
+    width: 20%;
+    height: auto;
+    margin: 5% 0 0 20%;
 }
 
 /* form */
@@ -612,10 +592,27 @@ footer {
     color: #f5f1e4;
 }
 
+/* to keep postion image logo in the contact section*/
+@media only screen and (max-width: 1354px) {
+    .head_logo_contact_wrapper img {
+        width: 20%;
+        height: auto;
+        margin: 5% 0 0 20%;
+    }
 
+    /* Place the container to the left */
+    .left {
+        left: -26%;
+    }
+
+    /* Place the container to the right */
+    .right {
+        left: 33.5%;
+    }
+}
 
 /* meduim devices (portrait tablets and small laptop from 917px up to 1124px) */
-@media only screen and (max-width: 1124px) {
+@media only screen and (max-width: 1150px) {
 
     #menupage {
         height: 80px;
@@ -737,15 +734,14 @@ footer {
         left: -26.5%;
     }
 
-    /* Fix the circle for containers on the right side */
-    .right::after {
-        left: -16px;
+    /* Place the container to the left */
+    .left {
+        left: -27%;
     }
-
 
     /* Place the container to the right */
     .right {
-        left: 34%;
+        left: 35%;
     }
 
 
@@ -805,27 +801,12 @@ footer {
         padding: 0;
     }
 
-    .head_logo_contact_wrapper {
-        display: block;
-        width: 30%;
-        height: 50%;
-        float: left;
-        margin-top: 15%;
-    }
-
-    .contact_head_Michael_logo {
-        display: block;
+    .head_logo_contact_wrapper img {
         width: 20%;
-        height: 20%;
-        margin-top: 6%;
+        height: auto;
+        margin: 5% 0 0 20%;
     }
 
-    .contact_Doric_logo {
-        display: block;
-        width: 35%;
-        height: 20%;
-        margin-top: 2%;
-    }
 
     .contact-form {
         width: 50%;
@@ -966,7 +947,7 @@ footer {
         font-size: 1em;
         text-align: center;
         padding: 15px 0 20px 0;
-        background-color: #7a7a7a;
+        background-color: #252424;
     }
 
     #menupage a {
@@ -996,7 +977,7 @@ footer {
         float: right;
         position: relative;
         z-index: 7;
-        margin: 2% 2% 0 0;
+        margin: 1% 2% 0 0;
     }
 
     .dash-menu {
@@ -1008,14 +989,13 @@ footer {
     }
 
     .drop-btn {
-        background-color: #7a7a7a;
+        background-color: #252424;
         border: none;
     }
 
     .dropdown-content {
         display: none;
         position: relative;
-        background-color: #7a7a7a;
         z-index: 1;
         top: -8px;
         margin: auto;
@@ -1160,6 +1140,11 @@ footer {
         left: 0;
     }
 
+    /* Place the container to the left */
+    .left {
+        left: -25%;
+    }
+
     /* Make all right containers behave like the left ones */
     .right {
         left: -25%;
@@ -1191,11 +1176,12 @@ footer {
     .img_and_text {
         width: 90%;
         height: fit-content;
+        font-size: 1em;
         margin: 5% 0 5% 5%;
     }
 
     .img_and_text h3 {
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     .img_and_text img {
@@ -1207,32 +1193,15 @@ footer {
     .contact_and_img_wrapper {
         width: 94%;
         height: 590px;
-        background-color: #231f20;
         margin: -3% auto 5%;
         clear: both;
         padding: 0;
     }
 
-    .head_logo_contact_wrapper {
-        display: block;
-        width: 30%;
-        height: 50%;
-        float: left;
-        margin-top: 15%;
-    }
-
-    .contact_head_Michael_logo {
-        display: block;
+    .head_logo_contact_wrapper img {
         width: 20%;
-        height: 20%;
-        margin-top: 8%;
-    }
-
-    .contact_Doric_logo {
-        display: block;
-        width: 35%;
-        height: 20%;
-        margin-top: 2%;
+        height: auto;
+        margin: 12% 0 0 12%;
     }
 
     .contact-form {
@@ -1445,15 +1414,11 @@ footer {
 
 
     /* contact section responsive */
-    .head_logo_contact_wrapper {
-        display: none;
+    .contact_and_img_wrapper {
+        background-color: #cdc3c3;
     }
 
-    .contact_head_Michael_logo {
-        display: none;
-    }
-
-    .contact_Doric_logo {
+    .head_logo_contact_wrapper img {
         display: none;
     }
 
