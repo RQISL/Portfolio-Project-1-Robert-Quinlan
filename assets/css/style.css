@@ -212,7 +212,7 @@ and paste it here. I had a few modifications to make the position fit the screen
     background-color: white;
     top: 0;
     bottom: 0;
-    left: 53%;
+    left: 54%;
     margin-left: -3px;
 }
 
@@ -287,6 +287,8 @@ and paste it here. I had a few modifications to make the position fit the screen
     background-color: white;
     position: relative;
     border-radius: 6px;
+    word-spacing: 2px;
+    line-height: 1.6;
 }
 
 .content p {
@@ -308,40 +310,21 @@ and paste it here. I had a few modifications to make the position fit the screen
     height: 220px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 31px;
-    }
-
-    /* Full-width containers */
-    .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
-        left: 15px;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
+.content a {
+    text-decoration: none;
+    color: #f5f1e4;
+    background-color: #7a7a7a;
+    padding: 2%;
+    word-wrap: break-word;
+    word-spacing: 1.6%;
 }
+
+.content a:hover {
+    text-decoration: none;
+    color: #f5f1e4;
+    background-color: #a2a888;
+}
+
 
 /* Section Museum */
 
@@ -749,28 +732,28 @@ footer {
 
     }
 
+    /* Place the container to the left */
+    .left {
+        left: -26.5%;
+    }
+
+    /* Fix the circle for containers on the right side */
+    .right::after {
+        left: -16px;
+    }
+
+
+    /* Place the container to the right */
+    .right {
+        left: 34%;
+    }
+
+
     section#timelines h2 {
         text-align: center;
         margin-top: 0;
     }
 
-    .fa-circle {
-        font-size: 15px;
-    }
-
-    .line_border {
-        display: none;
-    }
-
-
-    .timeline li {
-        list-style: none;
-        display: inline-block;
-        float: none;
-        width: 16%;
-        height: 200px;
-        margin: 2% 0;
-    }
 
     .circle_img {
         width: 80px;
@@ -964,8 +947,8 @@ footer {
     }
 }
 
-/* Small devices (portrait tablets and large phones, from 600px up to 917px) */
-@media only screen and (max-width: 917px) {
+/* Small devices (portrait tablets and large phones, from 600px up to 950px) */
+@media only screen and (max-width: 950px) {
 
     #menupage {
         height: 80px;
@@ -1124,33 +1107,71 @@ footer {
 
     section#timelines h2 {
         text-align: center;
-        margin-top: 0;
+        margin-top: 10%;
     }
 
-    .fa-circle {
-        font-size: 20px;
+    /* Timeline section responsiveness */
+
+    .container {
+        margin: 0;
     }
 
-    .line_border {
-        display: none;
+    section#timelines h2 {
+        text-align: center;
+        margin-top: 1%;
     }
 
-    .timeline li {
-        list-style: none;
-        float: left;
-        width: 100%;
-        height: 600px;
-        margin: 5% 0 10% -3%;
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 0;
     }
 
-    .circle_img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-        border: solid 2px #f5f1e4;
-        padding: 2%;
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: -1.3%;
+        margin-left: -3px;
     }
+
+    /* Full-width containers */
+    .container {
+        width: 90%;
+        padding-left: 70px;
+        padding-right: 25px;
+        margin-left: 21%;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 0;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: -25%;
+    }
+
+    .content h2 {
+        font-size: 1.2em;
+        padding-top: 18%;
+    }
+
+
+
 
     /* Museum section resposiveness */
     section#museum {
@@ -1336,8 +1357,8 @@ footer {
 
 }
 
-/* mobile standard responsiveness  for max 600px screen*/
-@media only screen and (max-width: 600px) {
+/* mobile standard responsiveness  for max 650px screen*/
+@media only screen and (max-width: 650px) {
 
     /* beside head logo with the text*/
     #menupage .logo_text {
@@ -1410,71 +1431,20 @@ footer {
         width: fit-content;
     }
 
-    /* Timeline section responsiveness */
-
-    .container {
-        margin: 0;
-
-    }
-
-    section#timelines h2 {
-        text-align: center;
-        margin-top: -20%;
-    }
-
-    .fa-circle {
-        font-size: 20px;
-    }
-
-    .line_border {
-        display: none;
-    }
-
-    .timeline li {
-        list-style: none;
-        float: left;
-        width: 100%;
-        height: 600px;
-        margin: 5% 0 0 -3%;
-    }
-
-    .circle_img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-        border: solid 2px black;
-        padding: 2%;
-    }
-
-    .textbox {
-
-        width: 80%;
-        height: 300px;
-        background-color: #f5f1e4;
-        overflow-y: hidden;
-        padding: 10px;
-        border: inset 2px black;
-        clear: both;
-        margin: auto;
-        transition: all 1s ease;
-    }
-
-    .text_timeline {
-        text-align: left;
-        padding-top: 20px;
-    }
-
-    .img_and_text {
-        height: fit-content;
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 0%;
+        margin-left: -3px;
     }
 
 
-    .img_and_text img {
-        width: 100%;
-        height: 200px;
-    }
-
+    /* contact section responsive */
     .head_logo_contact_wrapper {
         display: none;
     }
@@ -1495,9 +1465,6 @@ footer {
     }
 
     /* responsiveness footer section */
-
-
-
     /* site maps links */
 
     .site_map li {
@@ -1555,8 +1522,8 @@ footer {
 }
 
 
-/* smaller mobile responsiveness  for max 396px screen*/
-@media only screen and (max-width: 398px) {
+/* smaller mobile responsiveness  for max 414px screen*/
+@media only screen and (max-width: 414px) {
 
     /* head logo vector */
     #menupage img {
@@ -1572,7 +1539,7 @@ footer {
     /* Timeline section responsiveness */
 
     .container {
-        margin: 0;
+        margin: 0 auto;
     }
 
     section#timelines h2 {
@@ -1581,15 +1548,34 @@ footer {
         font-size: 1.2em;
     }
 
-    .timeline li {
-        padding-bottom: 30%;
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        display: none;
     }
 
-    .timeline .textbox {
-
-        width: 92%;
-        margin-left: -5%;
+    /* The circles on the timeline */
+    .container::after {
+        display: none;
     }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+        max-width: 100%;
+        margin-left: 10%;
+    }
+
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+        display: none;
+    }
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+        display: none;
+    }
+
+
 
     /* Museum section resposiveness */
     section#museum {
