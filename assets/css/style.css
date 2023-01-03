@@ -184,6 +184,10 @@ section#timelines h2 {
     text-align: center;
 }
 
+/* I had experienced difficulty with a responsive timeline. I decide to copy 
+from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline  
+and paste it here. I had a few modifications to make the position fit the screen*/
+
 .container {
     width: 98%;
     margin: auto;
