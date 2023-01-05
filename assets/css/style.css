@@ -24,7 +24,6 @@ body {
 /* top navbar menu */
 #menupage {
     background-color: #252424;
-    text-align: center;
     width: 100%;
     height: 153px;
     position: fixed;
@@ -33,15 +32,15 @@ body {
 
 #menupage ul {
     list-style-type: none;
-    margin: auto;
-
+    float: right;
+    position: relative;
+    margin: -2% 4% 0 0;
 }
 
 #menupage li {
     display: inline-block;
     float: none;
     font-size: 24px;
-    padding-top: 65px;
 }
 
 #menupage a {
@@ -63,19 +62,18 @@ body {
 /* Head logo */
 #menupage img {
     float: left;
-    width: 10%;
-    height: 100%;
-}
-
-#menupage #head_logo {
-    float: left;
+    margin-left: 0;
+    width: 9%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 #menupage .logo_text {
-    float: left;
     font-size: 2em;
-    margin-top: 3%;
+    margin: 5% 0 0 10%;
     color: #f5f1e4;
+    width: fit-content;
 }
 
 /* Selection of pages */
@@ -89,31 +87,30 @@ section#home {
     background-color: #cdc3c3;
     height: fit-content;
     display: inline-block;
-    padding-bottom: 5%;
 }
 
 .home_wrapper {
-    width: 80%;
-    height: 800px;
+    width: 95%;
+    height: 710px;
     clear: both;
-    margin: auto;
-    margin-top: 120px;
+    margin: 3% auto;
 }
 
 .home_wrapper .Michael_art {
     float: left;
-    width: 34%;
-    height: 55%;
+    width: 44%;
+    height: auto;
     border: solid 1em #a2a888;
 
 }
 
 .home_wrapper .background_text {
     background-color: #a2a888;
-    width: 45%;
+    width: 42%;
     height: fit-content;
     float: right;
-    margin-top: 0.5%;
+    margin: 3% 0 0 2%;
+    padding: 2%;
     border: solid 1em #f4f3f3;
 }
 
@@ -127,8 +124,7 @@ section#home {
 
 .home_wrapper h2 {
     float: left;
-    width: 30vw;
-    margin: 2% 0 0 2%;
+    width: 90%;
 }
 
 /* About section */
@@ -177,6 +173,7 @@ section#about {
 
 /* Timeline section */
 section#timelines {
+
     background-color: #a2a888;
     height: fit-content;
     padding-bottom: 10%;
@@ -373,7 +370,7 @@ section#museum {
 
 .img_and_text img {
     width: 100%;
-    height: 230px;
+    height: auto;
 }
 
 /* button active outside site */
@@ -431,7 +428,7 @@ section#contact {
 }
 
 .text-input {
-    color: #fafafa;
+    color: black;
     width: 95%;
     height: 25px;
     margin: 5px 0 20px 0;
@@ -611,24 +608,25 @@ footer {
     }
 }
 
-/* meduim devices (portrait tablets and small laptop from 917px up to 1124px) */
-@media only screen and (max-width: 1150px) {
-
+/*focus on navbar responsive from 650px up to 740px) */
+@media only screen and (max-width: 740px) {
     #menupage {
-        height: 80px;
+        height: 90px;
     }
 
     #menupage ul {
         list-style-type: none;
-        float: right;
-        margin: 2.4% 0 0 0;
+        margin: 1% auto;
+        clear: both;
+        width: 100%;
     }
 
     #menupage li {
-        display: inline-block;
+        display: block;
         font-size: 1em;
         text-align: center;
-        padding: 1% 0 0 0;
+        padding: 15px 0 20px 0;
+        background-color: #252424;
     }
 
     #menupage a {
@@ -642,21 +640,53 @@ footer {
 
     /* head logo vector */
 
+    #menupage {
+        height: 100px;
+    }
+
     #menupage img {
-        width: 10%;
+        width: 12%;
     }
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        font-size: 1.1em;
-        margin-top: 3%;
+        font-size: 1.2em;
+        margin: 6% 0 0 12%;
     }
 
-    .home_wrapper {
-        width: 90%;
-        margin: 0 auto;
+    /* Three dash for menu */
+    #dash-menu-wrapper {
+        margin: -6% 3% 0 0;
+        float: right;
+        display: block;
+    }
+
+    .dash-menu {
+        width: 35px;
+        height: 4px;
+        background-color: #f5f1e4;
+        margin: 6px 0;
+        display: block;
+    }
+
+    .drop-btn {
+        background-color: #252424;
+        border: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        z-index: 1;
+        top: -8px;
+        margin: auto;
         clear: both;
     }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
 
     .home_wrapper .Michael_art {
         width: 40%;
@@ -928,11 +958,11 @@ footer {
     }
 }
 
-/* Small devices (portrait tablets and large phones, from 600px up to 950px) */
-@media only screen and (max-width: 950px) {
+/* large devices large phones, from 450px up to 750px */
+@media only screen and (max-width: 750px) {
 
     #menupage {
-        height: 80px;
+        height: 100px;
     }
 
     #menupage ul {
@@ -962,22 +992,20 @@ footer {
     /* head logo vector */
 
     #menupage img {
-        width: 15%;
+        width: 13%;
     }
 
     /* beside head logo with the text*/
     #menupage .logo_text {
         font-size: 1.2em;
-        margin-top: 3%;
+        margin: 6% 0 0 15%;
     }
 
-    /* create three dash for menu */
+    /* Three dash for menu */
     #dash-menu-wrapper {
-        display: block;
+        margin: -7% 3% 0 0;
         float: right;
-        position: relative;
-        z-index: 7;
-        margin: 1% 2% 0 0;
+        display: block;
     }
 
     .dash-menu {
@@ -1006,17 +1034,20 @@ footer {
         display: block;
     }
 
+    section#home {
+        padding-bottom: 10%;
+        width: 104%;
+    }
+
     .home_wrapper {
         width: 90%;
         margin: 0 auto;
-        clear: both;
     }
 
     .home_wrapper .Michael_art {
-        width: 90%;
-        height: 70%;
-        margin: 0 auto 5%;
-        clear: both;
+        width: 94%;
+        height: auto;
+        margin: 0;
         float: left;
         border: solid 1em #a2a888;
 
@@ -1025,6 +1056,7 @@ footer {
     .home_wrapper .background_text {
         width: 90%;
         height: fit-content;
+        margin-left: 0;
         float: left;
 
     }
@@ -1042,6 +1074,9 @@ footer {
     }
 
     /* responsive about section */
+    section#about {
+        width: 104%;
+    }
 
     #about_wrapper {
         width: 95%;
@@ -1051,7 +1086,7 @@ footer {
 
     #about_wrapper .head_Store_Michael {
         width: 95%;
-        height: 80%;
+        height: auto;
         margin: 0 auto 5%;
         clear: both;
         border: solid 1em #7a7a7a;
@@ -1065,24 +1100,20 @@ footer {
     #about_wrapper .text_about_Michael {
         background-color: #a2a888;
         border: solid 1em #7a7a7a;
-        width: 83%;
+        width: 84%;
         height: fit-content;
         float: left;
         margin: 0 auto;
         clear: both;
     }
 
-    #about_wrapper .text_about_Michael p {
-        font-size: 1em;
-        word-spacing: 2px;
-        line-height: 1.6;
-    }
-
     /* Timeline section responsiveness */
+    section#timelines {
+        width: 104%;
+    }
 
     .container {
         margin: 0;
-
     }
 
     section#timelines h2 {
@@ -1114,7 +1145,7 @@ footer {
         background-color: white;
         top: 0;
         bottom: 0;
-        left: -1.3%;
+        left: 1%;
         margin-left: -3px;
     }
 
@@ -1155,13 +1186,11 @@ footer {
         padding-top: 18%;
     }
 
-
-
-
     /* Museum section resposiveness */
     section#museum {
         background-image: none;
         padding-bottom: 5%;
+        width: 104%;
     }
 
     .museum_wrapper {
@@ -1186,10 +1215,14 @@ footer {
 
     .img_and_text img {
         width: 100%;
-        height: 290px;
+        height: auto;
     }
 
     /* contact section responsiveness */
+    section#contact {
+        width: 104%;
+    }
+
     .contact_and_img_wrapper {
         width: 94%;
         height: 590px;
@@ -1201,7 +1234,8 @@ footer {
     .head_logo_contact_wrapper img {
         width: 20%;
         height: auto;
-        margin: 12% 0 0 12%;
+        position: sticky;
+        margin: 28% 0 0 12%;
     }
 
     .contact-form {
@@ -1226,6 +1260,11 @@ footer {
 
     /* responsiveness footer section */
 
+    footer {
+        text-align: center;
+        width: 104%;
+    }
+
     /* Head logo */
     .site_map img {
         float: left;
@@ -1242,29 +1281,12 @@ footer {
         color: #f5f1e4;
     }
 
-    /* Social media icons */
-    footer {
-        height: fit-content;
-        margin-top: 0;
-        border: solid 1px #7a7a7a;
-    }
-
     /* site maps links */
-
-    .site_map li p {
-        color: #f5f1e4;
-        margin-top: 0;
-        max-width: 100%;
-        font-weight: bolder;
-        font-size: 1.2em;
-    }
 
     .site_map ul {
         list-style-type: none;
         margin: auto;
-        clear: both;
-        width: 97%;
-        float: right;
+        width: 100%;
     }
 
     .site_map li {
@@ -1272,17 +1294,6 @@ footer {
         display: inline-block;
         font-size: 1em;
         padding: 3% 5% 5% 0;
-    }
-
-    .site_map a {
-        text-decoration: none;
-        color: #f5f1e4;
-        padding: 2%;
-    }
-
-    .site_map a:hover {
-        background-color: #f5f1e4;
-        color: #7a7a7a;
     }
 
     /* Social media icons */
@@ -1326,61 +1337,105 @@ footer {
 
 }
 
+/* focus on contact image beside reomved responsiveness between 450px and 500px*/
+@media only screen and (max-width: 500px) {
+
+    /* content form centre both of the form and image */
+    .contact_and_img_wrapper {
+
+        background-color: #cdc3c3;
+    }
+
+    .head_logo_contact_wrapper img {
+        display: none;
+    }
+
+    .contact-form {
+        width: fit-content;
+        margin: auto;
+        clear: both;
+        border-radius: 2%;
+    }
+
+    /* Footer section responsive */
+
+    footer {
+        text-align: center;
+    }
+
+}
+
+
 /* mobile standard responsiveness  for max 650px screen*/
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 450px) {
+
+    /* Three dash for menu */
+    #dash-menu-wrapper {
+        margin: 0 3% 0 0;
+    }
+
+    .dash-menu {
+        width: 25px;
+        height: 3px;
+    }
+
+    /* head logo vector */
+    #menupage img {
+        width: 18%;
+    }
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        margin-top: 8%;
+        font-size: 1em;
+        margin: 9% 0 0 19%;
     }
 
-    /* create three dash for menu */
+
+    /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: 6% 2% 0 0;
+        margin: -9% 3% 0 0;
     }
 
+    .dash-menu {
+        width: 35px;
+        height: 4px;
+    }
 
-    /* Home section resposiveness */
+    /* home section responsive */
+    section#home {
+        padding-bottom: 15%;
+    }
 
     .home_wrapper .Michael_art {
-        width: 100%;
-        height: 50%;
-        border: solid 5px #a2a888;
-        margin-top: 0%;
-
+        width: 95%;
+        height: auto;
+        margin-left: 0;
+        border: solid 0.5em #a2a888;
     }
 
     .home_wrapper .background_text {
-        width: 100%;
-        margin: 8% 0 5% 0;
-        border: solid 5px #f4f3f3;
-
+        background-color: #a2a888;
+        width: 91%;
+        border: solid 0.5em #f4f3f3;
+        margin-left: 0;
     }
 
-    .home_wrapper .text_Michael_legacy {
-        font-size: 1em;
-        line-height: 1.6;
-        margin: 5% 5% 5% 5%;
-    }
-
-    .home_wrapper h2 {
-        width: 90%;
-        text-align: left;
-        font-size: 1.3em;
-        margin: 5% 5% 2% 5%;
-    }
 
     /* about section resposiveness */
+
+    section#about {
+        padding-bottom: 10%;
+    }
+
     #about_wrapper {
-        margin-top: -3%;
+        margin: -3% auto;
     }
 
     #about_wrapper .head_Store_Michael {
-        border: solid 5px #7a7a7a;
-        width: 100%;
-        height: 65%;
+        border: solid 0.5em #7a7a7a;
+        width: 94%;
+        height: auto;
         margin: auto;
-        clear: both;
     }
 
     #about_wrapper h2 {
@@ -1390,27 +1445,36 @@ footer {
     }
 
     #about_wrapper .text_about_Michael {
-        font-size: 1em;
-        line-height: 1.6;
-        border: solid 5px #7a7a7a;
-        margin: auto;
+        border: solid 0.5em #7a7a7a;
+        width: 76%;
+        margin-top: 6%;
+    }
+
+    /* Timline section resposive */
+
+    section#timelines h2 {
+        text-align: center;
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+    .container {
+        width: 110%;
+        margin: 0 0 5% 20%;
         clear: both;
-        margin-top: 5%;
-        padding: 4%;
-        width: fit-content;
+        padding: 0;
     }
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        left: 0%;
-        margin-left: -3px;
+        display: none;
     }
+
+    /* The circles on the timeline */
+    .container::after {
+        display: none;
+    }
+
 
 
     /* contact section responsive */
@@ -1430,6 +1494,10 @@ footer {
     }
 
     /* responsiveness footer section */
+    footer {
+        text-align: center;
+    }
+
     /* site maps links */
 
     .site_map li {
@@ -1457,10 +1525,7 @@ footer {
     }
 
     .social_media_icons span {
-        color: #f5f1e4;
-        font-size: 1em;
-        margin-left: 2%;
-        font-weight: bolder;
+        text-align: center;
     }
 
     .social_media_icons ul {
@@ -1487,8 +1552,18 @@ footer {
 }
 
 
-/* smaller mobile responsiveness  for max 414px screen*/
-@media only screen and (max-width: 414px) {
+/* smaller mobile responsiveness  for max 350px screen*/
+@media only screen and (max-width: 350px) {
+
+    /* Three dash for menu */
+    #dash-menu-wrapper {
+        margin: -9.5% 3% 0 0;
+    }
+
+    .dash-menu {
+        width: 28px;
+        height: 4px;
+    }
 
     /* head logo vector */
     #menupage img {
@@ -1497,22 +1572,105 @@ footer {
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        font-size: 0.9em;
-        margin-top: 8%;
+        font-size: 1em;
+        margin: 12% 0 0 21%;
+    }
+
+    /* home section responsive */
+    section#home {
+        padding-bottom: 15%;
+        width: 104%;
+    }
+
+    .home_wrapper {
+        margin: -5% auto;
+        width: 93%;
+    }
+
+    .home_wrapper .Michael_art {
+        float: left;
+        width: 93.5%;
+        height: auto;
+        border: solid 0.5em #a2a888;
+        margin: -5% 0 5% 0
+    }
+
+    .home_wrapper .background_text {
+        background-color: #a2a888;
+        width: 89.5%;
+        border: solid 0.5em #f4f3f3;
+    }
+
+    .home_wrapper h2 {
+        width: 90%;
+        padding: 2%;
+        font-size: 1.2em;
+    }
+
+    /* responsive about section */
+
+    section#about {
+        width: 104%;
+    }
+
+    #about_wrapper {
+        margin: -5% auto;
+        width: 93%;
+    }
+
+    #about_wrapper .head_Store_Michael {
+        width: 100%;
+        height: auto;
+        margin: 0 0 7% 0;
+        border: solid 0.5em #7a7a7a;
+    }
+
+    #about_wrapper h2 {
+        width: 100%;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    #about_wrapper .text_about_Michael {
+        background-color: #a2a888;
+        border: solid 0.5em #7a7a7a;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    #about_wrapper .text_about_Michael p {
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.6;
     }
 
     /* Timeline section responsiveness */
 
     .container {
-        margin: 0 auto;
+        margin: 0;
+
     }
 
     section#timelines h2 {
         text-align: center;
-        margin-top: -20%;
+        padding-top: 9%;
+        width: 90%;
+    }
+
+
+    /* Timeline section responsiveness */
+
+    section#timelines h2 {
+        text-align: center;
+        margin: -20% auto;
         font-size: 1.2em;
     }
 
+    .container {
+        margin: 24% 20% 0 20%;
+        width: 100%;
+        padding: 0;
+    }
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
@@ -1545,21 +1703,34 @@ footer {
     /* Museum section resposiveness */
     section#museum {
         background-image: none;
-        padding-bottom: 5%;
         background-color: #f4f3f3;
+        width: 104%;
+
     }
 
-    .img_and_text {
-        height: fit-content;
+    .museum_wrapper {
+        width: 90%;
+        margin: -25% auto 12%;
+
+    }
+
+    .img_and_text p {
+        font-size: 0.8em;
+        line-height: 1.2;
     }
 
     .img_and_text h3 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .img_and_text img {
         width: 100%;
-        height: 160px;
+        height: auto;
+    }
+
+    /* contact section responsive */
+    section#contact {
+        width: 104%;
     }
 
     .head_logo_contact_wrapper {
@@ -1576,11 +1747,15 @@ footer {
 
     /* responsiveness footer section */
 
-    /* Head logo */
+    footer {
+        text-align: center;
+        width: 104%;
+    }
 
     .site_map li {
-        padding: 3% 0 5% 0;
-        font-size: 0.8em;
+        padding: 0 5% 5% 0;
+        font-size: 0.9em;
+        display: block;
     }
 
     .site_map img {
@@ -1593,14 +1768,101 @@ footer {
     .site_map .logo_text {
         float: left;
         font-size: 1em;
-        margin-top: 8%;
-        margin-left: 7%;
+        margin-top: 8% 7% 0 0;
         color: #f5f1e4;
     }
 
-    .social_media_icons li .fa {
-        padding: 8px;
+    .social_media_icons span {
+        margin-left: 30%;
     }
 
+    .social_media_icons ul {
+        padding-left: 0;
+        margin: 0 auto;
+    }
 
+    .social_media_icons li {
+        margin: 6%;
+    }
+
+    .social_media_icons li .fa {
+        padding: 50% 40% 40% 40%;
+        margin: 20%;
+        font-size: .8em;
+    }
+}
+
+/* smaller mobile  focus on navbar and footer  for responsiveness */
+@media only screen and (max-width: 320px) {
+
+    /* Three dash for menu */
+    #dash-menu-wrapper {
+        margin: -9.5% 3% 0 0;
+    }
+
+    .dash-menu {
+        width: 28px;
+        height: 3px;
+    }
+
+    #menupage {
+        height: 70px;
+    }
+
+    /* beside head logo with the text*/
+    #menupage .logo_text {
+        font-size: 0.8em;
+        margin: 12% 0 0 21%;
+    }
+
+    #menupage li {
+        font-size: 0.8em;
+    }
+
+    /* responsiveness footer section */
+
+    footer {
+        text-align: center;
+        width: 104%;
+    }
+
+    .site_map li {
+        padding: 3% 0 5% 0;
+        font-size: 0.8em;
+        display: block;
+    }
+
+    .site_map img {
+        float: left;
+        margin-top: 2%;
+        width: 20%;
+        height: auto;
+    }
+
+    .site_map .logo_text {
+        float: left;
+        margin: 8% 5% 0 0;
+        color: #f5f1e4;
+    }
+
+    .social_media_icons span {
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .social_media_icons ul {
+        padding-top: 1%;
+    }
+
+    .social_media_icons li {
+        margin: auto;
+        clear: both;
+        padding: 2%;
+    }
+
+    .social_media_icons li .fa {
+        margin-left: -15%;
+        padding: 7px;
+        font-size: 0.8em;
+    }
 }
