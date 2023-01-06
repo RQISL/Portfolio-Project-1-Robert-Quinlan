@@ -13,10 +13,11 @@ body {
 
 /* content in the main page with setions */
 #content {
-    width: 100%
+
+    overflow: hidden;
 }
 
-/* hide for dah menu button, will be show when responsive is active */
+/* hide for dash menu button, will be show when responsive is active */
 #dash-menu-wrapper {
     display: none;
 }
@@ -34,7 +35,7 @@ body {
     list-style-type: none;
     float: right;
     position: relative;
-    margin: -2% 4% 0 0;
+    margin: 0% 4% 0 0;
 }
 
 #menupage li {
@@ -71,7 +72,7 @@ body {
 
 #menupage .logo_text {
     font-size: 2em;
-    margin: 5% 0 0 10%;
+    margin: 3% 0 0 10%;
     color: #f5f1e4;
     width: fit-content;
 }
@@ -132,21 +133,20 @@ section#home {
 section#about {
     background-color: #f4f3f3;
     height: fit-content;
-    padding-bottom: 5%;
+    margin-top: 10%;
 }
 
 #about_wrapper {
     width: 90%;
+    height: 750px;
     margin: auto;
     clear: both;
-    margin-top: 120px;
 }
 
 #about_wrapper .head_Store_Michael {
     width: 45%;
     height: auto;
     float: left;
-    margin-left: 5%;
     margin-top: 1%;
     border: solid 1em #7a7a7a;
 }
@@ -159,14 +159,14 @@ section#about {
 #about_wrapper .text_about_Michael {
     background-color: #a2a888;
     float: right;
-    width: 35%;
+    width: 38%;
     height: fit-content;
     font-size: 1em;
     border: solid 1em #7a7a7a;
     word-spacing: 2px;
     line-height: 1.6;
-    margin: 1em 0 0 3em;
-    padding: 2em;
+    margin: 5% 0 0 3%;
+    padding: 2%;
 }
 
 
@@ -237,12 +237,12 @@ and paste it here. I had a few modifications to make the position fit the screen
 
 /* Place the container to the left */
 .left {
-    left: -25%;
+    left: -24%;
 }
 
 /* Place the container to the right */
 .right {
-    left: 33%;
+    left: 32%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -329,6 +329,7 @@ section#museum {
     background-image: url("https://scontent.fdub5-1.fna.fbcdn.net/v/t1.6435-9/165215227_125522859583778_5199776069317048256_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=RhuweWCyItcAX-oD6nj&_nc_ht=scontent.fdub5-1.fna&oh=00_AfD9cOhWpUgyw7n0wGzw6ZOlneVUzSrsdRCJnU7-bdb2KQ&oe=63C2D974");
     background-repeat: no-repeat;
     height: fit-content;
+    padding-bottom: 4%;
 }
 
 .museum_wrapper {
@@ -393,7 +394,7 @@ section#contact {
 
 /* content form centre both of the form and image */
 .contact_and_img_wrapper {
-    width: 80%;
+    width: 70%;
     height: 650px;
     margin: auto;
     clear: both;
@@ -405,7 +406,7 @@ section#contact {
 .head_logo_contact_wrapper img {
     width: 20%;
     height: auto;
-    margin: 5% 0 0 20%;
+    margin: 50px 0 0 180px;
 }
 
 /* form */
@@ -413,7 +414,7 @@ section#contact {
     margin-top: 0;
     color: black;
     background-color: #a2a888;
-    max-width: 90%;
+    width: 45%;
     border-radius: 30px;
     left: 20%;
     padding: 30px;
@@ -478,6 +479,7 @@ footer {
     width: 100%;
     height: fit-content;
     margin-top: 0;
+    padding-bottom: 5%;
     border: solid 1px #7a7a7a;
 }
 
@@ -531,10 +533,10 @@ footer {
 
 /* Social media icons */
 .social_media_icons {
-    width: 10%;
+    width: 40%;
     height: 42%;
     text-align: center;
-    margin: 5% 0 0 0;
+    margin: 5% 0 0 30%;
 }
 
 .social_media_icons span {
@@ -551,12 +553,14 @@ footer {
     float: none;
     display: inline-block;
     margin-left: 0;
+    padding-right: 5%;
 }
 
 .social_media_icons li .fa {
-    padding: 20px;
-    font-size: 25px;
+    padding: 25px;
+    font-size: 27px;
     width: 20px;
+    height: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -586,12 +590,128 @@ footer {
     color: #f5f1e4;
 }
 
-/* to keep postion image logo in the contact section*/
+/* large tablet and small laptop responsive*/
 @media only screen and (max-width: 1354px) {
-    .head_logo_contact_wrapper img {
-        width: 20%;
+
+    #menupage {
+        height: 90px;
+    }
+
+    #menupage ul {
+        list-style-type: none;
+        margin: -40px auto;
+        width: fit-content;
+        float: right;
+    }
+
+    #menupage li {
+        display: inline-block;
+        font-size: 1em;
+        text-align: center;
+        padding: 15px 0 10px 0;
+        background-color: #252424;
+    }
+
+    #menupage a {
+        text-decoration: none;
+        color: #f5f1e4;
+    }
+
+    #menupage a:hover {
+        border-bottom: 2px solid #f5f1e4;
+    }
+
+    /* head logo vector */
+
+    #menupage {
+        height: 100px;
+    }
+
+    #menupage img {
+        width: 90px;
+    }
+
+    /* beside head logo with the text*/
+    #menupage .logo_text {
+        font-size: 1.2em;
+        margin: 40px 0 0 90px;
+    }
+
+    .home_wrapper .Michael_art {
+        width: 36%;
         height: auto;
-        margin: 5% 0 0 20%;
+        margin: 0 auto 2%;
+        float: left;
+        border: solid 1em #a2a888;
+
+    }
+
+    .home_wrapper .background_text {
+        width: 46%;
+        height: fit-content;
+        float: right;
+        margin-top: 0;
+    }
+
+    .home_wrapper .text_Michael_legacy {
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.6;
+        padding: 3%;
+    }
+
+    .home_wrapper h2 {
+        float: left;
+        width: 95%;
+    }
+
+    /* responsive about section */
+
+    #about_wrapper {
+        width: 95%;
+        height: 840px;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    #about_wrapper .head_Store_Michael {
+        width: 35%;
+        height: auto;
+        margin: 0 auto 5%;
+        border: solid 1em #7a7a7a;
+    }
+
+    #about_wrapper h2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #about_wrapper .text_about_Michael {
+        background-color: #a2a888;
+        border: solid 1em #7a7a7a;
+        width: 42%;
+        height: fit-content;
+        float: right;
+        margin: 0 auto;
+    }
+
+    #about_wrapper .text_about_Michael p {
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.6;
+    }
+
+    /* Timeline section responsiveness */
+
+    .container {
+        margin: 0 auto;
+        clear: both;
+
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        margin-left: -10%px;
     }
 
     /* Place the container to the left */
@@ -603,10 +723,197 @@ footer {
     .right {
         left: 33.5%;
     }
+
+
+    section#timelines h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+
+    .circle_img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        border: solid 2px #f5f1e4;
+        padding: 3%;
+    }
+
+    /* Museum section resposiveness */
+    section#museum {
+        background-image: none;
+        padding-bottom: 5%;
+    }
+
+    .museum_wrapper {
+        margin-top: -10%;
+    }
+
+    .museum_wrapper h2 {
+        font-size: 1.5em;
+        padding-top: 10%;
+    }
+
+    .img_and_text {
+        width: 90%;
+        height: fit-content;
+        font-size: 1em;
+        margin: 5% 0 5% 5%;
+    }
+
+    .img_and_text h3 {
+        font-size: 1.8em;
+    }
+
+    .img_and_text img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* contact section responsiveness */
+    .contact_and_img_wrapper {
+        width: 94%;
+        height: 590px;
+        background-color: #231f20;
+        margin: -3% auto 5%;
+        clear: both;
+        padding: 0;
+    }
+
+    .head_logo_contact_wrapper img {
+        width: 20%;
+        height: auto;
+        margin: 70px 0 0 100px;
+        position: sticky;
+    }
+
+
+    .contact-form {
+        width: 50%;
+        height: 530px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .contact-form h2 {
+        color: black;
+        margin: 2% 0 2% 0;
+    }
+
+    .text-input {
+        width: 95%;
+        height: 18px;
+        margin: 0 0 20px 0;
+        border: 1px solid #fafafa;
+        border-radius: 2px;
+
+    }
+
+    /* responsiveness footer section */
+
+    /* Head logo */
+    .site_map img {
+        float: left;
+        margin-top: 2%;
+        width: 20%;
+        height: 20%;
+    }
+
+    .site_map .logo_text {
+        float: left;
+        font-size: 1.2em;
+        margin-top: 15%;
+        margin-left: 5%;
+        color: #f5f1e4;
+    }
+
+    /* Social media icons */
+    footer {
+        height: fit-content;
+        margin-top: 0;
+        padding-bottom: 5%;
+        text-align: center;
+        border: solid 1px #7a7a7a;
+    }
+
+    /* site maps links */
+
+    .site_map li p {
+        color: #f5f1e4;
+        margin-top: 0;
+        max-width: 100%;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+
+    .site_map ul {
+        list-style-type: none;
+        margin: auto;
+        clear: both;
+        width: 97%;
+        float: right;
+    }
+
+    .site_map li {
+        float: none;
+        display: inline-block;
+        font-size: 1em;
+        padding: 3% 5% 5% 0;
+    }
+
+    .site_map a {
+        text-decoration: none;
+        color: #f5f1e4;
+        padding: 2%;
+    }
+
+    .site_map a:hover {
+        background-color: #f5f1e4;
+        color: #7a7a7a;
+    }
+
+    /* Social media icons */
+    .social_media_icons {
+        width: 98%;
+        height: 32%;
+        text-align: left;
+        margin: auto;
+        clear: both;
+    }
+
+    .social_media_icons span {
+        color: #f5f1e4;
+        font-size: 1em;
+        font-weight: bolder;
+        margin-left: 43%;
+    }
+
+    .social_media_icons ul {
+        list-style-type: none;
+        text-align: center;
+        margin-left: -14%;
+    }
+
+    .social_media_icons li {
+        float: none;
+        display: inline-block;
+        padding: 2% 0 0 5%;
+    }
+
+    .social_media_icons li .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
 }
 
-/*focus on navbar responsive from 650px up to 850px) */
-@media only screen and (max-width: 850px) {
+/*focus on navbar responsive from 650px up to 950px) */
+@media only screen and (max-width: 950px) {
     #menupage {
         height: 90px;
     }
@@ -642,7 +949,7 @@ footer {
     }
 
     #menupage img {
-        width: 12%;
+        width: 90px;
     }
 
     /* beside head logo with the text*/
@@ -675,7 +982,7 @@ footer {
         display: none;
         position: relative;
         z-index: 1;
-        top: 15%;
+        top: 13%;
         margin: auto;
         clear: both;
     }
@@ -800,23 +1107,23 @@ footer {
 
     .museum_wrapper h2 {
         font-size: 1.5em;
-        padding-top: 5%;
+        padding-top: 10%;
     }
 
     .img_and_text {
-        width: 25%;
+        width: 90%;
         height: fit-content;
+        font-size: 1em;
         margin: 5% 0 5% 5%;
-        font-size: .5em;
     }
 
     .img_and_text h3 {
-        font-size: 0.8em;
+        font-size: 1.8em;
     }
 
     .img_and_text img {
         width: 100%;
-        height: 140px;
+        height: auto;
     }
 
     /* contact section responsiveness */
@@ -832,7 +1139,8 @@ footer {
     .head_logo_contact_wrapper img {
         width: 20%;
         height: auto;
-        margin: 5% 0 0 20%;
+        margin: 20% 0 0 10%;
+        position: sticky;
     }
 
 
@@ -932,17 +1240,19 @@ footer {
         color: #f5f1e4;
         font-size: 1em;
         font-weight: bolder;
+        margin-left: 43%;
     }
 
     .social_media_icons ul {
         list-style-type: none;
         text-align: center;
-        margin: auto;
+        margin-left: -14%;
     }
 
     .social_media_icons li {
         float: none;
         display: inline-block;
+        padding: 2% 0 0 5%;
     }
 
     .social_media_icons li .fa {
@@ -990,27 +1300,27 @@ footer {
     /* head logo vector */
 
     #menupage img {
-        width: 13%;
+        width: 90px;
     }
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        font-size: 1.5em;
-        margin: 4% 0 0 14%;
+        font-size: 1.4em;
+        margin: 40px 0 0 90px;
     }
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -4% 3% 0 0;
+        margin: -45px 30px 0 0;
         float: right;
         display: block;
     }
 
     .dash-menu {
-        width: 35px;
-        height: 4px;
+        width: 45px;
+        height: 6px;
         background-color: #f5f1e4;
-        margin: 6px 0;
+        margin: 8px 0;
         display: block;
     }
 
@@ -1023,7 +1333,7 @@ footer {
         display: none;
         position: relative;
         z-index: 1;
-        top: 15%;
+        top: 0;
         margin: auto;
         clear: both;
     }
@@ -1044,7 +1354,7 @@ footer {
     .home_wrapper .Michael_art {
         width: 90%;
         height: auto;
-        margin: 0;
+        margin: 0 auto 5%;
         float: left;
         border: solid 1em #a2a888;
 
@@ -1076,14 +1386,12 @@ footer {
         width: 100%;
         height: 1280px;
         margin: 0 auto;
-        clear: both;
     }
 
     #about_wrapper .head_Store_Michael {
-        width: 92%;
+        width: 89%;
         height: auto;
-        margin: 0 auto 5%;
-        clear: both;
+        margin: 0 0 5% 1.5%;
         border: solid 1em #7a7a7a;
     }
 
@@ -1092,7 +1400,7 @@ footer {
     }
 
     #about_wrapper .text_about_Michael {
-        width: 80%;
+        width: 88%;
         float: left;
         margin: 0 auto;
     }
@@ -1122,14 +1430,7 @@ footer {
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        left: -0.4%;
-        margin-left: -3px;
+        left: 1%;
     }
 
     /* Full-width containers */
@@ -1271,16 +1572,15 @@ footer {
         float: none;
         display: inline-block;
         font-size: 1em;
-        padding: 3% 5% 5% 0;
+        padding: 3% 2% 5% 0;
     }
 
     /* Social media icons */
     .social_media_icons {
-        width: 70%;
+        width: 100%;
         height: 32%;
         text-align: left;
         margin: auto;
-        clear: both;
     }
 
     .social_media_icons span {
@@ -1289,16 +1589,16 @@ footer {
 
     .social_media_icons ul {
         list-style-type: none;
-        margin-left: 15%;
-        width: 60%;
+        width: 90%;
+        margin-left: -5%;
     }
 
     .social_media_icons li {
         float: none;
         display: inline-block;
-        margin: 3%;
+        padding-right: 0;
+        margin: 1%;
     }
-
 
     .social_media_icons li .fa {
         padding: 10px;
@@ -1312,35 +1612,6 @@ footer {
 
 
 }
-
-/* focus on contact image beside reomved responsiveness between 450px and 500px*/
-@media only screen and (max-width: 500px) {
-
-    /* content form centre both of the form and image */
-    .contact_and_img_wrapper {
-
-        background-color: #cdc3c3;
-    }
-
-    .head_logo_contact_wrapper img {
-        display: none;
-    }
-
-    .contact-form {
-        width: fit-content;
-        margin: auto;
-        clear: both;
-        border-radius: 2%;
-    }
-
-    /* Footer section responsive */
-
-    footer {
-        text-align: center;
-    }
-
-}
-
 
 /* mobile standard responsiveness  for max 450px screen*/
 @media only screen and (max-width: 450px) {
@@ -1362,19 +1633,19 @@ footer {
 
     /* head logo vector */
     #menupage img {
-        width: 18%;
+        width: 80px;
     }
 
     /* beside head logo with the text*/
     #menupage .logo_text {
         font-size: 1em;
-        margin: 9% 0 0 19%;
+        margin: 30px 0 0 70px;
     }
 
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -9% 3% 0 0;
+        margin: -30px 20px 0 0;
     }
 
     .dash-menu {
@@ -1390,7 +1661,7 @@ footer {
     .home_wrapper .Michael_art {
         width: 95%;
         height: auto;
-        margin-left: 0;
+        margin: 0 0 5% 0;
         border: solid 0.5em #a2a888;
     }
 
@@ -1410,7 +1681,7 @@ footer {
 
     #about_wrapper {
         margin: -3% auto;
-        height: 1400px;
+        height: 1150px;
     }
 
     #about_wrapper .head_Store_Michael {
@@ -1428,7 +1699,7 @@ footer {
 
     #about_wrapper .text_about_Michael {
         border: solid 0.5em #7a7a7a;
-        width: 73%;
+        width: 89%;
         margin-top: 8%;
     }
 
@@ -1457,8 +1728,6 @@ footer {
         display: none;
     }
 
-
-
     /* contact section responsive */
     .contact_and_img_wrapper {
         background-color: #cdc3c3;
@@ -1468,10 +1737,13 @@ footer {
         display: none;
     }
 
+
+    .head_logo_contact_wrapper img {
+        display: none;
+    }
+
     .contact-form {
         width: fit-content;
-        margin: auto;
-        clear: both;
         border-radius: 2%;
     }
 
@@ -1486,6 +1758,7 @@ footer {
         padding: 3% 3% 5% 0;
         display: inline-block;
         width: 90%;
+        margin: auto;
     }
 
     .site_map a {
@@ -1501,38 +1774,27 @@ footer {
 
     /* Social media icons */
     .social_media_icons {
-        width: 70%;
+        width: 100%;
         height: 32%;
         text-align: left;
         margin: auto;
-        clear: both;
     }
 
     .social_media_icons span {
-        margin-left: 28%;
+        margin-left: 30%;
     }
 
     .social_media_icons ul {
         list-style-type: none;
-        margin-left: -12%;
-        padding-top: 5%;
-        max-width: fit-content;
-
+        width: 90%;
+        margin-left: -9%;
     }
 
     .social_media_icons li {
         float: none;
         display: inline-block;
-    }
-
-    .social_media_icons li .fa {
-        padding: 10px;
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
+        padding-right: 0;
+        margin: 1%;
     }
 
 }
@@ -1543,23 +1805,24 @@ footer {
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -9.5% 3% 0 0;
+        margin: -25px 8px 0 0;
     }
 
     .dash-menu {
-        width: 28px;
-        height: 4px;
+        width: 26px;
+        height: 3px;
+        margin: 5px 0;
     }
 
     /* head logo vector */
     #menupage img {
-        width: 22%;
+        width: 70px;
     }
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        font-size: 1em;
-        margin: 12% 0 0 21%;
+        font-size: 0.9em;
+        margin: 35px 0 0 60px;
     }
 
     /* home section responsive */
@@ -1597,6 +1860,7 @@ footer {
     #about_wrapper {
         margin: -5% auto;
         width: 93%;
+        height: 1150px;
     }
 
     #about_wrapper .head_Store_Michael {
@@ -1615,7 +1879,7 @@ footer {
     #about_wrapper .text_about_Michael {
         background-color: #a2a888;
         border: solid 0.5em #7a7a7a;
-        width: 68.5%;
+        width: 89%;
         margin: 0 auto;
     }
 
@@ -1720,7 +1984,7 @@ footer {
 
     /* form */
     .contact-form {
-        max-width: 80%;
+        width: 80%;
     }
 
 
@@ -1750,52 +2014,64 @@ footer {
         color: #f5f1e4;
     }
 
-    .social_media_icons span {
-        margin-left: 30%;
+    /* Social media icons */
+    .social_media_icons {
+        width: 100%;
+        height: 32%;
+        text-align: left;
+        margin: auto;
     }
 
     .social_media_icons ul {
-        padding-left: 0;
-        margin-left: 10%;
-        width: 67.5%;
+        list-style-type: none;
+        width: 90%;
+        margin-left: -9%;
     }
 
     .social_media_icons li {
-        margin: 6%;
-    }
-
-    .social_media_icons li .fa {
-        padding: 50% 40% 40% 40%;
-        margin: 20%;
-        font-size: .8em;
+        float: none;
+        display: inline-block;
+        padding-right: 0;
+        margin: 1%;
     }
 }
 
-/* smaller mobile  focus on navbar and footer  for responsiveness */
+/* smaller mobile  responsiveness */
 @media only screen and (max-width: 320px) {
 
-    /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: -9.5% 3% 0 0;
+    /* about section resposiveness */
+
+    section#about {
+        padding-bottom: 10%;
     }
 
-    .dash-menu {
-        width: 28px;
-        height: 3px;
+    #about_wrapper {
+        margin: -3% auto;
+        height: 1200px;
     }
 
-    #menupage {
-        height: 70px;
+    #about_wrapper .head_Store_Michael {
+        border: solid 0.5em #7a7a7a;
+        width: 94%;
+        height: auto;
+        margin: auto;
     }
 
-    /* beside head logo with the text*/
-    #menupage .logo_text {
-        font-size: 0.8em;
-        margin: 12% 0 0 21%;
+    #about_wrapper h2 {
+        text-align: left;
+        font-size: 1.3em;
+        width: 97%;
     }
 
-    #menupage li {
-        font-size: 0.8em;
+    #about_wrapper .text_about_Michael {
+        border: solid 0.5em #7a7a7a;
+        width: 89%;
+        margin-top: 8%;
+    }
+
+    /* form */
+    .contact-form {
+        width: 78%;
     }
 
     /* responsiveness footer section */
@@ -1808,6 +2084,7 @@ footer {
         padding: 3% 0 5% 0;
         font-size: 0.8em;
         display: block;
+        margin: auto;
     }
 
     .site_map img {
@@ -1823,24 +2100,27 @@ footer {
         color: #f5f1e4;
     }
 
+    /* Social media icons */
+    .social_media_icons {
+        width: 100%;
+        height: 32%;
+        text-align: left;
+        margin: auto;
+    }
+
     .social_media_icons span {
-        text-align: center;
-        padding-bottom: 1%;
+        margin-left: 30%;
     }
 
     .social_media_icons ul {
-        padding-top: 1%;
+        list-style-type: none;
+        width: 90%;
     }
 
     .social_media_icons li {
-        margin: auto;
-        clear: both;
-        padding: 2%;
-    }
-
-    .social_media_icons li .fa {
-        margin-left: -15%;
-        padding: 7px;
-        font-size: 0.8em;
+        float: none;
+        display: inline-block;
+        padding-right: 1%;
+        margin: 0.5%;
     }
 }
