@@ -138,7 +138,7 @@ section#about {
 
 #about_wrapper {
     width: 90%;
-    height: 750px;
+    height: 900px;
     margin: auto;
     clear: both;
 }
@@ -166,7 +166,7 @@ section#about {
     word-spacing: 2px;
     line-height: 1.6;
     margin: 5% 0 0 3%;
-    padding: 2%;
+    padding: 3%;
 }
 
 
@@ -1383,9 +1383,10 @@ footer {
     /* responsive about section */
 
     #about_wrapper {
-        width: 100%;
+        width: 95%;
         height: 1280px;
         margin: 0 auto;
+        border: solid 1px red;
     }
 
     #about_wrapper .head_Store_Michael {
@@ -1400,7 +1401,7 @@ footer {
     }
 
     #about_wrapper .text_about_Michael {
-        width: 88%;
+        width: 86%;
         float: left;
         margin: 0 auto;
     }
@@ -1677,16 +1678,19 @@ footer {
 
     section#about {
         padding-bottom: 10%;
+        background-color: #7a7a7a;
+        margin-top: 0;
     }
 
     #about_wrapper {
-        margin: -3% auto;
+        margin: 0 auto;
         height: 1150px;
+        width: 90%;
     }
 
     #about_wrapper .head_Store_Michael {
-        border: solid 0.5em #7a7a7a;
-        width: 94%;
+        border: solid 0.5em #cdc3c3;
+        width: 95%;
         height: auto;
         margin: auto;
     }
@@ -1698,8 +1702,8 @@ footer {
     }
 
     #about_wrapper .text_about_Michael {
-        border: solid 0.5em #7a7a7a;
-        width: 89%;
+        border: solid 0.5em #cdc3c3;
+        width: 91%;
         margin-top: 8%;
     }
 
@@ -1861,13 +1865,14 @@ footer {
         margin: -5% auto;
         width: 93%;
         height: 1150px;
+        padding-bottom: 5%;
     }
 
     #about_wrapper .head_Store_Michael {
         width: 93%;
         height: auto;
         margin: 0 0 7% 0;
-        border: solid 0.5em #7a7a7a;
+        border: solid 0.5em #cdc3c3;
     }
 
     #about_wrapper h2 {
@@ -1878,8 +1883,8 @@ footer {
 
     #about_wrapper .text_about_Michael {
         background-color: #a2a888;
-        border: solid 0.5em #7a7a7a;
-        width: 89%;
+        border: solid 0.5em #cdc3c3;
+        width: 87%;
         margin: 0 auto;
     }
 
@@ -2042,16 +2047,19 @@ footer {
     /* about section resposiveness */
 
     section#about {
-        padding-bottom: 10%;
+        padding-bottom: 20%;
+
     }
 
     #about_wrapper {
-        margin: -3% auto;
+        margin: -2% auto;
         height: 1200px;
+        width: 90%;
+        background-color: #7a7a7a;
     }
 
     #about_wrapper .head_Store_Michael {
-        border: solid 0.5em #7a7a7a;
+        border: solid 0.5em #cdc3c3;
         width: 94%;
         height: auto;
         margin: auto;
@@ -2064,7 +2072,7 @@ footer {
     }
 
     #about_wrapper .text_about_Michael {
-        border: solid 0.5em #7a7a7a;
+        border: solid 0.5em #cdc3c3;
         width: 89%;
         margin-top: 8%;
     }
