@@ -78,7 +78,7 @@ body {
 
 /* Selection of pages */
 section {
-    width: 100%;
+    width: 99%;
     padding-top: 160px;
 }
 
@@ -87,10 +87,11 @@ section#home {
     background-color: #cdc3c3;
     height: fit-content;
     display: inline-block;
+    padding-bottom: 5%;
 }
 
 .home_wrapper {
-    width: 95%;
+    width: 96%;
     height: 710px;
     clear: both;
     margin: 3% auto;
@@ -131,13 +132,11 @@ section#home {
 section#about {
     background-color: #f4f3f3;
     height: fit-content;
-    display: inline-block;
     padding-bottom: 5%;
 }
 
 #about_wrapper {
     width: 90%;
-    height: 600px;
     margin: auto;
     clear: both;
     margin-top: 120px;
@@ -145,7 +144,7 @@ section#about {
 
 #about_wrapper .head_Store_Michael {
     width: 45%;
-    height: 90%;
+    height: auto;
     float: left;
     margin-left: 5%;
     margin-top: 1%;
@@ -173,7 +172,6 @@ section#about {
 
 /* Timeline section */
 section#timelines {
-
     background-color: #a2a888;
     height: fit-content;
     padding-bottom: 10%;
@@ -415,7 +413,7 @@ section#contact {
     margin-top: 0;
     color: black;
     background-color: #a2a888;
-    max-width: 500px;
+    max-width: 90%;
     border-radius: 30px;
     left: 20%;
     padding: 30px;
@@ -478,7 +476,7 @@ section#contact {
 footer {
     background-color: #7a7a7a;
     width: 100%;
-    height: 350px;
+    height: fit-content;
     margin-top: 0;
     border: solid 1px #7a7a7a;
 }
@@ -533,10 +531,10 @@ footer {
 
 /* Social media icons */
 .social_media_icons {
-    width: 25%;
+    width: 10%;
     height: 42%;
     text-align: center;
-    margin: 5% 0 0 35%;
+    margin: 5% 0 0 0;
 }
 
 .social_media_icons span {
@@ -547,7 +545,6 @@ footer {
 
 .social_media_icons ul {
     list-style-type: none;
-    max-width: 95%;
 }
 
 .social_media_icons li {
@@ -608,8 +605,8 @@ footer {
     }
 }
 
-/*focus on navbar responsive from 650px up to 740px) */
-@media only screen and (max-width: 740px) {
+/*focus on navbar responsive from 650px up to 850px) */
+@media only screen and (max-width: 850px) {
     #menupage {
         height: 90px;
     }
@@ -650,22 +647,22 @@ footer {
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        font-size: 1.2em;
-        margin: 6% 0 0 12%;
+        font-size: 1.5em;
+        margin: 4% 0 0 12%;
     }
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -6% 3% 0 0;
+        margin: -5% 3% 0 0;
         float: right;
         display: block;
     }
 
     .dash-menu {
-        width: 35px;
-        height: 4px;
+        width: 45px;
+        height: 5px;
         background-color: #f5f1e4;
-        margin: 6px 0;
+        margin: 7px 0;
         display: block;
     }
 
@@ -678,7 +675,7 @@ footer {
         display: none;
         position: relative;
         z-index: 1;
-        top: -8px;
+        top: 15%;
         margin: auto;
         clear: both;
     }
@@ -689,19 +686,19 @@ footer {
 
 
     .home_wrapper .Michael_art {
-        width: 40%;
-        height: 40%;
-        margin: 0 auto 5%;
+        width: 36%;
+        height: auto;
+        margin: 0 auto 2%;
         float: left;
         border: solid 1em #a2a888;
 
     }
 
     .home_wrapper .background_text {
-        width: 45%;
+        width: 46%;
         height: fit-content;
         float: right;
-
+        margin-top: 0;
     }
 
     .home_wrapper .text_Michael_legacy {
@@ -720,13 +717,14 @@ footer {
 
     #about_wrapper {
         width: 95%;
+        height: 840px;
         margin: 0 auto;
         clear: both;
     }
 
     #about_wrapper .head_Store_Michael {
         width: 35%;
-        height: 50%;
+        height: auto;
         margin: 0 auto 5%;
         border: solid 1em #7a7a7a;
     }
@@ -739,7 +737,7 @@ footer {
     #about_wrapper .text_about_Michael {
         background-color: #a2a888;
         border: solid 1em #7a7a7a;
-        width: 45%;
+        width: 42%;
         height: fit-content;
         float: right;
         margin: 0 auto;
@@ -759,19 +757,19 @@ footer {
 
     }
 
-    /* Place the container to the left */
-    .left {
-        left: -26.5%;
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        margin-left: -10%px;
     }
 
     /* Place the container to the left */
     .left {
-        left: -27%;
+        left: -28%;
     }
 
     /* Place the container to the right */
     .right {
-        left: 35%;
+        left: 36%;
     }
 
 
@@ -880,6 +878,8 @@ footer {
     footer {
         height: fit-content;
         margin-top: 0;
+        padding-bottom: 5%;
+        text-align: center;
         border: solid 1px #7a7a7a;
     }
 
@@ -931,20 +931,18 @@ footer {
     .social_media_icons span {
         color: #f5f1e4;
         font-size: 1em;
-        margin-left: 40%;
         font-weight: bolder;
     }
 
     .social_media_icons ul {
         list-style-type: none;
-        max-width: 80%;
         text-align: center;
+        margin: auto;
     }
 
     .social_media_icons li {
         float: none;
         display: inline-block;
-        margin-left: 15px;
     }
 
     .social_media_icons li .fa {
@@ -997,13 +995,13 @@ footer {
 
     /* beside head logo with the text*/
     #menupage .logo_text {
-        font-size: 1.2em;
-        margin: 6% 0 0 15%;
+        font-size: 1.5em;
+        margin: 4% 0 0 14%;
     }
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -7% 3% 0 0;
+        margin: -4% 3% 0 0;
         float: right;
         display: block;
     }
@@ -1025,7 +1023,7 @@ footer {
         display: none;
         position: relative;
         z-index: 1;
-        top: -8px;
+        top: 15%;
         margin: auto;
         clear: both;
     }
@@ -1036,7 +1034,6 @@ footer {
 
     section#home {
         padding-bottom: 10%;
-        width: 104%;
     }
 
     .home_wrapper {
@@ -1045,7 +1042,7 @@ footer {
     }
 
     .home_wrapper .Michael_art {
-        width: 94%;
+        width: 90%;
         height: auto;
         margin: 0;
         float: left;
@@ -1054,7 +1051,7 @@ footer {
     }
 
     .home_wrapper .background_text {
-        width: 90%;
+        width: 86%;
         height: fit-content;
         margin-left: 0;
         float: left;
@@ -1074,18 +1071,16 @@ footer {
     }
 
     /* responsive about section */
-    section#about {
-        width: 104%;
-    }
 
     #about_wrapper {
-        width: 95%;
+        width: 100%;
+        height: 1280px;
         margin: 0 auto;
         clear: both;
     }
 
     #about_wrapper .head_Store_Michael {
-        width: 95%;
+        width: 92%;
         height: auto;
         margin: 0 auto 5%;
         clear: both;
@@ -1093,24 +1088,16 @@ footer {
     }
 
     #about_wrapper h2 {
-        width: 100%;
         text-align: left;
     }
 
     #about_wrapper .text_about_Michael {
-        background-color: #a2a888;
-        border: solid 1em #7a7a7a;
-        width: 84%;
-        height: fit-content;
+        width: 80%;
         float: left;
         margin: 0 auto;
-        clear: both;
     }
 
     /* Timeline section responsiveness */
-    section#timelines {
-        width: 104%;
-    }
 
     .container {
         margin: 0;
@@ -1118,13 +1105,9 @@ footer {
 
     section#timelines h2 {
         text-align: center;
-        margin-top: 10%;
-    }
-
-    /* Timeline section responsiveness */
-
-    .container {
-        margin: 0;
+        margin: 10% auto;
+        width: 80%;
+        font-size: 1.8em;
     }
 
     section#timelines h2 {
@@ -1145,7 +1128,7 @@ footer {
         background-color: white;
         top: 0;
         bottom: 0;
-        left: 1%;
+        left: -0.4%;
         margin-left: -3px;
     }
 
@@ -1190,7 +1173,6 @@ footer {
     section#museum {
         background-image: none;
         padding-bottom: 5%;
-        width: 104%;
     }
 
     .museum_wrapper {
@@ -1219,9 +1201,6 @@ footer {
     }
 
     /* contact section responsiveness */
-    section#contact {
-        width: 104%;
-    }
 
     .contact_and_img_wrapper {
         width: 94%;
@@ -1262,7 +1241,6 @@ footer {
 
     footer {
         text-align: center;
-        width: 104%;
     }
 
     /* Head logo */
@@ -1298,7 +1276,7 @@ footer {
 
     /* Social media icons */
     .social_media_icons {
-        width: 98%;
+        width: 70%;
         height: 32%;
         text-align: left;
         margin: auto;
@@ -1306,23 +1284,21 @@ footer {
     }
 
     .social_media_icons span {
-        color: #f5f1e4;
-        font-size: 1em;
-        margin-left: 40%;
-        font-weight: bolder;
+        margin-left: 35%;
     }
 
     .social_media_icons ul {
         list-style-type: none;
-        max-width: 80%;
-        text-align: center;
+        margin-left: 15%;
+        width: 60%;
     }
 
     .social_media_icons li {
         float: none;
         display: inline-block;
-        margin-left: 15px;
+        margin: 3%;
     }
+
 
     .social_media_icons li .fa {
         padding: 10px;
@@ -1366,7 +1342,7 @@ footer {
 }
 
 
-/* mobile standard responsiveness  for max 650px screen*/
+/* mobile standard responsiveness  for max 450px screen*/
 @media only screen and (max-width: 450px) {
 
     /* Three dash for menu */
@@ -1378,6 +1354,11 @@ footer {
         width: 25px;
         height: 3px;
     }
+
+    #menupage {
+        height: 80px;
+    }
+
 
     /* head logo vector */
     #menupage img {
@@ -1429,6 +1410,7 @@ footer {
 
     #about_wrapper {
         margin: -3% auto;
+        height: 1400px;
     }
 
     #about_wrapper .head_Store_Michael {
@@ -1441,13 +1423,13 @@ footer {
     #about_wrapper h2 {
         text-align: left;
         font-size: 1.3em;
-        width: 100%;
+        width: 97%;
     }
 
     #about_wrapper .text_about_Michael {
         border: solid 0.5em #7a7a7a;
-        width: 76%;
-        margin-top: 6%;
+        width: 73%;
+        margin-top: 8%;
     }
 
     /* Timline section resposive */
@@ -1502,6 +1484,8 @@ footer {
 
     .site_map li {
         padding: 3% 3% 5% 0;
+        display: inline-block;
+        width: 90%;
     }
 
     .site_map a {
@@ -1517,7 +1501,7 @@ footer {
 
     /* Social media icons */
     .social_media_icons {
-        width: 98%;
+        width: 70%;
         height: 32%;
         text-align: left;
         margin: auto;
@@ -1525,18 +1509,20 @@ footer {
     }
 
     .social_media_icons span {
-        text-align: center;
+        margin-left: 28%;
     }
 
     .social_media_icons ul {
         list-style-type: none;
-        max-width: 80%;
+        margin-left: -12%;
+        padding-top: 5%;
+        max-width: fit-content;
+
     }
 
     .social_media_icons li {
         float: none;
         display: inline-block;
-        margin-left: 15px;
     }
 
     .social_media_icons li .fa {
@@ -1579,7 +1565,6 @@ footer {
     /* home section responsive */
     section#home {
         padding-bottom: 15%;
-        width: 104%;
     }
 
     .home_wrapper {
@@ -1609,17 +1594,13 @@ footer {
 
     /* responsive about section */
 
-    section#about {
-        width: 104%;
-    }
-
     #about_wrapper {
         margin: -5% auto;
         width: 93%;
     }
 
     #about_wrapper .head_Store_Michael {
-        width: 100%;
+        width: 93%;
         height: auto;
         margin: 0 0 7% 0;
         border: solid 0.5em #7a7a7a;
@@ -1634,7 +1615,7 @@ footer {
     #about_wrapper .text_about_Michael {
         background-color: #a2a888;
         border: solid 0.5em #7a7a7a;
-        width: 75%;
+        width: 68.5%;
         margin: 0 auto;
     }
 
@@ -1659,7 +1640,6 @@ footer {
 
 
     /* Timeline section responsiveness */
-
     section#timelines h2 {
         text-align: center;
         margin: -20% auto;
@@ -1698,14 +1678,10 @@ footer {
         display: none;
     }
 
-
-
     /* Museum section resposiveness */
     section#museum {
         background-image: none;
         background-color: #f4f3f3;
-        width: 104%;
-
     }
 
     .museum_wrapper {
@@ -1729,9 +1705,6 @@ footer {
     }
 
     /* contact section responsive */
-    section#contact {
-        width: 104%;
-    }
 
     .head_logo_contact_wrapper {
         display: none;
@@ -1745,11 +1718,16 @@ footer {
         display: none;
     }
 
+    /* form */
+    .contact-form {
+        max-width: 80%;
+    }
+
+
     /* responsiveness footer section */
 
     footer {
         text-align: center;
-        width: 104%;
     }
 
     .site_map li {
@@ -1778,7 +1756,8 @@ footer {
 
     .social_media_icons ul {
         padding-left: 0;
-        margin: 0 auto;
+        margin-left: 10%;
+        width: 67.5%;
     }
 
     .social_media_icons li {
@@ -1823,7 +1802,6 @@ footer {
 
     footer {
         text-align: center;
-        width: 104%;
     }
 
     .site_map li {
