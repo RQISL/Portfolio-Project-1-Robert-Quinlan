@@ -35,7 +35,7 @@ body {
     list-style-type: none;
     float: right;
     position: relative;
-    margin: 0% 4% 0 0;
+    margin: -2% 4% 0 0;
 }
 
 #menupage li {
@@ -64,7 +64,7 @@ body {
 #menupage img {
     float: left;
     margin-left: 0;
-    width: 9%;
+    width: 150px;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -543,6 +543,7 @@ footer {
     color: #f5f1e4;
     font-size: 1.2em;
     font-weight: bolder;
+    margin: auto;
 }
 
 .social_media_icons ul {
@@ -876,16 +877,9 @@ footer {
     .social_media_icons {
         width: 98%;
         height: 32%;
-        text-align: left;
+        text-align: center;
         margin: auto;
         clear: both;
-    }
-
-    .social_media_icons span {
-        color: #f5f1e4;
-        font-size: 1em;
-        font-weight: bolder;
-        margin-left: 43%;
     }
 
     .social_media_icons ul {
@@ -1024,7 +1018,7 @@ footer {
 
     #about_wrapper {
         width: 95%;
-        height: 840px;
+        height: 900px;
         margin: 0 auto;
         clear: both;
     }
@@ -1231,16 +1225,9 @@ footer {
     .social_media_icons {
         width: 98%;
         height: 32%;
-        text-align: left;
+        text-align: center;
         margin: auto;
         clear: both;
-    }
-
-    .social_media_icons span {
-        color: #f5f1e4;
-        font-size: 1em;
-        font-weight: bolder;
-        margin-left: 43%;
     }
 
     .social_media_icons ul {
@@ -1384,9 +1371,8 @@ footer {
 
     #about_wrapper {
         width: 95%;
-        height: 1280px;
+        height: 1180px;
         margin: 0 auto;
-        border: solid 1px red;
     }
 
     #about_wrapper .head_Store_Michael {
@@ -1580,12 +1566,8 @@ footer {
     .social_media_icons {
         width: 100%;
         height: 32%;
-        text-align: left;
+        text-align: center;
         margin: auto;
-    }
-
-    .social_media_icons span {
-        margin-left: 35%;
     }
 
     .social_media_icons ul {
@@ -1780,12 +1762,8 @@ footer {
     .social_media_icons {
         width: 100%;
         height: 32%;
-        text-align: left;
+        text-align: center;
         margin: auto;
-    }
-
-    .social_media_icons span {
-        margin-left: 30%;
     }
 
     .social_media_icons ul {
@@ -2023,7 +2001,7 @@ footer {
     .social_media_icons {
         width: 100%;
         height: 32%;
-        text-align: left;
+        text-align: center;
         margin: auto;
     }
 
@@ -2112,12 +2090,8 @@ footer {
     .social_media_icons {
         width: 100%;
         height: 32%;
-        text-align: left;
+        text-align: center;
         margin: auto;
-    }
-
-    .social_media_icons span {
-        margin-left: 30%;
     }
 
     .social_media_icons ul {
