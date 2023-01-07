@@ -183,7 +183,7 @@ section#timelines h2 {
 
 /* I had experienced difficulty with a responsive timeline. I decide to copy 
 from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline  
-and paste it here. I had a few modifications to make the position fit the screen*/
+and paste it here. I had a few modifications to make the position fit the screen and also responsiveness*/
 
 .container {
     width: 98%;
@@ -357,6 +357,7 @@ section#museum {
     display: inline-block;
     padding-bottom: 3%;
     margin: 0 3% 3% 4.5%;
+    border: solid 1px blue;
 }
 
 .img_and_text p {
