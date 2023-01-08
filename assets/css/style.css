@@ -111,7 +111,7 @@ section#home {
     width: 42%;
     height: fit-content;
     float: right;
-    margin: 3% 0 0 2%;
+    margin: 5% 0 0 2%;
     padding: 2%;
     border: solid 1em #f4f3f3;
 }
@@ -138,7 +138,7 @@ section#about {
 
 #about_wrapper {
     width: 90%;
-    height: 900px;
+    height: 850px;
     margin: auto;
     clear: both;
 }
@@ -147,7 +147,7 @@ section#about {
     width: 45%;
     height: auto;
     float: left;
-    margin-top: 1%;
+    margin-top: 8%;
     border: solid 1em #7a7a7a;
 }
 
@@ -165,7 +165,7 @@ section#about {
     border: solid 1em #7a7a7a;
     word-spacing: 2px;
     line-height: 1.6;
-    margin: 5% 0 0 3%;
+    margin: 8% 0 0 3%;
     padding: 3%;
 }
 
@@ -237,12 +237,12 @@ and paste it here. I had a few modifications to make the position fit the screen
 
 /* Place the container to the left */
 .left {
-    left: -24%;
+    left: -25%;
 }
 
 /* Place the container to the right */
 .right {
-    left: 32%;
+    left: 32.5%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -298,8 +298,8 @@ and paste it here. I had a few modifications to make the position fit the screen
     border-radius: 50%;
     border: solid 1px black;
     padding: 2%;
-    transition: width 4s,
-        height 4s;
+    transition: width 2s,
+        height 2s;
 }
 
 .content .circle_img:hover {
@@ -307,7 +307,7 @@ and paste it here. I had a few modifications to make the position fit the screen
     height: 220px;
 }
 
-.content a {
+.content .button-site {
     text-decoration: none;
     color: #f5f1e4;
     background-color: #7a7a7a;
@@ -316,7 +316,7 @@ and paste it here. I had a few modifications to make the position fit the screen
     word-spacing: 1.6px;
 }
 
-.content a:hover {
+.content .button-site:hover {
     text-decoration: none;
     color: #f5f1e4;
     background-color: #a2a888;
@@ -370,6 +370,10 @@ section#museum {
 .img_and_text img {
     width: 100%;
     height: auto;
+}
+
+.first-img {
+    margin-bottom: 7%;
 }
 
 /* button active outside site */
@@ -585,6 +589,20 @@ footer {
     color: #f5f1e4;
 }
 
+/* large desktop focus on timeline responsive*/
+@media only screen and (max-width: 1900px) {
+
+    /* Place the container to the left */
+    .left {
+        left: -24%;
+    }
+
+    /* Place the container to the right */
+    .right {
+        left: 32%;
+    }
+}
+
 /* large tablet and small laptop responsive*/
 @media only screen and (max-width: 1354px) {
 
@@ -672,7 +690,7 @@ footer {
     #about_wrapper .head_Store_Michael {
         width: 35%;
         height: auto;
-        margin: 0 auto 5%;
+        margin: 5% 0 0 2%;
         border: solid 1em #7a7a7a;
     }
 
@@ -687,7 +705,7 @@ footer {
         width: 42%;
         height: fit-content;
         float: right;
-        margin: 0 auto;
+        margin: 5% auto;
     }
 
     #about_wrapper .text_about_Michael p {
@@ -706,17 +724,17 @@ footer {
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        margin-left: -10%;
+        margin-left: -4%;
     }
 
     /* Place the container to the left */
     .left {
-        left: -26%;
+        left: -30%;
     }
 
     /* Place the container to the right */
     .right {
-        left: 33.5%;
+        left: 30.5%;
     }
 
 
@@ -969,21 +987,32 @@ footer {
         display: block;
     }
 
+    /* Home section responsive */
+
+    section#home {
+        padding-bottom: 10%;
+    }
+
+    .home_wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
 
     .home_wrapper .Michael_art {
-        width: 36%;
+        width: 90%;
         height: auto;
-        margin: 0 auto 2%;
+        margin: 0 auto 5%;
         float: left;
         border: solid 1em #a2a888;
 
     }
 
     .home_wrapper .background_text {
-        width: 46%;
+        width: 86%;
         height: fit-content;
-        float: right;
-        margin-top: 0;
+        margin-left: 0;
+        float: left;
+
     }
 
     .home_wrapper .text_Michael_legacy {
@@ -998,41 +1027,32 @@ footer {
         width: 95%;
     }
 
+
     /* responsive about section */
 
     #about_wrapper {
         width: 95%;
-        height: 900px;
+        height: 1100px;
         margin: 0 auto;
-        clear: both;
     }
 
     #about_wrapper .head_Store_Michael {
-        width: 35%;
+        width: 89%;
         height: auto;
-        margin: 0 auto 5%;
+        margin: 0 0 5% 1.5%;
         border: solid 1em #7a7a7a;
     }
 
     #about_wrapper h2 {
-        width: 100%;
         text-align: left;
     }
 
     #about_wrapper .text_about_Michael {
-        background-color: #a2a888;
-        border: solid 1em #7a7a7a;
-        width: 42%;
-        height: fit-content;
-        float: right;
+        width: 86%;
+        float: left;
         margin: 0 auto;
     }
 
-    #about_wrapper .text_about_Michael p {
-        font-size: 1em;
-        word-spacing: 2px;
-        line-height: 1.6;
-    }
 
     /* Timeline section responsiveness */
 
@@ -1044,17 +1064,17 @@ footer {
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        margin-left: -10%;
+        margin-left: -5%;
     }
 
     /* Place the container to the left */
     .left {
-        left: -28%;
+        left: -33%;
     }
 
     /* Place the container to the right */
     .right {
-        left: 36%;
+        left: 32%;
     }
 
 
@@ -1290,6 +1310,8 @@ footer {
         display: block;
     }
 
+    /* Home section responsive */
+
     section#home {
         padding-bottom: 10%;
     }
@@ -1328,7 +1350,7 @@ footer {
         width: 95%;
     }
 
-    /* responsive about section */
+    /* About section responsive */
 
     #about_wrapper {
         width: 95%;
@@ -1339,7 +1361,7 @@ footer {
     #about_wrapper .head_Store_Michael {
         width: 89%;
         height: auto;
-        margin: 0 0 5% 1.5%;
+        margin: 0 0 5% 2%;
         border: solid 1em #7a7a7a;
     }
 
@@ -1348,7 +1370,7 @@ footer {
     }
 
     #about_wrapper .text_about_Michael {
-        width: 86%;
+        width: 85%;
         float: left;
         margin: 0 auto;
     }
@@ -1378,7 +1400,7 @@ footer {
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        left: 1%;
+        left: 3.5%;
     }
 
     /* Full-width containers */
@@ -1651,7 +1673,7 @@ footer {
 
     #about_wrapper .text_about_Michael {
         border: solid 0.5em #cdc3c3;
-        width: 91%;
+        width: 89%;
         margin-top: 8%;
     }
 
