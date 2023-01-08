@@ -313,7 +313,7 @@ and paste it here. I had a few modifications to make the position fit the screen
     background-color: #7a7a7a;
     padding: 2%;
     word-wrap: break-word;
-    word-spacing: 1.6%;
+    word-spacing: 1.6px;
 }
 
 .content a:hover {
@@ -499,19 +499,13 @@ footer {
 }
 
 /* site maps links */
-.site_map p {
-    color: #f5f1e4;
-    margin-bottom: 0.3em;
-    font-weight: bolder;
-    font-size: 1.2em;
-
-}
 
 .site_map ul {
     list-style-type: none;
     margin: 2em 4em 0 0em;
     width: 10%;
     float: right;
+    color: #f5f1e4;
 }
 
 .site_map li {
@@ -712,7 +706,7 @@ footer {
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        margin-left: -10%px;
+        margin-left: -10%;
     }
 
     /* Place the container to the left */
@@ -822,9 +816,9 @@ footer {
 
     .site_map .logo_text {
         float: left;
-        font-size: 1.2em;
+        font-size: 1.9em;
         margin-top: 15%;
-        margin-left: 5%;
+        margin-left: 1%;
         color: #f5f1e4;
     }
 
@@ -838,14 +832,6 @@ footer {
     }
 
     /* site maps links */
-
-    .site_map li p {
-        color: #f5f1e4;
-        margin-top: 0;
-        max-width: 100%;
-        font-weight: bolder;
-        font-size: 1.2em;
-    }
 
     .site_map ul {
         list-style-type: none;
@@ -906,7 +892,7 @@ footer {
 
 }
 
-/*focus on navbar responsive from 650px up to 950px) */
+/*tablet responsive from 650px up to 950px) */
 @media only screen and (max-width: 950px) {
     #menupage {
         height: 90px;
@@ -954,29 +940,27 @@ footer {
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -5% 3% 0 0;
+        margin: -50px 25px 0 0;
         float: right;
-        display: block;
-    }
-
-    .dash-menu {
-        width: 45px;
-        height: 5px;
-        background-color: #f5f1e4;
-        margin: 7px 0;
         display: block;
     }
 
     .drop-btn {
         background-color: #252424;
         border: none;
+        width: 70px;
+        height: 70px;
+        color: white;
+        padding: 5px 8px;
+        font-size: 36px;
+        cursor: pointer;
     }
 
     .dropdown-content {
         display: none;
         position: relative;
         z-index: 1;
-        top: 13%;
+        top: -2px;
         margin: auto;
         clear: both;
     }
@@ -1060,7 +1044,7 @@ footer {
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        margin-left: -10%px;
+        margin-left: -10%;
     }
 
     /* Place the container to the left */
@@ -1170,9 +1154,9 @@ footer {
 
     .site_map .logo_text {
         float: left;
-        font-size: 1.2em;
+        font-size: 1.9em;
         margin-top: 15%;
-        margin-left: 5%;
+        margin-left: 1%;
         color: #f5f1e4;
     }
 
@@ -1183,16 +1167,6 @@ footer {
         padding-bottom: 5%;
         text-align: center;
         border: solid 1px #7a7a7a;
-    }
-
-    /* site maps links */
-
-    .site_map li p {
-        color: #f5f1e4;
-        margin-top: 0;
-        max-width: 100%;
-        font-weight: bolder;
-        font-size: 1.2em;
     }
 
     .site_map ul {
@@ -1298,31 +1272,18 @@ footer {
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -45px 30px 0 0;
+        margin: -48px 18px 0 0;
         float: right;
-        display: block;
-    }
-
-    .dash-menu {
-        width: 45px;
-        height: 6px;
-        background-color: #f5f1e4;
-        margin: 8px 0;
         display: block;
     }
 
     .drop-btn {
         background-color: #252424;
         border: none;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: relative;
-        z-index: 1;
-        top: 0;
-        margin: auto;
-        clear: both;
+        color: white;
+        padding: 5px 8px;
+        font-size: 36px;
+        cursor: pointer;
     }
 
     .dropdown:hover .dropdown-content {
@@ -1542,8 +1503,8 @@ footer {
     .site_map .logo_text {
         float: left;
         font-size: 1.2em;
-        margin-top: 15%;
-        margin-left: 5%;
+        margin-top: 12%;
+        margin-left: 3%;
         color: #f5f1e4;
     }
 
@@ -1559,7 +1520,7 @@ footer {
         float: none;
         display: inline-block;
         font-size: 1em;
-        padding: 3% 2% 5% 0;
+        padding: 3% 0.5% 5% 0;
     }
 
     /* Social media icons */
@@ -1601,12 +1562,17 @@ footer {
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: 0 3% 0 0;
+        margin: -48px 15px 0 0;
     }
 
-    .dash-menu {
-        width: 25px;
-        height: 3px;
+    .drop-btn {
+        background-color: #252424;
+        width: 50px;
+        height: 50px;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
     }
 
     #menupage {
@@ -1738,6 +1704,14 @@ footer {
         text-align: center;
     }
 
+    .site_map .logo_text {
+        float: left;
+        font-size: 1.2em;
+        margin-top: 12%;
+        margin-left: 3%;
+        color: #f5f1e4;
+    }
+
     /* site maps links */
 
     .site_map li {
@@ -1787,13 +1761,16 @@ footer {
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -25px 8px 0 0;
+        margin: -35px 8px 0 0;
     }
 
-    .dash-menu {
-        width: 26px;
-        height: 3px;
-        margin: 5px 0;
+    .drop-btn {
+        background-color: #252424;
+        border: none;
+        color: white;
+        padding: 5px 8px;
+        font-size: 26px;
+        cursor: pointer;
     }
 
     /* head logo vector */
@@ -1993,7 +1970,6 @@ footer {
     .site_map .logo_text {
         float: left;
         font-size: 1em;
-        margin-top: 8% 7% 0 0;
         color: #f5f1e4;
     }
 
@@ -2082,7 +2058,9 @@ footer {
 
     .site_map .logo_text {
         float: left;
-        margin: 8% 5% 0 0;
+        font-size: 1.2em;
+        margin-top: 12%;
+        margin-left: 3%;
         color: #f5f1e4;
     }
 
