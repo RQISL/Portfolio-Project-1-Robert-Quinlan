@@ -1,108 +1,115 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Logo: Michael Collins Legend
+----------------------------------------
 
-Welcome Robert Quinlan,
+![CI logo](assets/images/ReadMe-image/Michael-Collins-Logo.jpg)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The site is Michael Collins's history. The target is users who are interested to know more about him, and who are hobbies or the student’s projects of history. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![alt text]( assets/images/ReadMe-image/Mockup%20Michael%20Collins%20screens.jpg "it is open source by https://www.freepik.com/premium-psd/mockup-electronic-devices_2565884.htm#from_view=detail_serie  and I edited from my photoshop.")
 
-## Gitpod Reminders
+Features
+-------------
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This website links outside sites where it has depth information. The aim is easier for the users to find links and follow Michael Collins’s information for their users’ convenience.
 
-`python3 -m http.server`
+Existing Features
+-----------------------
+**Navigation Bar**
+* The page sections are five links, including a responsiveness navigation bar and a three-dash button to the dropdown menu. 
+* The sections are Home, About, Timelines, Museum, Contact, and Footer, it is all include responsiveness.
 
-A blue button should appear to click: _Make Public_,
+**Desktop/laptop responsive**
 
-Another blue button should appear to click: _Open Browser_.
+![]( assets/images/ReadMe-image/Desktop-laptop%20Nav-Menu.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**Tablet/Mobile devices for responsive**
 
-A blue button should appear to click: _Make Public_,
+![]( assets/images/ReadMe-image/Reponsive-menu.png)
 
-Another blue button should appear to click: _Open Browser_.
+**Tablet/Mobile Devices for dropdown menu responsive**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![]( assets/images/ReadMe-image/Dropdown-menu%20responsive)
 
-To log into the Heroku toolbelt CLI:
+**Home section**
+* Images on the left side and text on the right.
+* Brief text to story about Michael Collins
+* The art image is powerful and shows how he was a legend.
+* The painting by Leo Whelan painting.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![]( assets/images/ReadMe-image/Home-Section.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+**About Section**
+* Image of headstone display and text brief about the site.
 
-------
+![]( assets/images/ReadMe-image/About%20Michael%20Collins1.png)
 
-## Release History
+**Michael Collins's history of the Timeline section**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* On the timelines, a page is a brief story in the timeline years and a link at the bottom box, it gives further information outside sites and gives more depth about his stories. 
+* Hovering on the image will make the size enlarge.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![]( assets/images//ReadMe%20image/Timeline-section.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+**Museum Section**
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* The site is together with information links from outside sites to look at the museums' page link to direct and buy a ticket who wish to visit the museums. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![]( assets/images/ReadMe-image/Museum%20section1.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Contact section**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Send a request for the users who require accessibility building or other comments as they request.  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![]( assets/images//ReadMe-image/Contact%20section.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+**Footer Section**
+* Display on the logo, social media and site maps.
+* Link to the social media directions either 
+* Facebook, Twitter, Instagram or YouTube for further information on Michael Collins history.  
+* Site maps add in the case for users’ convenience to links to go back home, about, timeline, museum or contact. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![]( assets/images//ReadMe-image/Footer%20section.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+**Testing**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+ >> The testing has been browsers, are Chrome, Firebox, Safari, Opera and Edge. There are a few problems which are Safari, does not support therefore use “scroll-behaviour: smooth;” in the CSS style. I searched to find what is it problem but it would need to use JavaScript.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+>> The testing runs Chrome, Opera, Microsoft Edge and Firefox and it does support them. All the screens are fine and responsive but sight little different sizes of aspect screens. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+**The lighthouse runs testing and results.**
 
-------
+![]( assets/images//ReadMe-image/Lighthouse%20results.png)
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+**Validation testing**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+**HTML**
+* Had been found few errors when the test run through the official W3C validator.
+- Incorrect open and closed by div and nav, and incorrect tag rule, I had to do the fixed bug and it was all pass and no errors.
 
-**How will this affect me?**
+**CSS**
+- Had been found four errors through the official (Jigsaw) validator.
+- Missing px and incorrect %, I had to do the fixed bug and it was all pass and no errors.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+**Deployment**
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The GitHub page where is deployed. How do processing the site deployed as follows:
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Use files on the GitHub page and choose one of the files where it is in the “portfolio-project-1-robert-quinlan” file
+* Click on setting 
+* On the left side follow the list of options
+* To click on ‘page’
+* The source under the option to “Deploy from a Branch”
+* The Branch under to open to main and root then click to save. 
+* It ran the deployment processing while it is successful.
 
-**So….?**
+The site lives at [Michael Collins Legend](https://rqisl.github.io/portfolio-project-1-robert-quinlan/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
