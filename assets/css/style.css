@@ -41,7 +41,7 @@ body {
 #menupage li {
     display: inline-block;
     float: none;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 #menupage a {
@@ -111,13 +111,13 @@ section#home {
     width: 42%;
     height: fit-content;
     float: right;
-    margin: 5% 0 0 2%;
+    margin: 0 0 0 2%;
     padding: 2%;
     border: solid 1em #f4f3f3;
 }
 
 .home_wrapper .text_Michael_legacy {
-    font-size: 1em;
+    font-size: 1.5em;
     word-spacing: 2px;
     line-height: 1.6;
     float: right;
@@ -133,12 +133,13 @@ section#home {
 section#about {
     background-color: #f4f3f3;
     height: fit-content;
+    display: inline-block;
     margin-top: 10%;
+    padding-bottom: 8%;
 }
 
 #about_wrapper {
     width: 90%;
-    height: 850px;
     margin: auto;
     clear: both;
 }
@@ -161,8 +162,8 @@ section#about {
     float: right;
     width: 38%;
     height: fit-content;
-    font-size: 1em;
-    border: solid 1em #7a7a7a;
+    font-size: 1.5em;
+    border: solid 0.7em #7a7a7a;
     word-spacing: 2px;
     line-height: 1.6;
     margin: 8% 0 0 3%;
@@ -682,7 +683,6 @@ footer {
 
     #about_wrapper {
         width: 95%;
-        height: 840px;
         margin: 0 auto;
         clear: both;
     }
@@ -701,7 +701,6 @@ footer {
 
     #about_wrapper .text_about_Michael {
         background-color: #a2a888;
-        border: solid 1em #7a7a7a;
         width: 42%;
         height: fit-content;
         float: right;
@@ -722,7 +721,7 @@ footer {
 
     }
 
-    /* The actual timeline (the vertical ruler) */
+    /* The actual timeline (the vertical r13uler) */
     .timeline::after {
         margin-left: -4%;
     }
@@ -1016,7 +1015,7 @@ footer {
     }
 
     .home_wrapper .text_Michael_legacy {
-        font-size: 1em;
+        font-size: 1.5em;
         word-spacing: 2px;
         line-height: 1.6;
         padding: 3%;
@@ -1032,7 +1031,7 @@ footer {
 
     #about_wrapper {
         width: 95%;
-        height: 1100px;
+        height: 1250px;
         margin: 0 auto;
     }
 
@@ -1338,13 +1337,6 @@ footer {
 
     }
 
-    .home_wrapper .text_Michael_legacy {
-        font-size: 1em;
-        word-spacing: 2px;
-        line-height: 1.6;
-        padding: 3%;
-    }
-
     .home_wrapper h2 {
         float: left;
         width: 95%;
@@ -1354,7 +1346,6 @@ footer {
 
     #about_wrapper {
         width: 95%;
-        height: 1180px;
         margin: 0 auto;
     }
 
@@ -1646,15 +1637,8 @@ footer {
 
     /* about section resposiveness */
 
-    section#about {
-        padding-bottom: 10%;
-        background-color: #7a7a7a;
-        margin-top: 0;
-    }
-
     #about_wrapper {
         margin: 0 auto;
-        height: 1150px;
         width: 90%;
     }
 
@@ -1841,8 +1825,6 @@ footer {
     #about_wrapper {
         margin: -5% auto;
         width: 93%;
-        height: 1150px;
-        padding-bottom: 5%;
     }
 
     #about_wrapper .head_Store_Michael {
@@ -2022,14 +2004,8 @@ footer {
 
     /* about section resposiveness */
 
-    section#about {
-        padding-bottom: 20%;
-
-    }
-
     #about_wrapper {
         margin: -2% auto;
-        height: 1200px;
         width: 90%;
         background-color: #7a7a7a;
     }
