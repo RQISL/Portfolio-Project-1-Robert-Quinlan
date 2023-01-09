@@ -151,6 +151,12 @@ I learned through the course in Code Institute. I do most learning of different 
 
 >>>>![]( assets/images/ReadMe-image/Head-Gold_White-Doric1.jpg)
 
+**Icon image** 
+
+>>In my preview site which is not in server anymore. I copied it to here and modify image for Michael Head icons.
+
+>>![]( assets/images/ReadMe-image/Icon.png)
+
 
 
 
