@@ -590,6 +590,15 @@ footer {
     color: #f5f1e4;
 }
 
+/* Title bottom reserved */
+
+.RQ-designed {
+    color: #f5f1e4;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5%;
+}
+
 /* large desktop focus on timeline responsive*/
 @media only screen and (max-width: 1900px) {
 
