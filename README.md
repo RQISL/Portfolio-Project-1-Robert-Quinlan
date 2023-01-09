@@ -28,7 +28,7 @@ Existing Features
 
 **Tablet/Mobile Devices for dropdown menu responsive**
 
-![]( assets/images/ReadMe-image/Dropdown-menu%20responsive)
+![]( assets/images/ReadMe-image/responsive%20dropdown-menu.png)
 
 **Home section**
 * Images on the left side and text on the right.
@@ -106,6 +106,50 @@ The GitHub page where is deployed. How do processing the site deployed as follow
 
 The site lives at [Michael Collins Legend](https://rqisl.github.io/portfolio-project-1-robert-quinlan/)
 
+**Credits**
+_________________________________________________________
+
+I learned through the course in Code Institute. I do most learning of different open source on 3WC it helps to remember what the code used tags and style CSS for HTML and CSS, also what I am interested in as scroll smooth, icons, and transitions. I did a few learning to CodePen. 
+
+>Here is throughout projects:  
+
+>>**Contents**
+
+>> * jQuery for the active current section page, I copied from CodePen. <https://codepen.io/arjunamgain/pen/RwWoQM> 
+
+>>**Social media icons**
+
+>><https://www.freepik.com/free-vector/social-media-logo-collection_3966112.htm#query=social%20media%20icon&position=7&from_view=keyword>
+
+>>**Specifies size screen for responsive**
+
+>><https://screensiz.es/monitor> 
+
+>>**The dash button icon**
+
+>><https://www.w3schools.com/howto/howto_css_icon_buttons.asp>
+
+>>I had experienced difficulty with a responsive timeline. I decide to copy from <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline> and I had a few modifications to make the position fit the screen and also responsiveness.
+
+>>**Media**
+
+>>>All the image comes from Michael Collins’s Wikimedia and it is free to share and link the images and embed a file from Wikimedia. It is in the public domain.
+
+>>>I like the two images on my site of the project. The references image are details: 
+
+>>>>* Leo Whelan (10 January 1892 – 6 November 1956
+), Art Painting,  Available from: https://www.historyireland.com/michael-collins-military-dictator/  [Accessed 12 December 2023].
+
+>>>>* Janice O Connell f22 Photography,  Available from: https://www.google.com/search?q=michael+collins+house+cork&tbm=isch#imgrc=OcxaVe7zvb0x1M  to Facebook page [Accessed 12 December 2023].
+
+>>**Edit Photoshop**	
+>>>>The logo of Michael’s head silhouette images where I created the Photoshop. Also, Michael’s head on the Doric image which is downloaded comes from https://www.vecteezy.com/vector-art/11014285-museums-museum-columns-museum-lines-museum-pillar-logos-museums-with-minimalist-and-modern-concepts-logos-can-be-used-for-companies-museums-and-businesses to editing and together Michael’s head silhouette and Doric
+
+>>>>**Photoshop images**
+
+>>>>![]( assets/images/ReadMe-image/Michael-Collins-Logo.jpg)
+
+>>>>![]( assets/images/ReadMe-image/Head-Gold_White-Doric1.jpg)
 
 
 
