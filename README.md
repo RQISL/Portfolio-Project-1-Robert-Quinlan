@@ -152,7 +152,7 @@ ________________
 ```
 
 ``` markdown
-/* large devices large phones, from 450px up to 750px */
+/* large mobile, from 450px up to 750px */
 @media only screen and (max-width: 750px) {…………}
 ```
 
@@ -192,19 +192,138 @@ Creator, Year. Title [Online]. Place of publication: Publisher (if known). Avail
 e.g. NASA, 2015. NASA astronaut Tim Kopra on Dec. 21 spacewalk [Online]. Washington: NASA. Available from: https://www.nasa.gov/image-feature/nasa-astronaut-tim-kopra-on-dec-21-spacewalk [Accessed 7 January 2015].
 ```
 
-Detailed references:
+### Detailed references:
 
-The references image details are: 
+The references holders' images details are: 
 
-Leo Whelan (10 January 1892 – 6 November 1956
+* Leo Whelan (10 January 1892 – 6 November 1956
 ), Fine Art Painting,  Available from: https://www.historyireland.com/michael-collins-military-dictator/  [Accessed 12 December 2023].
 
-Janice O Connell f22 Photography,  Available from: https://www.google.com/search?q=michael+collins+house+cork&tbm=isch#imgrc=OcxaVe7zvb0x1M  to Facebook page [Accessed 12 December 2023].
+* Janice O Connell f22 Photography,  Available from: <https://www.google.com/search?q=michael+collins+house+cork&tbm=isch#imgrc=OcxaVe7zvb0x1M>  to Facebook page [Accessed 12 December 2023].
 
-	
-The logo of Michael’s head silhouette images where I created the Photoshop. Also, Michael’s head on the Doric image which is downloaded comes from https://www.vecteezy.com/vector-art/11014285-museums-museum-columns-museum-lines-museum-pillar-logos-museums-with-minimalist-and-modern-concepts-logos-can-be-used-for-companies-museums-and-businesses to editing together Michael’s head silhouette and Doric
 
-Photoshop images
+### Adobe Photoshop
+
+* The logo of Michael’s head silhouette images where I created the Photoshop. Also, Michael’s head on the Doric image which is downloaded comes from [www.vecteezy.com](https://www.vecteezy.com/vector-art/11014285-museums-museum-columns-museum-lines-museum-pillar-logos-museums-with-minimalist-and-modern-concepts-logos-can-be-used-for-companies-museums-and-businesses) to editing together Michael’s head silhouette and Doric.
+
+### Photoshop images
+
+### Logo 
+![]( assets/images/ReadMe-image/Michael-Collins-Logo.jpg)
+
+### Michael's head sillhoette and Droic together image
+![]( assets/images/ReadMe-image/Head-Gold_White-Doric-small.jpg)
+
+## Concept Project
+
+Where I did concept project for the Michael Collins' History. The projects follows below:
+
+### Brainstorm 
+
+* The five planes — strategy, scope, structure, skeleton, and surface where I learned [the five planes](https://www.uxdesigninstitute.com/blog/5-elements-of-ux-design/) and I used the XMind app for project management but I created a mindmap for the project. The brainstorming is very useful therefore it would be running smoothly organised.
+
+### See a screenshot of the mindmap.
+
+ ![](assets/images/ReadMe-image/Mindmap-five-planes.png)
+
+ ### Sketch UX
+
+* I was just a quick sketch idea of the site then moved on to Justinmind app.
+
+* See picture below:
+
+![](assets/images/ReadMe-image/Sketch.png)
+
+### Wireframe by Justinmind
+
+* I downloaded the Justinmind app for the wireframe I designed a wireframe and learned how use creates a wireframe. It had a lot more work than I expected because I want to create an interactive wireframe mobile. 
+
+* I asked to mentor for advice through chat on Stack. He instructed that just only use design wireframes. I stop to do further what I was trying to create interactive because the time was taking a lot. I moved to start building HTML and CSS.  
+
+### The screenshot desktop and mobile wireframes are here: 
+
+* ### Desktop
+
+![](assets/images/ReadMe-image/Home-About.png)
+
+![](assets/images/ReadMe-image/Timeline-Museum.png)
+
+![](assets/images/ReadMe-image/Accessibility-Contact.png)
+
+* ### Mobile
+
+![](assets/images/ReadMe-image/Wireframe-mobile.png)
+
+### Remove the Accessibility Section Page
+
+* I decided to leave out the accessibility page because I was not the able chance to create it. After all, it took a lot of work with CSS and responsiveness. I learned a lot of CSS and I would get better next time. 
+
+* What I did a concept the accessibility to design for focus users who are preferred toggle light/dark mode and for the visually impaired change background to black and foreground yellow for text. Also for text medium to large options to suit the users’ preferences. 
+
+### Research and collection links
+
+#### I did the research for open-source HTML & CSS. I collected links and I wish to keep them for the next time I may able to design for accessibility in the future. 
+
+1)  [Accessibility UX example](https://www.museum.ie/en-ie/accessibility)
+
+1) [Example icon for accessibility](https://castlegarsource.com/news/government-introduces-legislation-build-more-accessible-inclusive-bc)
+
+1) [Dark mode HTML](https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/amp/)
+
+1) [Choice of Light and dark design](https://www.dreamstime.com/day-night-switch-icon-dark-mode-light-button-mobile-app-interface-design-concept-image184942820) 
+
+1) [For example, click on dark mode](https://redstapler.co/pure-css-minimal-dark-mode-toggle-button/)
+
+1) [Responsive grid use CSS](https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe)
+
+
+### Moodboard 
+
+* The moodboard is an arrangement of images, materials, pieces of text, etc. intended to evoke or project a particular style or concept. It helps to see clearly what you would like to design for the site. I put label images for the timeline, colour pallets, footer, icons accessibility, font of Roboto, light/dark mode, contact, and logo.
+
+* I used the Adobe Illustrator app and create a moodboard. 
+
+See the image below:
+
+![](assets/images/ReadMe-image/Moddboard-for-desgin-UX.png)
+
+### Colour Pallet
+
+* I choose the colour pallet because the style is matching to Michael Collins’s history style, green Ireland, soldier uniform and oldest building. It caught my eye with the colour which I found and I like it to match the website. 
+
+1) When I ran the test through the lighthouse and it had issues with contrast colour. 
+1)I had to change to get dark from #7a7a76 to #252424 for the button link to external sites. 
+1)The footer background get dark from #7a7a76 to #252424.
+1) The timeline and museum sections also for the button link to external sites. 
+1) The navigation menu bar gets darker from #7a7a76 to #252424 to prevent the match from the footer when you scroll up to menu bar.
+
+### Image colour pallet
+
+* I took the screenshot image to choose the image colour palette from [www.icolorpalette.com](https://icolorpalette.com/imagepalette)
+
+See the image of the colour palette below:
+
+![](assets/images/ReadMe-image/Option%20colours%20to%20be%20decide.png)
+
+### Concluded 
+
+* I completed my concept project for the Michael Collins Legend’s website and included responsiveness. I hope you enjoy my project on the Michael Collins Legend site. The site lives [Michael Collins Legend](https://rqisl.github.io/portfolio-project-1-robert-quinlan/).
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
 
 
 
