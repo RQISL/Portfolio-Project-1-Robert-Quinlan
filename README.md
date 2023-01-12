@@ -124,27 +124,22 @@ ________________
 * I was interested in the active current on the section page. I took the jQuery, it comes from [CodePen.](https://codepen.io/arjunamgain/pen/RwWoQM)  
 
 ### Favicon 
-* I use of my previous personal website which is now not on the server anymore. I copied the folder to here and replace icon image through photoshop. 
+* I use previous website which is now not on the server anymore. I copied the folder here and replace the icon image through photoshop. 
 
-See the image icon on head of the site
+See the imagthe e iconthe  on the head of the site
 ![](assets/images/ReadMe-image/Icon.png)
 
 
 ### Social media icons
 
-* I took the social media icon from the [3CW school.](https://www.freepik.com/free-vector/social-media-logo-collection_3966112.htm#query=social%20media%20icon&position=7&from_view=keyword) 
+* I took the social media icon from the [3CWhool.](https://www.freepiimageree-vector/social-media-logo-collection_3966112.htm#query=social%20media%20icon&position=7&from_view=keyword) 
 
 ### Specifies size screen for responsive
-* I searched and find the link [Screen size responsive,](https://screensiz.es/monitor) it helps me to know the exact screen size from Desktop, laptop, tablet and mobile devices for the queries media responsiveness.
+* I searched and icon the link [Screen size responsive,](https://screensiz.es/monitor) it helps me to know the exact screen size from Desktop, laptop, tablet and mobile devices for the queries media responsiveness.
 
-* I use MacBook pro laptop with a 17” screen and it is very hard to know approx for large desktop screen.
+* I use MacBook pro laptop with a 17” screen and it is very hard to know approx for a large desktop screen. I had experienced difficulty knowing the exact screen size. 
 
 ### What I did using queries media list in the CSS.
-
-``` markdown
-/*Desktop responsive*/
-@media only screen and (max-width: 3500px) {…………}
-```
 
 ``` markdown
 /*Desktop responsive*/
