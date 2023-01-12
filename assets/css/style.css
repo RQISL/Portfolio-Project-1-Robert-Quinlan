@@ -35,7 +35,8 @@ body {
     list-style-type: none;
     float: right;
     position: relative;
-    margin: -2% 4% 0 0;
+    bottom: 0;
+    margin: 95px 30px 0 0;
 }
 
 #menupage li {
@@ -64,7 +65,7 @@ body {
 #menupage img {
     float: left;
     margin-left: 0;
-    width: 150px;
+    width: 40%;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -82,6 +83,14 @@ body {
 section {
     width: 99%;
     padding-top: 160px;
+}
+
+/* disable click on the image to prevent interrupted to the external site. */
+/* serach on 3WC School to find disable click so I found at https://www.w3schools.com/cssref/css3_pr_pointer-events.php */
+.home_wrapper .Michael_art,
+.head_Store_Michael,
+.img_and_text img {
+    pointer-events: none;
 }
 
 /* Home Section */
@@ -119,7 +128,7 @@ section#home {
 }
 
 .home_wrapper .text_Michael_legacy {
-    font-size: 1.5em;
+    font-size: 2em;
     word-spacing: 2px;
     line-height: 1.6;
     float: right;
@@ -129,6 +138,7 @@ section#home {
 .home_wrapper h2 {
     float: left;
     width: 90%;
+    font-size: 3em;
 }
 
 /* About section */
@@ -158,6 +168,7 @@ section#about {
 #about_wrapper h2 {
     max-width: 100%;
     text-align: left;
+    font-size: 2em;
 }
 
 #about_wrapper .text_about_Michael {
@@ -165,7 +176,7 @@ section#about {
     float: right;
     width: 40%;
     height: fit-content;
-    font-size: 1.5em;
+    font-size: 2em;
     border: solid 0.7em #7a7a7a;
     word-spacing: 2px;
     line-height: 1.6;
@@ -183,6 +194,7 @@ section#timelines {
 
 section#timelines h2 {
     text-align: center;
+    font-size: 3em;
 }
 
 /* I had experienced difficulty with a responsive timeline. I decide to copy 
@@ -229,9 +241,9 @@ and paste it here. I had a few modifications to make the position fit the screen
 .container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
+    width: 40px;
+    height: 40px;
+    right: -25px;
     background-color: white;
     border: 4px solid #7a7a7a;
     top: 15px;
@@ -241,12 +253,12 @@ and paste it here. I had a few modifications to make the position fit the screen
 
 /* Place the container to the left */
 .left {
-    left: -25%;
+    left: -23%;
 }
 
 /* Place the container to the right */
 .right {
-    left: 32.5%;
+    left: 31%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -279,7 +291,7 @@ and paste it here. I had a few modifications to make the position fit the screen
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -30px;
 }
 
 /* The actual content */
@@ -294,11 +306,12 @@ and paste it here. I had a few modifications to make the position fit the screen
 
 .content p {
     text-align: left;
+    font-size: 2em;
 }
 
 .content .circle_img {
-    width: 120px;
-    height: 120px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     border: solid 1px black;
     padding: 2%;
@@ -308,8 +321,9 @@ and paste it here. I had a few modifications to make the position fit the screen
 }
 
 .content .circle_img:hover {
-    width: 220px;
-    height: 220px;
+    width: 520px;
+    height: 520px;
+    cursor: pointer;
 }
 
 .content .button-site {
@@ -351,7 +365,7 @@ section#museum {
     text-align: center;
     padding-top: 1%;
     color: #f5f1e4;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .img_and_text {
@@ -365,7 +379,7 @@ section#museum {
 }
 
 .img_and_text p {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .img_and_text h3 {
@@ -406,7 +420,7 @@ section#contact {
 /* content form centre both of the form and image */
 .contact_and_img_wrapper {
     width: 70%;
-    height: 650px;
+    height: 1200px;
     margin: auto;
     clear: both;
     padding: 50px 50px 80px 50px;
@@ -417,32 +431,36 @@ section#contact {
 .head_logo_contact_wrapper img {
     width: 20%;
     height: auto;
-    margin: 50px 0 0 180px;
+    margin: 50px 0 0 300px;
     object-fit: cover;
 }
 
 /* form */
 .contact-form {
-    margin-top: 0;
+    margin-top: 60px;
     color: black;
     background-color: #a2a888;
     width: 45%;
+    height: fit-content;
     border-radius: 30px;
     left: 20%;
     padding: 30px;
     float: left;
+    font-size: 2em;
 }
+
 
 .contact-form h2 {
     color: black;
     margin-bottom: 20px;
+    font-size: 2em;
 }
 
 .text-input {
     color: black;
     width: 95%;
-    height: 25px;
-    margin: 5px 0 20px 0;
+    height: 45px;
+    margin: 5px 0 40px 0;
     border: 1px solid #fafafa;
     border-radius: 2px;
 
@@ -455,6 +473,7 @@ section#contact {
 .message_box {
     color: black;
     width: 100%;
+    max-height: 250px;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
     border-radius: 2px;
@@ -607,18 +626,101 @@ footer {
     margin-top: 5%;
 }
 
-/* large desktop focus on timeline responsive*/
-@media only screen and (max-width: 1900px) {
+/* large Desktop */
+@media only screen and (max-width: 3500px) {
 
-    /* Place the container to the left */
-    .left {
-        left: -24%;
+    /* Nav bar */
+    #menupage ul {
+        margin-top: 60px;
     }
 
-    /* Place the container to the right */
-    .right {
-        left: 32%;
+    #menupage li {
+        font-size: 50px;
     }
+
+    #menupage img {
+        width: 28%;
+    }
+
+    /* Timeline Section */
+    .content h3 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    /* Contact Section */
+
+    .head_logo_contact_wrapper img {
+        width: 23%;
+        height: auto;
+        margin: 230px 0 0 320px;
+    }
+
+
+    /* Footer section */
+
+    footer {
+        height: fit-content;
+    }
+
+    /* Head logo */
+    .site_map img {
+        float: left;
+        margin-top: 2%;
+        width: 12%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .site_map .logo_text {
+        float: left;
+        font-size: 2.4em;
+        margin-top: 7%;
+        color: #f5f1e4;
+    }
+
+    /* site maps links */
+
+    .site_map li {
+        float: none;
+        font-size: 2em;
+        padding-top: 0.3em;
+    }
+
+    /* Social media icons */
+    .social_media_icons {
+        width: 40%;
+        height: 40%;
+        text-align: center;
+        margin: 5% 0 0 30%;
+    }
+
+    .social_media_icons span {
+        color: #f5f1e4;
+        font-size: 2em;
+        font-weight: bolder;
+        margin: auto;
+    }
+
+    .social_media_icons ul {
+        list-style-type: none;
+    }
+
+    .social_media_icons li .fa {
+        font-size: 35px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .RQ-designed {
+        color: #f5f1e4;
+        font-size: 1em;
+        max-width: 40%;
+        margin: auto;
+        text-align: center;
+        margin-top: 5%;
+    }
+
 }
 
 /* large Desktop and laptop responsive*/
@@ -641,10 +743,23 @@ footer {
 
     }
 
-}
+    /* Timeline Section */
+    .content .circle_img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: solid 1px black;
+        padding: 2%;
+        transition: width 2s,
+            height 2s;
+        object-fit: cover;
+    }
 
-/* large desktop focus on timeline responsive*/
-@media only screen and (max-width: 1900px) {
+    .content .circle_img:hover {
+        width: 320px;
+        height: 320px;
+        cursor: pointer;
+    }
 
     /* Place the container to the left */
     .left {
@@ -655,25 +770,200 @@ footer {
     .right {
         left: 32%;
     }
+
+}
+
+/* large desktop responsive*/
+@media only screen and (max-width: 1900px) {
+
+    #menupage ul {
+        margin-top: 95px;
+    }
+
+    #menupage li {
+        font-size: 27px;
+    }
+
+    #menupage img {
+        width: 47%;
+    }
+
+    /* Timeline Section */
+    .content .circle_img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: solid 1px black;
+        padding: 2%;
+        transition: width 2s,
+            height 2s;
+        object-fit: cover;
+    }
+
+    .content .circle_img:hover {
+        width: 320px;
+        height: 320px;
+        cursor: pointer;
+    }
+
+    /* Place the container to the left */
+    .left {
+        left: -24%;
+    }
+
+    /* Place the container to the right */
+    .right {
+        left: 32%;
+    }
+
+    .content h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    /* Museum section resposiveness */
+    section#museum {
+        background-image: none;
+        padding-bottom: 5%;
+    }
+
+    .museum_wrapper {
+        margin-top: -10%;
+    }
+
+    .museum_wrapper h2 {
+        font-size: 1.5em;
+        padding-top: 10%;
+    }
+
+    .img_and_text {
+        width: 90%;
+        height: fit-content;
+        font-size: 1em;
+        margin: 5% 0 5% 5%;
+    }
+
+    .img_and_text h3 {
+        font-size: 1.8em;
+    }
+
+    .img_and_text img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* contact section */
+
+    /* content form centre both of the form and image */
+    .contact_and_img_wrapper {
+
+        height: 960px;
+    }
+
+    .contact-form {
+        margin-top: 80px;
+        font-size: 1em;
+    }
+
+    .head_logo_contact_wrapper img {
+        width: 23%;
+        height: auto;
+        margin: 200px 0 0 180px;
+    }
+
+    /* responsiveness footer section */
+
+    /* Head logo */
+    .site_map img {
+        float: left;
+        margin-top: 2%;
+        width: 20%;
+        height: 20%;
+    }
+
+    .site_map .logo_text {
+        float: left;
+        font-size: 2.5em;
+        margin-top: 15%;
+        margin-left: 1%;
+        color: #f5f1e4;
+    }
+
+    /* site maps links */
+
+    .site_map ul {
+        list-style-type: none;
+        margin: auto;
+        clear: both;
+        width: 97%;
+        float: right;
+    }
+
+    .site_map li {
+        float: none;
+        display: inline-block;
+        font-size: 2em;
+        padding: 3% 5% 5% 0;
+    }
+
+    .site_map a {
+        text-decoration: none;
+        color: #f5f1e4;
+        padding: 2%;
+    }
+
+    .site_map a:hover {
+        background-color: #f5f1e4;
+        color: #7a7a7a;
+    }
+
+    /* Social media icons */
+    .social_media_icons {
+        width: 98%;
+        height: 32%;
+        text-align: center;
+        margin: auto;
+        clear: both;
+    }
+
+    .social_media_icons ul {
+        list-style-type: none;
+        text-align: center;
+        margin-left: -14%;
+    }
+
+    .social_media_icons li {
+        float: none;
+        display: inline-block;
+        padding: 2% 0 0 5%;
+    }
+
+    .social_media_icons li .fa {
+        font-size: 35px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 /* large tablet and small laptop responsive*/
 @media only screen and (max-width: 1354px) {
 
+    /* nav bar */
     #menupage {
         height: 90px;
     }
 
     #menupage ul {
         list-style-type: none;
-        margin: -40px auto;
+        margin: 40px auto;
         width: fit-content;
         float: right;
     }
 
     #menupage li {
         display: inline-block;
-        font-size: 1em;
+        font-size: 0.9em;
         text-align: center;
         padding: 15px 0 10px 0;
         background-color: #252424;
@@ -692,10 +982,6 @@ footer {
 
     #menupage {
         height: 100px;
-    }
-
-    #menupage img {
-        width: 90px;
     }
 
     /* beside head logo with the text*/
@@ -721,7 +1007,7 @@ footer {
     }
 
     .home_wrapper .text_Michael_legacy {
-        font-size: 1em;
+        font-size: 1.5em;
         word-spacing: 2px;
         line-height: 1.6;
         padding: 3%;
@@ -730,6 +1016,7 @@ footer {
     .home_wrapper h2 {
         float: left;
         width: 95%;
+        font-size: 1.5em;
     }
 
     /* responsive about section */
@@ -750,6 +1037,7 @@ footer {
     #about_wrapper h2 {
         width: 100%;
         text-align: left;
+        font-size: 1.1em;
     }
 
     #about_wrapper .text_about_Michael {
@@ -758,6 +1046,7 @@ footer {
         height: fit-content;
         float: right;
         margin: 5% auto;
+        font-size: 1.5em;
     }
 
     #about_wrapper .text_about_Michael p {
@@ -771,7 +1060,24 @@ footer {
     .container {
         margin: 0 auto;
         clear: both;
+    }
 
+    /* circle image */
+    .content .circle_img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: solid 1px black;
+        padding: 2%;
+        transition: width 2s,
+            height 2s;
+        object-fit: cover;
+    }
+
+    .content .circle_img:hover {
+        width: 260px;
+        height: 260px;
+        cursor: pointer;
     }
 
     /* The actual timeline (the vertical r13uler) */
@@ -795,7 +1101,6 @@ footer {
         margin-top: 0;
     }
 
-
     .circle_img {
         width: 80px;
         height: 80px;
@@ -803,6 +1108,16 @@ footer {
         margin-bottom: 5px;
         border: solid 2px #f5f1e4;
         padding: 3%;
+    }
+
+    .content h3 {
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    .content p {
+        text-align: left;
+        font-size: 1.5em;
     }
 
     /* Museum section resposiveness */
@@ -857,12 +1172,15 @@ footer {
     .contact-form {
         width: 50%;
         height: 530px;
+        margin-top: 0;
         border-radius: 25px 0 0 25px;
+        font-size: 1em;
     }
 
     .contact-form h2 {
         color: black;
         margin: 2% 0 2% 0;
+        font-size: 1em;
     }
 
     .text-input {
@@ -999,7 +1317,7 @@ footer {
     }
 
     #menupage img {
-        width: 90px;
+        width: 60%;
     }
 
     /* beside head logo with the text*/
@@ -1010,7 +1328,7 @@ footer {
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -50px 25px 0 0;
+        margin: 23px 25px 0 0;
         float: right;
         display: block;
     }
@@ -1109,40 +1427,66 @@ footer {
     /* Timeline section responsiveness */
 
     .container {
-        margin: 0 auto;
-        clear: both;
+        margin: 0;
+    }
 
+    section#timelines h2 {
+        text-align: center;
+        margin: 10% auto;
+        width: 80%;
+        font-size: 1.8em;
+    }
+
+    section#timelines h2 {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 0;
     }
 
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        margin-left: -5%;
+        left: 3.5%;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 90%;
+        padding-left: 70px;
+        padding-right: 25px;
+        margin-left: 21%;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 0;
     }
 
     /* Place the container to the left */
     .left {
-        left: -33%;
+        left: -25%;
     }
 
-    /* Place the container to the right */
+    /* Make all right containers behave like the left ones */
     .right {
-        left: 32%;
+        left: -25%;
     }
 
-
-    section#timelines h2 {
-        text-align: center;
-        margin-top: 0;
-    }
-
-
-    .circle_img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-        border: solid 2px #f5f1e4;
-        padding: 3%;
+    .content h2 {
+        font-size: 1.2em;
+        padding-top: 18%;
     }
 
     /* Museum section resposiveness */
@@ -1333,18 +1677,12 @@ footer {
     /* head logo vector */
 
     #menupage img {
-        width: 90px;
-    }
-
-    /* beside head logo with the text*/
-    #menupage .logo_text {
-        font-size: 1.4em;
-        margin: 40px 0 0 90px;
+        width: 80%;
     }
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -48px 18px 0 0;
+        margin: 26px 25px 0 0;
         float: right;
         display: block;
     }
@@ -1495,19 +1833,19 @@ footer {
     }
 
     .museum_wrapper h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding-top: 10%;
     }
 
     .img_and_text {
         width: 90%;
         height: fit-content;
-        font-size: 1em;
+        font-size: 0.5em;
         margin: 5% 0 5% 5%;
     }
 
     .img_and_text h3 {
-        font-size: 1.8em;
+        font-size: 2.2em;
     }
 
     .img_and_text img {
@@ -1620,6 +1958,10 @@ footer {
         border-radius: 50%;
     }
 
+    .RQ-designed {
+        max-width: 100%;
+    }
+
 
 }
 
@@ -1627,10 +1969,6 @@ footer {
 @media only screen and (max-width: 450px) {
 
     /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: -48px 15px 0 0;
-    }
-
     .drop-btn {
         background-color: #252424;
         width: 50px;
@@ -1639,6 +1977,7 @@ footer {
         color: white;
         font-size: 30px;
         cursor: pointer;
+        margin: 58px 5px 0 0;
     }
 
     #menupage {
@@ -1648,7 +1987,7 @@ footer {
 
     /* head logo vector */
     #menupage img {
-        width: 80px;
+        width: 70%;
     }
 
     /* beside head logo with the text*/
@@ -1799,6 +2138,10 @@ footer {
         margin: auto;
     }
 
+    .social_media_icons span {
+        font-size: 1em;
+    }
+
     .social_media_icons ul {
         list-style-type: none;
         width: 90%;
@@ -1812,15 +2155,21 @@ footer {
         margin: 1%;
     }
 
+    .RQ-designed {
+        font-size: 0.7em;
+        max-width: 100%;
+    }
+
 }
 
 
 /* smaller mobile responsiveness  for max 350px screen*/
 @media only screen and (max-width: 350px) {
+    /* nav bar */
 
     /* Three dash for menu */
     #dash-menu-wrapper {
-        margin: -35px 8px 0 0;
+        margin: -50px 8px 0 0;
     }
 
     .drop-btn {
@@ -1832,9 +2181,13 @@ footer {
         cursor: pointer;
     }
 
+    #menupage {
+        height: 60px
+    }
+
     /* head logo vector */
     #menupage img {
-        width: 70px;
+        width: 70%;
     }
 
     /* beside head logo with the text*/
@@ -2050,10 +2403,40 @@ footer {
         padding-right: 0;
         margin: 1%;
     }
+
+    .social_media_icons span {
+        font-size: 1.2em;
+    }
 }
 
 /* smaller mobile  responsiveness */
 @media only screen and (max-width: 320px) {
+
+    /* nav bar */
+    /* head logo vector */
+    #menupage {
+        height: 50px;
+    }
+
+    /* Three dash for menu */
+    #dash-menu-wrapper {
+        margin: -40px 10px 0 0;
+        float: right;
+        display: block;
+    }
+
+    .drop-btn {
+        background-color: #252424;
+        border: none;
+        width: 30px;
+        height: 30px;
+        color: white;
+        padding: 5px 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
 
     /* about section resposiveness */
 
@@ -2136,7 +2519,7 @@ footer {
     }
 
     .RQ-designed {
-        font-size: 0.7em;
+        font-size: 0.1em;
     }
 
 }
