@@ -140,6 +140,12 @@ See the image icon on head of the site
 * I use MacBook pro laptop with a 17” screen and it is very hard to know approx for large desktop screen.
 
 ### What I did using queries media list in the CSS.
+
+``` markdown
+/*Desktop responsive*/
+@media only screen and (max-width: 3500px) {…………}
+```
+
 ``` markdown
 /*Desktop responsive*/
 @media only screen and (max-width: 2070px) {…………}
