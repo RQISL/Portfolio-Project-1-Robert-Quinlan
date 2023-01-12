@@ -80,7 +80,7 @@ Existing Features
 
 ### The lighthouse runs testing and results.
 
-![]( assets/images//ReadMe-image/Lighthouse%20results.png)
+![]( assets/images//ReadMe-image/Lighthouse-testing.png)
 
 
 ### Validation testing
@@ -109,11 +109,9 @@ The site lives at [Michael Collins Legend](https://rqisl.github.io/portfolio-pro
 
 ## Credits
 _________________________________________________________
-
-``` markdown
-Please note: English is not my first language as my first language is ISL (Irish Sign Language).
-```
-
+### **Please note:** 
+* English is not my first language as my first language is ISL (Irish Sign Language).
+____________________________________________________________________________________
 I learned through the course in Code Institute. I do most learning of different open source on 3WC it helps to remember what the code used tags and style CSS for HTML and CSS, also what I am interested in as scroll smooth, icons, and transitions. I did a few learning to CodePen. 
 
 My mentor had good feedback and helps to my process improvement on site project. 
@@ -124,6 +122,12 @@ ________________
 ### Contents
 
 * I was interested in the active current on the section page. I took the jQuery, it comes from [CodePen.](https://codepen.io/arjunamgain/pen/RwWoQM)  
+
+### Favicon 
+* I use of my previous personal website which is now not on the server anymore. I copied the folder to here and replace icon image through photoshop. 
+
+See the image icon on head of the site
+![](assets/images/ReadMe-image/Icon.png)
 
 
 ### Social media icons
