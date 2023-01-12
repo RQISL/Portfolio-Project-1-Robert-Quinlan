@@ -347,6 +347,7 @@ and paste it here. I had a few modifications to make the position fit the screen
 section#museum {
     background-image: url("https://scontent.fdub5-1.fna.fbcdn.net/v/t1.6435-9/165215227_125522859583778_5199776069317048256_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=RhuweWCyItcAX-oD6nj&_nc_ht=scontent.fdub5-1.fna&oh=00_AfD9cOhWpUgyw7n0wGzw6ZOlneVUzSrsdRCJnU7-bdb2KQ&oe=63C2D974");
     background-repeat: no-repeat;
+    background-size: cover;
     height: fit-content;
     padding-bottom: 4%;
 }
@@ -379,11 +380,11 @@ section#museum {
 }
 
 .img_and_text p {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .img_and_text h3 {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .img_and_text img {
@@ -626,103 +627,6 @@ footer {
     margin-top: 5%;
 }
 
-/* large Desktop */
-@media only screen and (max-width: 3500px) {
-
-    /* Nav bar */
-    #menupage ul {
-        margin-top: 60px;
-    }
-
-    #menupage li {
-        font-size: 50px;
-    }
-
-    #menupage img {
-        width: 28%;
-    }
-
-    /* Timeline Section */
-    .content h3 {
-        text-align: center;
-        font-size: 2.5em;
-    }
-
-    /* Contact Section */
-
-    .head_logo_contact_wrapper img {
-        width: 23%;
-        height: auto;
-        margin: 230px 0 0 320px;
-    }
-
-
-    /* Footer section */
-
-    footer {
-        height: fit-content;
-    }
-
-    /* Head logo */
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 12%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 2.4em;
-        margin-top: 7%;
-        color: #f5f1e4;
-    }
-
-    /* site maps links */
-
-    .site_map li {
-        float: none;
-        font-size: 2em;
-        padding-top: 0.3em;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 40%;
-        height: 40%;
-        text-align: center;
-        margin: 5% 0 0 30%;
-    }
-
-    .social_media_icons span {
-        color: #f5f1e4;
-        font-size: 2em;
-        font-weight: bolder;
-        margin: auto;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-    }
-
-    .social_media_icons li .fa {
-        font-size: 35px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .RQ-designed {
-        color: #f5f1e4;
-        font-size: 1em;
-        max-width: 40%;
-        margin: auto;
-        text-align: center;
-        margin-top: 5%;
-    }
-
-}
-
 /* large Desktop and laptop responsive*/
 @media only screen and (max-width: 2070px) {
     .home_wrapper .Michael_art {
@@ -770,6 +674,39 @@ footer {
     .right {
         left: 32%;
     }
+
+    /* Museum section resposiveness */
+
+    .museum_wrapper {
+        margin-top: -10%;
+    }
+
+    .museum_wrapper h2 {
+        font-size: 3em;
+        padding-top: 10%;
+    }
+
+    .img_and_text {
+        width: 30%;
+        height: fit-content;
+        font-size: 0.7em;
+        margin: 5% 0 5% 2%;
+        display: inline-block;
+    }
+
+    .img_and_text h3 {
+        font-size: 1.5em;
+    }
+
+    .img_and_text p {
+        font-size: 1.5em;
+    }
+
+    .img_and_text img {
+        width: 100%;
+        height: auto;
+    }
+
 
 }
 
@@ -832,19 +769,24 @@ footer {
     }
 
     .museum_wrapper h2 {
-        font-size: 1.5em;
+        font-size: 3em;
         padding-top: 10%;
     }
 
     .img_and_text {
-        width: 90%;
+        width: 30%;
         height: fit-content;
-        font-size: 1em;
-        margin: 5% 0 5% 5%;
+        font-size: 0.5em;
+        margin: 5% 0 5% 2%;
+        display: inline-block;
     }
 
     .img_and_text h3 {
-        font-size: 1.8em;
+        font-size: 1.5em;
+    }
+
+    .img_and_text p {
+        font-size: 2em;
     }
 
     .img_and_text img {
