@@ -108,10 +108,7 @@ The GitHub page where is deployed. How do processing the site deployed as follow
 The site lives at [Michael Collins Legend](https://rqisl.github.io/portfolio-project-1-robert-quinlan/)
 
 ## Credits
-_________________________________________________________
-### **Please note:** 
-* English is not my first language as my first language is ISL (Irish Sign Language).
-____________________________________________________________________________________
+
 I learned through the course in Code Institute. I do most learning of different open source on 3WC it helps to remember what the code used tags and style CSS for HTML and CSS, also what I am interested in as scroll smooth, icons, and transitions. I did a few learning to CodePen. 
 
 My mentor had good feedback and helps to my process improvement on site project. 
