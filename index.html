@@ -42,222 +42,246 @@
     <!-- The manifest is not need here for a while -->
     <!-- <link rel="manifest" href="assets/favicon/site.webmanifest">  -->
 
-
-
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
     <header>
-        <!-- Menu -->
-        <div class="dropdown">
-            <!--button dropdown hover -->
-            <nav id="menupage">
-                <!-- Head logo vector and text beside of logo -->
-                <img id="head_logo" src="assets/images/Michael-Collins-Logo.png" alt="Michael Collins head logo">
-                <!-- for the dash menu in responsiveness -->
-                <div id="dash-menu-wrapper">
-                    <button type="button" aria-expanded="false" aria-label="Toggle navigation" class="drop-btn"><i
-                            class="fa fa-bars"></i></button>
-                </div>
-                <!-- closed menu-wrapper -->
-                <div class="dropdown-content">
-                    <!-- dropdown content the menu -->
-                    <ul>
-                        <li><a class="active" href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#timelines">Timelines</a></li>
-                        <li><a href="#museum">Museum</a></li>
-                        <!-- <li><a href="#accessibility">Accessibility</a></li> -->
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- closed dropdown-content -->
-            </nav>
-        </div>
-        <!-- closed dropdown -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home"><img class="img-fluid" src="assets/images/Michael-Collins-Logo.png" alt="Michael Collins head logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon container-fluid d-flex justify-content-end"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid d-flex justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#timelines">Timelines</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#museum">Museums</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Main the page with sections -->
-    <div id="content">
+
+    <div class="container-fluid">
         <section id="home">
-            <div class="home_wrapper">
-                <a title="Copyright:  the art painting by Leo Whelan, link upload image from https://www.historyireland.com/michael-collins-military-dictator/"
-                    href="https://www.historyireland.com/michael-collins-military-dictator/">
-                    <img class="Michael_art" loading="lazy" width="950"
-                        src="https://www.historyireland.com/wp-content/uploads/2022/08/Michael-Collins-Leo-WhelanLOW-.jpg"
-                        alt="Michael Collins face with art of history"></a>
-                <div class="background_text">
-                    <h2>Michael Collins's Legend</h2>
-                    <p class="text_Michael_legacy">
-                        Michael Collins was an Irish revolutionary, soldier and politician who was a leading figure
-                        in
-                        the early-20th century struggle for Irish independence. During the War of Independence he
-                        was
-                        Director of Intelligence of the Irish Republican Army and a government minister of the
-                        self-declared Irish Republic.
-                        <br><br>
-                        During this time he secretly provided support for an IRA offensive in Northern Ireland. It
-                        was
-                        soon disrupted by the Irish Civil War, in which Collins was commander-in-chief of the
-                        National
-                        Army. He was shot and killed in an ambush by anti-Treaty forces on 22 August 1922.</p>
+            <div class="row cols-md-2">
+                <div class="col-xl-6 text-center">
+                    <div> <a title="Copyright:  the art painting by Leo Whelan, link upload image from https://www.historyireland.com/michael-collins-military-dictator/"
+                        href="https://www.historyireland.com/michael-collins-military-dictator/">
+                        <img class="img-fluid align-text-middle none_click"
+                            src="https://www.historyireland.com/wp-content/uploads/2022/08/Michael-Collins-Leo-WhelanLOW-.jpg"
+                            alt="Michael Collins face with art of history"></a>
+                    </div>
                 </div>
-                <!--closed background_text-->
+                <div class="col-xl-6 text-black align-self-center">
+                    <div>
+                        <div class="col mt-2 p-3 background_text" style=" line-height: 1.8;">
+                            <h2>Michael Collins's Legend</h2>
+                            <p class="text_Michael_legacy">
+                                Michael Collins was an Irish revolutionary, soldier and politician who was a leading figure
+                                in
+                                the early-20th century struggle for Irish independence. During the War of Independence he
+                                was
+                                Director of Intelligence of the Irish Republican Army and a government minister of the
+                                self-declared Irish Republic.
+                                <br><br>
+                                During this time he secretly provided support for an IRA offensive in Northern Ireland. It
+                                was
+                                soon disrupted by the Irish Civil War, in which Collins was commander-in-chief of the
+                                National
+                                Army. He was shot and killed in an ambush by anti-Treaty forces on 22 August 1922.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--closed home_wrapper -->
         </section>
 
-        <!-- Aobut Section -->
+        <!-- About Section -->
         <section id="about">
-            <div id="about_wrapper">
-                <a title="Osama Shukir Muhammed Amin FRCP(Glasg), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
-                    href="https://commons.wikimedia.org/wiki/File:Bust_of_Michael_Collins_at_Merrion_Square_Park,_Dublin,_Ireland..JPG"><img
-                        class="head_Store_Michael" loading="lazy" width="930"
-                        alt="Bust of Michael Collins at Merrion Square Park, Dublin, Ireland."
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bust_of_Michael_Collins_at_Merrion_Square_Park%2C_Dublin%2C_Ireland..JPG/512px-Bust_of_Michael_Collins_at_Merrion_Square_Park%2C_Dublin%2C_Ireland..JPG"></a>
-
-                <div class="text_about_Michael">
-                    <h2>About Michael Collins history</h2>
-                    <p>Our site tells the story of Michael Collins. He was a great hero and many people honoured him
-                        during his lifetime and throughout history. This site gives an interesting brief story of his
-                        history and provides external links to give further insight into his story. Also, there are a
-                        few museums, the National Museum of Ireland in Dublin, and the beautiful Michael Collins Centre
-                        museums in Clonakilty West Cork. This site includes links to the museum, external links to other
-                        museums and gives an option to book tickets online to visit the museum.
-                    </p>
+            <div class="row cols-md-2">
+                <div class="col-xl-6 text-center">
+                    <div> <a title="Osama Shukir Muhammed Amin FRCP(Glasg), CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                        href="https://commons.wikimedia.org/wiki/File:Bust_of_Michael_Collins_at_Merrion_Square_Park,_Dublin,_Ireland..JPG"><img
+                            class="none_click head_Store_Michael"
+                            alt="Bust of Michael Collins at Merrion Square Park, Dublin, Ireland."
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bust_of_Michael_Collins_at_Merrion_Square_Park%2C_Dublin%2C_Ireland..JPG/512px-Bust_of_Michael_Collins_at_Merrion_Square_Park%2C_Dublin%2C_Ireland..JPG"></a>
+                    </div>
                 </div>
-                <!-- closed text_about_Michael -->
+                <div class="col-xl-6 text-black">
+                    <div>
+                        <div class="col mt-2 p-3 text_about_Michael" style=" line-height: 1.8;">
+                            <h2>About Michael Collins history</h2>
+                            <p>Our site tells the story of Michael Collins. He was a great hero and many people honoured him
+                                during his lifetime and throughout history. This site gives an interesting brief story of his
+                                history and provides external links to give further insight into his story. Also, there are a
+                                few museums, the National Museum of Ireland in Dublin, and the beautiful Michael Collins Centre
+                                museums in Clonakilty West Cork. This site includes links to the museum, external links to other
+                                museums and gives an option to book tickets online to visit the museum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- closed about_wrapper -->
         </section>
 
         <!-- Section Timeline -->
+
         <section id="timelines">
-            <h2>Michael Collins History Timeline</h2>
-            <div class="timeline">
-                <div class="container left">
-                    <div class="content">
-                        <img class="circle_img" loading="lazy" alt="Michael Collins at 8 years old"
-                            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Michael_Collins_at_8_years_old.jpg">
-                        <h3>1890s Michael Collins younger</h3>
-                        <p>Collins was born in Woodfield, Sam's Cross, near Rosscarbery,
-                            County Cork, on 16 October 1890, the third son and youngest of eight
-                            children. <br><br><a class="button-site" aria-label="click external site to Michael Collins
-                                Wikimedia"
-                                href="https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)#Early_years"
-                                target="_blank">More informaton to wikimedia </a></p>
-                    </div>
-                    <!-- closed container left -->
-                </div>
-                <!-- closed content -->
-                <div class="container right">
-                    <div class="content">
-                        <img class="circle_img" loading="lazy"
-                            alt="Captured Irish soldiers in Stafford Gaol after the failed 1916 Easter Uprising"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/512px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg">
-                        <h3>1917s Easter Rising</h3>
-                        <p class="text_timeline"> In the aftermath of the Easter Rising Collins was imprisoned in
-                            Frongoch in Wales. Amongst the internees were hundreds of those who had participated in
-                            the Easter Rising and those who had been suspected of participation.<br><br><a
-                                class="button-site" aria-label="click external site to Michael Collins
-                                 video & audio story about him"
-                                href="https://michaelcollinshouse.oncell.com/en/the-rise-of-michael-collins-217072.html"
-                                target="_blank">More informaton at Michael Collins House's website </a>
-                        </p>
-                    </div>
-                    <!-- closed container left -->
-                </div>
-                <!-- closed content -->
-                <div class="container left">
-                    <div class="content">
-                        <img class="circle_img" loading="lazy"
-                            alt="Michael Collins addressing crowd in Cork cph.3b15295"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Michael_Collins_addressing_crowd_in_Cork_cph.3b15295.jpg/512px-Michael_Collins_addressing_crowd_in_Cork_cph.3b15295.jpg">
-                        <h3>1922s Provisional government</h3>
-                        <p class="text_timeline"> The Provisional Government's first obligation was to create a
-                            Constitution for the Free State. This was undertaken by Collins and a team of
-                            solicitors. The outcome of their work became the Irish Constitution of 1922. <br><br><a
-                                class="button-site" aria-label="click external site to Michael Collins
-                                 Wikimedia"
-                                href="https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)#Provisional_government"
-                                target="_blank">More
-                                informaton to wikimedia </a></p>
-                    </div>
-                    <!-- closed container left -->
-                </div>
-                <!-- closed content -->
-                <div class="container right">
-                    <div class="content">
-                        <img class="circle_img" loading="lazy"
-                            alt="Michael Collins decreased, fine art painting by John Lavery"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michael_Collins_by_John_Lavery.jpg/512px-Michael_Collins_by_John_Lavery.jpg">
-                        <h3>On 22nd August 1922 Michael Collins decreased</h3>
-                        <p class="text_timeline"> Michael Collins was shot dead on this day, 22 August 1922 in Beal
-                            na Bláth, Co. Cork during the Irish Civil War. There are a number of items on display in
-                            Kilmainham Gaol Museum related to that tragic event.<br><br><a class="button-site"
-                                aria-label="click external site to Michael Collins
-                                 Wikimedia" href="https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)#Death"
-                                target="_blank">More informaton to wikimedia </a>
-                        </p>
-                    </div>
-                    <!-- closed container left -->
-                </div>
-                <!-- closed content -->
+            <div class="section-header">
+              <div>
+                <h2 class="text-center">Michael Collins History Timeline</h2>
+              </div>
             </div>
-            <!-- closed timeline -->
-        </section>
+             <div class="container">
+              <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content text-center" style="border: solid black 1px;">
+                  <img class="img-fluid circle_img" loading="lazy" alt="Michael Collins at 8 years old" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Michael_Collins_at_8_years_old.jpg">
+                  <hr>
+                  <h3>1890s Michael Collins younger</h3>  
+                  <p>Collins was born in Woodfield, Sam's Cross, near Rosscarbery,
+                    County Cork, on 16 October 1890, the third son and youngest of eight
+                    children. <br><br><a class="button-site" aria-label="click external site to Michael Collins
+                        Wikimedia"
+                        href="https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)#Early_years"
+                        target="_blank">More informaton to wikimedia </a></p>
+                </div>
+              </div>
+              <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content text-center" style="border: solid black 1px;">
+                    <img class="img-fluid circle_img" loading="lazy"
+                    alt="Captured Irish soldiers in Stafford Gaol after the failed 1916 Easter Uprising"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg/512px-Captured_Irish_soldiers_in_Stafford_Gaol_after_the_failed_1916_Easter_Uprising.jpg">
+                <hr>
+                  <h3>1917s Easter Rising</h3>
+
+                  <p class="text_timeline"> In the aftermath of the Easter Rising Collins was imprisoned in
+                    Frongoch in Wales. Amongst the internees were hundreds of those who had participated in
+                    the Easter Rising and those who had been suspected of participation.<br><br><a
+                        class="button-site" aria-label="click external site to Michael Collins
+                         video & audio story about him"
+                        href="https://michaelcollinshouse.oncell.com/en/the-rise-of-michael-collins-217072.html"
+                        target="_blank">More informaton at Michael Collins House's website </a>
+                </p>
+                </div>
+              </div>
+              <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content text-center" style="border: solid black 1px;">
+                    <img class="img-fluid circle_img" loading="lazy"
+                    alt="Michael Collins addressing crowd in Cork cph.3b15295"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Michael_Collins_addressing_crowd_in_Cork_cph.3b15295.jpg/512px-Michael_Collins_addressing_crowd_in_Cork_cph.3b15295.jpg">
+                <hr>
+                <h3>1922s Provisional government</h3>
+                <p class="text_timeline"> The Provisional Government's first obligation was to create a
+                    Constitution for the Free State. This was undertaken by Collins and a team of
+                    solicitors. The outcome of their work became the Irish Constitution of 1922. <br><br><a
+                        class="button-site" aria-label="click external site to Michael Collins
+                         Wikimedia"
+                        href="https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)#Provisional_government"
+                        target="_blank">More
+                        informaton to wikimedia </a></p>
+                </div>
+              </div>
+              <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content text-center" style="border: solid black 1px;">
+                    <img class="img-fluid circle_img" loading="lazy"
+                    alt="Michael Collins decreased, fine art painting by John Lavery"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michael_Collins_by_John_Lavery.jpg/512px-Michael_Collins_by_John_Lavery.jpg">
+                <hr>
+
+                <h3>On 22nd August 1922 Michael Collins decreased</h3>
+                <p class="text_timeline"> Michael Collins was shot dead on this day, 22 August 1922 in Beal
+                    na Bláth, Co. Cork during the Irish Civil War. There are a number of items on display in
+                    Kilmainham Gaol Museum related to that tragic event.<br><br><a class="button-site"
+                        aria-label="click external site to Michael Collins
+                         Wikimedia" href="https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)#Death"
+                        target="_blank">More informaton to wikimedia </a>
+                </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
         <!-- Section Museum -->
         <section id="museum">
-            <div class="museum_wrapper">
-                <h2> Museums</h2>
-                <div class="img_and_text ">
-                    <a title="Link upload image from the https://www.corkcoco.ie/en/visitor/cork-county-council-owned-and-supported-attractions/michael-collins-house"
-                    
-                        href="https://www.corkcoco.ie/sites/default/files/2022-04/michael-collins-house-2.jpg"><img
-                            class="first-img" loading="lazy" alt="The Michael Collins House Musesum in Clonakilty"
-                            src="https://www.corkcoco.ie/sites/default/files/2022-04/michael-collins-house-2.jpg"></a>
-                    <h3>Opening hours</h3>
-                    <p>October - April</p>
-                    <p>Wednesday to Saturday</p>
-                    <p>10AM TO 5PM</p>
-                    <p>(LAST ENTRY 4PM)</p>
-                    <p><a class="outsite_site" aria-label="click external site to Michael Collins House"
-                            href="https://www.michaelcollinshouse.ie/" target="_blank">Michael
-                            Collins House</a></p>
+            <div class="row">
+                <h2 class="text-center">Museums</h2>
+                <div class="col-xl-4 col-xl-1 text-center mb-2">
+                    <div class="bg-card p-5">
+                        <a title="Link upload image from the https://www.corkcoco.ie/en/visitor/cork-county-council-owned-and-supported-attractions/michael-collins-house"
+                        
+                            href="https://www.corkcoco.ie/sites/default/files/2022-04/michael-collins-house-2.jpg"><img
+                                class="img-fluid object-fit-cover border rounded" width="620" height="800" loading="lazy" alt="The Michael Collins House Musesum in Clonakilty"
+                                src="assets/images/michael-collins-house-2 copy.jpg"></a>
+                        <h3 class="pt-3">Opening hours</h3>
+                        <p>October - April</p>
+                        <p>Wednesday to Saturday</p>
+                        <p>10AM TO 5PM</p>
+                        <p>(LAST ENTRY 4PM)</p>
+                        <p><a class="outsite_site" aria-label="click external site to Michael Collins House"
+                                href="https://www.michaelcollinshouse.ie/" target="_blank">Michael
+                                Collins House</a></p>
+                    </div>
                 </div>
                 <!-- closed img_and_text -->
 
-                <div class="img_and_text">
-                    <a title="Mike Searle, The Birthplace of Michael Collins"
-                        href="https://commons.wikimedia.org/wiki/File:The_Birthplace_of_Michael_Collins_-_geograph.org.uk_-_499631.jpg"><img
-                            loading="lazy" alt="The Birthplace of Michael Collins - geograph.org.uk - 499631"
-                            src="https://upload.wikimedia.org/wikipedia/commons/3/38/The_Birthplace_of_Michael_Collins_-_geograph.org.uk_-_499631.jpg"></a>
-                    <h3>Opening hours</h3>
-                    <p>October - April</p>
-                    <p>Wednesday to Saturday</p>
-                    <p>10AM TO 5PM</p>
-                    <p>(LAST ENTRY 4PM)</p>
-                    <p><a class="outsite_site" aria-label="click external site to Michael Collins Centre"
-                            href="https://michaelcollinscentre.com/" target="_blank">Michael
-                            Collins Centre</a></p>
+                <div class="col-xl-4 col-xl-1 text-center mb-2">
+                    <div class="bg-card p-5">
+                        <a title="Mike Searle, The Birthplace of Michael Collins"
+                            href="https://commons.wikimedia.org/wiki/File:The_Birthplace_of_Michael_Collins_-_geograph.org.uk_-_499631.jpg"><img class="img-fluid border object-fit-cover border rounded" width="620"
+                                loading="lazy" alt="The Birthplace of Michael Collins - geograph.org.uk - 499631"
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/38/The_Birthplace_of_Michael_Collins_-_geograph.org.uk_-_499631.jpg"></a>
+                        <h3 class="pt-3">Opening hours</h3>
+                        <p>October - April</p>
+                        <p>Wednesday to Saturday</p>
+                        <p>10AM TO 5PM</p>
+                        <p>(LAST ENTRY 4PM)</p>
+                        <p><a class="outsite_site" aria-label="click external site to Michael Collins Centre"
+                                href="https://michaelcollinscentre.com/" target="_blank">Michael
+                                Collins Centre</a></p>
+                    </div>
                 </div>
                 <!-- closed img_and_text -->
 
-                <div class="img_and_text">
+                <div class="col-xl-4 col-xl-1  text-center mb-2">
+                    <div class="bg-card p-5">
                     <a title="GualdimG, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
-                        href="https://commons.wikimedia.org/wiki/File:National_Museum_of_Ireland_Collins_Barracks_Dublin_02.jpg"><img
+                        href="https://commons.wikimedia.org/wiki/File:National_Museum_of_Ireland_Collins_Barracks_Dublin_02.jpg"><img class="img-fluid object-fit-cover border rounded" width="620"
                             loading="lazy" alt="National Museum of Ireland Collins Barracks Dublin 02"
                             src="https://upload.wikimedia.org/wikipedia/commons/b/bd/National_Museum_of_Ireland_Collins_Barracks_Dublin_02.jpg"></a>
-                    <h3>Opening hours</h3>
-                    <p> Tuesday to Saturday 10am - 5pm</p>
-                    <p> Sunday and Monday 1pm - 5pm</p>
-                    <p>Christmas Eve 10am - 12pm</p>
-                    <p>Closed Christmas Day</p>
-                    <p><a class="outsite_site" aria-label="click external site to Collins Barracks Museum"
-                            href="https://www.museum.ie/en-IE/Museums/Decorative-Arts-History/Events/2022/122022/Public-Tour-Centenary-of-Handover-of-Collins-Barra"
-                            target="_blank">Collins
-                            Barracks Musesum</a></p>
+                    
+                    
+                        <h3 class="pt-3">Opening hours</h3>
+                        <p> Tuesday to Saturday 10am - 5pm</p>
+                        <p> Sunday and Monday 1pm - 5pm</p>
+                        <p>Christmas Eve 10am - 12pm</p>
+                        <p>Closed Christmas Day</p>
+                        <p><a class="outsite_site" aria-label="click external site to Collins Barracks Museum"
+                                href="https://www.museum.ie/en-IE/Museums/Decorative-Arts-History/Events/2022/122022/Public-Tour-Centenary-of-Handover-of-Collins-Barra"
+                                target="_blank">Collins
+                                Barracks Musesum</a></p>
+                    </div>
                 </div>
                 <!-- closed img_and_text -->
             </div>
@@ -265,80 +289,67 @@
 
         </section>
 
-        <!-- <section id="accessibility">
-            <p> Accessibility</p>
-        </section> -->
-
-
         <!-- Section Contact -->
         <section id="contact">
-            <div class="contact_and_img_wrapper">
-                <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net/">
+            <div class="container-fluid contact_and_img_wrapper p-5">
+                <div class="row">
+                    <div class="col-xl-8">
+                <form class="contact-form w-100 px-3" method="POST" action="">
                     <h2>Contact Us</h2>
-                    <label for="fname">First Name</label>
-                    <input id="fname" class="text-input" type="text" name="first_name" required>
-                    <label for="lname">Last Name</label>
-                    <input id="lname" class="text-input" type="text" name="last_name" required>
-                    <label for="email">Email Address</label>
-                    <input id="email" class="text-input" type="email" name="email_address" required>
-                    <label for="subject">Subject</label>
-                    <input id="subject" class="text-input" type="text" name="subject" required>
-                    <label for="message">Message</label>
-                    <textarea class="message_box" id="message" name="message" rows="4" cols="50" required></textarea>
-                    <input class="join-button" type="submit" value="Send!">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write in your message..." rows="3"></textarea>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-dark w-100 mb-3">Send</button>
+                      </div>
                 </form>
-                <div class="head_logo_contact_wrapper">
-                    <img class="contact_head_Michael_logo" loading="lazy" src="assets/images/Head-Gold_White-Doric.jpg"
-                        alt="Michael Collins head logo">
-                </div>
-                <!-- closed head_logo_contact wrapper -->
+            </div>
+            <!-- close col-auto on first -->
+                <div class="col-sm-4 text-center">
+                    <div class="head_logo_contact_wrapper">
+                        <img class="contact_head_Michael_logo pt-5 w-50 img-fluid" loading="lazy" src="assets/images/Head-Gold_White-Doric.jpg"
+                            alt="Michael Collins head logo">
+                    </div>
+                    </div> <!-- close col-auto -->
+                </div><!-- closed Row -->
             </div>
             <!-- closed contact_and_img wrapper -->
         </section>
 
         <!-- Footer -->
         <footer>
-
-            <!-- head logo, social media and site maps -->
-            <nav class="site_map">
-                <img class="head-logo-footer" loading="lazy" src="assets/images/Head-Gold_White.png"
-                    alt="Michael Collins head logo">
-                <h2 class="logo_text">Michael Collins Legend</h2>
-                <ul>
-                    <li>Site Maps:</li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#timelines">Timelines</a></li>
-                    <li><a href="#museum">Museum</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- Social Media -->
-            <div class="social_media_icons">
-                <span>Social Media</span>
-                <ul>
-                    <li><a aria-label="Facebook" aria-hidden="true"
-                            href="https://www.facebook.com/michaelcollinscentre/" class="fa fa-facebook"
-                            target="_blank"></a>
-                    </li>
-                    <li><a aria-label="twitter" aria-hidden="true" href="https://twitter.com/generalmichael4"
-                            class="fa fa-twitter" target="_blank"></a>
-                    </li>
-
-                    <li><a aria-label="Instagram" aria-hidden="true"
-                            href="https://www.instagram.com/michaelcollinshouse/?hl=en" class="fa fa-instagram"
-                            target="_blank"></a>
-                    </li>
-
-                    <li><a aria-label="YouTube" aria-hidden="true"
-                            href="https://www.youtube.com/results?search_query=Michael+Collins+" class="fa fa-youtube"
-                            target="_blank"></a>
-                    </li>
-                </ul>
-            </div>
-            <p class="RQ-designed">Designed by Robert Quinlan 2023</p>
-            <!-- closed social_media_icons -->
+                  <div class="text-center">
+                    <p class="head_text text-center">Social Media</p>
+                    <a aria-label="Facebook" aria-hidden="true"
+                      href="https://www.facebook.com/michaelcollinscentre/" 
+                      target="_blank"><i class="bi bi-facebook img-fluid rounded-circle p-2 m-2"></i></a>
+                    <a aria-label="twitter" aria-hidden="true" href="https://x.com/CollinsMick22"
+                      target="_blank"><i class="bi bi-twitter-x rounded-circle p-2 m-2"></i></a>
+                    <a aria-label="Instagram" aria-hidden="true"
+                      href="https://www.instagram.com/michaelcollinshouse/?hl=en"
+                      target="_blank"><i class="bi bi-instagram rounded-circle p-2 m-2"></i></a>
+                    <a aria-label="YouTube" aria-hidden="true"
+                      href="https://www.youtube.com/results?search_query=Michael+Collins+" 
+                      target="_blank"><i class="bi bi-youtube rounded-circle p-2 m-2"></i></a>
+                  </div>
+                    <p class="RQ-designed">Designed by Robert Quinlan 2023 to 2025</p>
         </footer>
     </div><!-- closed content -->
 
@@ -353,6 +364,7 @@
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
