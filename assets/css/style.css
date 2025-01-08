@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+.red {
+    border: red solid 3px !important;
+}
+
+.blue {
+    border: blue solid 3px !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,81 +17,64 @@ body {
     margin: 0;
     background-color: #f4f3f3;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 /* content in the main page with setions */
 #content {
-
     overflow: hidden;
 }
 
-/* hide for dash menu button, will be show when responsive is active */
-#dash-menu-wrapper {
-    display: none;
-}
-
 /* top navbar menu */
-#menupage {
+.navbar {
     background-color: #252424;
-    width: 100%;
-    height: 153px;
-    position: fixed;
-    z-index: 2;
+    color: #f5f1e4 !important;
 }
 
-#menupage ul {
-    list-style-type: none;
-    float: right;
-    position: relative;
-    bottom: 0;
-    margin: 95px 30px 0 0;
+.navbar-nav {
+    float: right !important;
 }
 
-#menupage li {
-    display: inline-block;
-    float: none;
-    font-size: 30px;
+.nav-link {
+    color: #f5f1e4 !important;
+    font-size: 1.4em !important;
 }
 
-#menupage a {
-    text-decoration: none;
-    color: #f5f1e4;
-    padding: 10px 20px 0 20px;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(245,241,228,1.000)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-#menupage a:hover {
+/* Click to active the page */
+
+nav a:hover {
     border-bottom: 3px solid #f5f1e4;
 }
 
-.active {
+nav .active {
     border-bottom: 3px solid #f5f1e4;
 }
-
-
 
 /* Head logo */
-#menupage img {
-    float: left;
-    margin-left: 0;
-    width: 40%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    object-fit: cover;
+.img-fluid {
+    max-width: 100% !important;
+}
+
+.navbar-brand {
+    width: 30%;
 }
 
 /* Selection of pages */
 section {
-    width: 99%;
-    padding-top: 160px;
+    width: 100%;
+    padding-top: 200px;
 }
 
 /* disable click on the image to prevent interrupted to the external site. */
 /* serach on 3WC School to find disable click so I found at https://www.w3schools.com/cssref/css3_pr_pointer-events.php */
-.home_wrapper .Michael_art,
-.head_Store_Michael,
-.img_and_text img {
+.none_click {
     pointer-events: none;
+    border: solid 1em #a2a888;
+    width: 75%;
 }
 
 /* Home Section */
@@ -91,300 +82,189 @@ section#home {
     background-color: #cdc3c3;
     height: fit-content;
     display: inline-block;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
-.home_wrapper {
-    width: 96%;
-    height: 710px;
-    clear: both;
-    margin: 3rem auto;
-}
-
-.home_wrapper .Michael_art {
-    float: left;
-    max-width: 100%;
-    height: auto;
-    border: solid 1em #a2a888;
-    object-fit: cover;
-
-}
-
-.home_wrapper .background_text {
+.background_text {
     background-color: #a2a888;
-    width: 42%;
-    height: fit-content;
-    float: right;
-    margin: 0 0 0 2rem;
-    padding: 2rem;
+    width: 72%;
     border: solid 1em #f4f3f3;
+    margin: auto;
+    font-size: 1.3em;
 }
 
-.home_wrapper .text_Michael_legacy {
-    font-size: 1.5em;
-    word-spacing: 2px;
-    line-height: 1.6;
-    float: right;
-    margin: 1rem 1rem 2rem 1rem
-}
-
-.home_wrapper h2 {
-    float: left;
-    width: 90%;
-    font-size: 2em;
-}
 
 /* About section */
 section#about {
     background-color: #f4f3f3;
-    height: auto;
-    display: inline-block;
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-#about_wrapper {
-    width: 95%;
-    margin: auto;
-    clear: both;
-}
-
-#about_wrapper .head_Store_Michael {
-    max-width: 100%;
-    height: auto;
-    float: left;
-    margin-top: 1rem;
-    border: solid 1em #7a7a7a;
-    object-fit: cover;
-}
-
-#about_wrapper h2 {
-    max-width: 100%;
-    text-align: left;
-    font-size: 1.5em;
-}
-
-#about_wrapper .text_about_Michael {
-    background-color: #a2a888;
-    float: right;
-    width: 40%;
     height: fit-content;
+    display: inline-block;
+    padding-bottom: 22rem;
+}
+
+.head_Store_Michael {
+    max-width: 100%;
+    border: solid 1em #7a7a7a;
+}
+
+.text_about_Michael {
+    background-color: #a2a888;
+    width: 72%;
     font-size: 1.5em;
     border: solid 0.7em #7a7a7a;
     word-spacing: 2px;
     line-height: 1.6;
-    margin: 1rem 0 0 3rem;
     padding: 3rem;
+    margin: auto;
 }
 
 
 /* Timeline section */
-section#timelines {
+
+#timelines {
     background-color: #a2a888;
-    height: fit-content;
-    padding-bottom: 10rem;
 }
 
-section#timelines h2 {
-    text-align: center;
-    font-size: 3em;
+h2 {
+    text-decoration-line: underline;
 }
 
-.container {
-    width: 98%;
-    margin: auto;
-    clear: both;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
+#timelines .container {
+    padding: 50px 10px;
     position: relative;
-    max-width: 70%;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
+#timelines .container:before {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: white;
     top: 0;
-    bottom: 0;
-    left: 54%;
-    margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: -25px;
-    background-color: white;
-    border: 4px solid #7a7a7a;
-    top: 15px;
-    border-radius: 50%;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
     z-index: 1;
+
 }
 
-/* Place the container to the left */
-.left {
-    left: -23%;
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
 }
 
-/* Place the container to the right */
-.right {
-    left: 31%;
+.timeline-block-right {
+    float: right;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+.timeline-block-left {
+    float: left;
+    direction: rtl;
 }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-    left: -25px;
-}
-
-/* The actual content */
-.content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    word-spacing: 2px;
-    line-height: 1.6;
-}
-
-.content p {
-    text-align: left;
-    font-size: 1.2em;
-}
-
-.content .circle_img {
+.circle_img {
     width: 420px;
     height: 420px;
     border-radius: 50%;
     border: solid 1px black;
-    padding: 2%;
-    transition: width 2s,
-        height 2s;
+    padding: 1em;
     object-fit: cover;
 }
 
-.content .circle_img:hover {
-    width: 520px;
-    height: 520px;
-    cursor: pointer;
+.timeline-content {
+    direction: ltr;
+    background-color: #eee;
 }
 
-.content .button-site {
-    text-decoration: none;
-    color: #f5f1e4;
-    background-color: #4D4D4D;
-    padding: 2%;
-    word-wrap: break-word;
-    word-spacing: 1.6px;
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    background: #eee;
+    margin-top: 10px;
+    z-index: 999;
 }
 
-.content .button-site:hover {
-    text-decoration: none;
-    color: black;
-    background-color: #a2a888;
+.timeline-content {
+    width: 95%;
+    padding: 15px 15px;
+    color: #3a3838;
+    text-align: start;
+    margin: 0;
 }
 
+.timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.timeline-content span {
+    font-size: 15px;
+    color: #656363;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    color: #3a3838;
+    padding-left: 30px;
+}
+
+.timeline-content ul {
+    font-size: 14px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    color: #3a3838;
+    text-align: start;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    #experience .container:before {
+        left: 8px;
+        width: 2px;
+    }
+
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+}
 
 /* Section Museum */
 
 section#museum {
-    background-image: url("https://scontent.fdub5-1.fna.fbcdn.net/v/t1.6435-9/165215227_125522859583778_5199776069317048256_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=RhuweWCyItcAX-oD6nj&_nc_ht=scontent.fdub5-1.fna&oh=00_AfD9cOhWpUgyw7n0wGzw6ZOlneVUzSrsdRCJnU7-bdb2KQ&oe=63C2D974");
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
     padding-bottom: 4%;
 }
 
-.museum_wrapper {
-    width: 90%;
-    height: 850px;
-    background-color: #7a7a7a;
-    display: block;
-    margin: auto;
-    clear: both;
-    height: fit-content;
-}
-
-.museum_wrapper h2 {
-    text-align: center;
-    padding-top: 1%;
-    color: #f5f1e4;
-    font-size: 3em;
-}
-
-.img_and_text {
-    width: 25%;
-    height: auto;
-    background-color: #cdc3c3;
-    text-align: center;
-    display: inline-block;
-    padding-bottom: 3rem;
-    margin: 0 3rem 3rem 4.5rem;
-}
-
-.img_and_text p {
-    font-size: 1.6em;
-}
-
-.img_and_text h3 {
-    font-size: 2em;
-}
-
-.img_and_text img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.first-img {
-    padding-bottom: 2.4rem;
-    background-color: rgba(206, 192, 177, 0.6);
+.bg-card {
+    background-color: #a2a888;
 }
 
 /* button active outside site */
@@ -409,202 +289,68 @@ section#contact {
 
 /* content form centre both of the form and image */
 .contact_and_img_wrapper {
-    width: 70%;
-    height: 1200px;
-    margin: auto;
-    clear: both;
-    padding: 50px 50px 80px 50px;
     background-color: #231f20;
     border-radius: 30px;
 }
 
-.head_logo_contact_wrapper img {
+/* .head_logo_contact_wrapper img {
     width: 20%;
     height: auto;
-    margin: 50px 0 0 300px;
-    object-fit: cover;
-}
+    margin-top: 50px;
+    border: solid 2px pink;
+} */
 
 /* form */
 .contact-form {
-    margin-top: 60px;
     color: black;
     background-color: #a2a888;
-    width: 45%;
-    height: fit-content;
     border-radius: 30px;
-    left: 20%;
     padding: 30px;
-    float: left;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 
 .contact-form h2 {
     color: black;
     margin-bottom: 20px;
-    font-size: 2em;
-}
-
-.text-input {
-    color: black;
-    width: 95%;
-    height: 45px;
-    margin: 5px 0 40px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-
-}
-
-.text-input:hover {
-    border-color: #4D4D4D;
-}
-
-.message_box {
-    color: black;
-    width: 100%;
-    max-height: 250px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.message_box:hover {
-    border-color: #4D4D4D;
+    font-size: 1.8em;
 }
 
 /* button */
-.join-button {
-    width: 80%;
-    margin-top: 20px;
-    margin: auto;
-    clear: both;
-    padding: 15px 32px 15px 32px;
-    text-align: center;
-    font-size: 100%;
-    background-color: #4D4D4D;
-    color: #f5f1e4;
-    display: block;
+.btn-dark {
+    background-color: #4D4D4D !important;
+    color: #f5f1e4 !important;
 }
 
-.join-button:hover {
-    background-color: #7a7a7a;
-    color: black;
+.btn-dark:hover {
+    background-color: #7a7a7a !important;
+    color: black !important;
 }
 
 /* Footer section */
 
 footer {
-    background-color: #4D4D4D;
+    background-color: #231f20;
     width: 100%;
-    height: fit-content;
-    margin-top: 0;
-    padding-bottom: 5%;
-    border: solid 1px#4D4D4D;
-}
-
-/* Head logo */
-.site_map img {
-    float: left;
-    margin-top: 2%;
-    width: 10%;
-    height: 10%;
-    object-fit: cover;
-}
-
-.site_map .logo_text {
-    float: left;
-    font-size: 1.5em;
-    margin-top: 7%;
-    color: #f5f1e4;
-}
-
-/* site maps links */
-
-.site_map ul {
-    list-style-type: none;
-    margin: 2em 4em 0 0em;
-    width: 10%;
-    float: right;
-    color: #f5f1e4;
-}
-
-.site_map li {
-    float: none;
-    font-size: 1.1em;
-    padding-top: 0.3em;
-}
-
-.site_map a {
-    text-decoration: none;
-    color: #f5f1e4;
-    padding: 0.3em 0.2em 0.3em 0.2em;
-}
-
-.site_map a:hover {
-    background-color: #f5f1e4;
-    color: #7a7a7a;
+    border: solid 1px #231f20;
 }
 
 /* Social media icons */
-.social_media_icons {
-    width: 40%;
-    height: 42%;
-    text-align: center;
-    margin: 5% 0 0 30%;
-}
 
-.social_media_icons span {
-    color: #f5f1e4;
+.head_text {
     font-size: 1.2em;
-    font-weight: bolder;
-    margin: auto;
+    padding: 10px;
+    color: #f4f3f3;
 }
 
-.social_media_icons ul {
-    list-style-type: none;
-}
-
-.social_media_icons li {
-    float: none;
-    display: inline-block;
-    margin-left: 0;
-    padding-right: 5%;
-}
-
-.social_media_icons li .fa {
-    padding: 25px;
-    font-size: 27px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    border: solid 2px #f5f1e4;
+.bi {
+    font-size: 1em !important;
     color: #f5f1e4;
+    border: solid 2px #f5f1e4;
 }
 
-.fa-twitter {
-    border: solid 2px #f5f1e4;
-    color: #f5f1e4;
-}
-
-.fa-youtube {
-    border: solid 2px #f5f1e4;
-    color: #f5f1e4;
-}
-
-.fa-instagram {
-    border: solid 2px #f5f1e4;
-    color: #f5f1e4;
+.bi:hover {
+    color: #a2a888;
 }
 
 /* Title bottom reserved */
@@ -613,1844 +359,14 @@ footer {
     color: #f5f1e4;
     font-size: 1em;
     text-align: center;
-    margin-top: 5%;
-}
-
-/* large Desktop and laptop responsive*/
-@media only screen and (max-width: 2070px) {
-    .home_wrapper .Michael_art {
-        max-width: 36%;
-        height: auto;
-        margin: 0 auto 2%;
-        float: left;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        max-width: 40%;
-        height: auto;
-        margin: 5% 0 0 2%;
-    }
-
-    #about_wrapper .text_about_Michael {
-        margin: 5% 0 0 2%;
-
-    }
-
-    /* Timeline Section */
-    .content .circle_img {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        border: solid 1px black;
-        padding: 2%;
-        transition: width 2s,
-            height 2s;
-        object-fit: cover;
-    }
-
-    .content .circle_img:hover {
-        width: 320px;
-        height: 320px;
-        cursor: pointer;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: -24%;
-    }
-
-    /* Place the container to the right */
-    .right {
-        left: 32%;
-    }
-
-    /* Museum section resposiveness */
-
-    .museum_wrapper {
-        margin-top: -10%;
-    }
-
-    .museum_wrapper h2 {
-        font-size: 3em;
-        padding-top: 10%;
-    }
-
-    .img_and_text {
-        width: 30%;
-        height: fit-content;
-        font-size: 0.7em;
-        margin: 5% 0 5% 2%;
-        display: inline-block;
-    }
-
-    .img_and_text h3 {
-        font-size: 1.5em;
-    }
-
-    .img_and_text p {
-        font-size: 1.5em;
-    }
-
-    .img_and_text img {
-        width: 100%;
-        height: auto;
-    }
-
-
-}
-
-/* large desktop responsive*/
-@media only screen and (max-width: 1900px) {
-
-    #menupage ul {
-        margin-top: 95px;
-    }
-
-    #menupage li {
-        font-size: 27px;
-    }
-
-    #menupage img {
-        width: 47%;
-    }
-
-    /* Timeline Section */
-    .content .circle_img {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        border: solid 1px black;
-        padding: 2%;
-        transition: width 2s,
-            height 2s;
-        object-fit: cover;
-    }
-
-    .content .circle_img:hover {
-        width: 320px;
-        height: 320px;
-        cursor: pointer;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: -24%;
-    }
-
-    /* Place the container to the right */
-    .right {
-        left: 32%;
-    }
-
-    .content h3 {
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    /* Museum section resposiveness */
-    section#museum {
-        background-image: none;
-        padding-bottom: 5%;
-    }
-
-    .museum_wrapper {
-        margin-top: -10%;
-    }
-
-    .museum_wrapper h2 {
-        font-size: 3em;
-        padding-top: 10%;
-    }
-
-    .img_and_text {
-        width: 30%;
-        height: fit-content;
-        font-size: 0.5em;
-        margin: 5% 0 5% 2%;
-        display: inline-block;
-    }
-
-    .img_and_text h3 {
-        font-size: 1.5em;
-    }
-
-    .img_and_text p {
-        font-size: 2em;
-    }
-
-    .img_and_text img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    /* contact section */
-
-    /* content form centre both of the form and image */
-    .contact_and_img_wrapper {
-
-        height: 960px;
-    }
-
-    .contact-form {
-        margin-top: 80px;
-        font-size: 1em;
-    }
-
-    .head_logo_contact_wrapper img {
-        width: 23%;
-        height: auto;
-        margin: 200px 0 0 180px;
-    }
-
-    /* responsiveness footer section */
-
-    /* Head logo */
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 20%;
-        height: 20%;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 2.5em;
-        margin-top: 15%;
-        margin-left: 1%;
-        color: #f5f1e4;
-    }
-
-    /* site maps links */
-
-    .site_map ul {
-        list-style-type: none;
-        margin: auto;
-        clear: both;
-        width: 97%;
-        float: right;
-    }
-
-    .site_map li {
-        float: none;
-        display: inline-block;
-        font-size: 2em;
-        padding: 3% 5% 5% 0;
-    }
-
-    .site_map a {
-        text-decoration: none;
-        color: #f5f1e4;
-        padding: 2%;
-    }
-
-    .site_map a:hover {
-        background-color: #f5f1e4;
-        color: #7a7a7a;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 98%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-        clear: both;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        text-align: center;
-        margin-left: -14%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding: 2% 0 0 5%;
-    }
-
-    .social_media_icons li .fa {
-        font-size: 35px;
-        width: 40px;
-        height: 40px;
-    }
-}
-
-/* large tablet and small laptop responsive*/
-@media only screen and (max-width: 1354px) {
-
-    /* nav bar */
-    #menupage {
-        height: 90px;
-    }
-
-    #menupage ul {
-        list-style-type: none;
-        margin: 40px auto;
-        width: fit-content;
-        float: right;
-    }
-
-    #menupage li {
-        display: inline-block;
-        font-size: 0.9em;
-        text-align: center;
-        padding: 15px 0 10px 0;
-        background-color: #252424;
-    }
-
-    #menupage a {
-        text-decoration: none;
-        color: #f5f1e4;
-    }
-
-    #menupage a:hover {
-        border-bottom: 2px solid #f5f1e4;
-    }
-
-    /* head logo vector */
-
-    #menupage {
-        height: 100px;
-    }
-
-    /* beside head logo with the text*/
-    #menupage .logo_text {
-        font-size: 1.2em;
-        margin: 40px 0 0 90px;
-    }
-
-    .home_wrapper .Michael_art {
-        max-width: 36%;
-        height: auto;
-        margin: 0 auto 2%;
-        float: left;
-        border: solid 1em #a2a888;
-
-    }
-
-    .home_wrapper .background_text {
-        width: 46%;
-        height: fit-content;
-        float: right;
-        margin-top: 0;
-    }
-
-    .home_wrapper .text_Michael_legacy {
-        font-size: 1.5em;
-        word-spacing: 2px;
-        line-height: 1.6;
-        padding: 3%;
-    }
-
-    .home_wrapper h2 {
-        float: left;
-        width: 95%;
-        font-size: 1.5em;
-    }
-
-    /* responsive about section */
-
-    #about_wrapper {
-        width: 95%;
-        margin: 0 auto;
-        clear: both;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        max-width: 40%;
-        height: auto;
-        margin: 5% 0 0 2%;
-        border: solid 1em #7a7a7a;
-    }
-
-    #about_wrapper h2 {
-        width: 100%;
-        text-align: left;
-        font-size: 1.1em;
-    }
-
-    #about_wrapper .text_about_Michael {
-        background-color: #a2a888;
-        width: 42%;
-        height: fit-content;
-        float: right;
-        margin: 5% auto;
-        font-size: 1.5em;
-    }
-
-    #about_wrapper .text_about_Michael p {
-        font-size: 1em;
-        word-spacing: 2px;
-        line-height: 1.6;
-    }
-
-    /* Timeline section responsiveness */
-
-    .container {
-        margin: 0 auto;
-        clear: both;
-    }
-
-    /* circle image */
-    .content .circle_img {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        border: solid 1px black;
-        padding: 2%;
-        transition: width 2s,
-            height 2s;
-        object-fit: cover;
-    }
-
-    .content .circle_img:hover {
-        width: 260px;
-        height: 260px;
-        cursor: pointer;
-    }
-
-    /* The actual timeline (the vertical r13uler) */
-    .timeline::after {
-        margin-left: -4%;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: -30%;
-    }
-
-    /* Place the container to the right */
-    .right {
-        left: 30.5%;
-    }
-
-
-    section#timelines h2 {
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .circle_img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-        border: solid 2px #f5f1e4;
-        padding: 3%;
-    }
-
-    .content h3 {
-        text-align: left;
-        font-size: 1.5em;
-    }
-
-    .content p {
-        text-align: left;
-        font-size: 1.5em;
-    }
-
-    /* Museum section resposiveness */
-    section#museum {
-        background-image: none;
-        padding-bottom: 5%;
-    }
-
-    .museum_wrapper {
-        margin-top: -10%;
-    }
-
-    .museum_wrapper h2 {
-        font-size: 1.5em;
-        padding-top: 10%;
-    }
-
-    .img_and_text {
-        width: 90%;
-        height: fit-content;
-        font-size: 1em;
-        margin: 5% 0 5% 5%;
-    }
-
-    .img_and_text h3 {
-        font-size: 1.8em;
-    }
-
-    .img_and_text img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* contact section responsiveness */
-    .contact_and_img_wrapper {
-        width: 94%;
-        height: 590px;
-        background-color: #231f20;
-        margin: -3% auto 5%;
-        clear: both;
-        padding: 0;
-    }
-
-    .head_logo_contact_wrapper img {
-        width: 20%;
-        height: auto;
-        margin: 70px 0 0 100px;
-        position: sticky;
-    }
-
-
-    .contact-form {
-        width: 50%;
-        height: 530px;
-        margin-top: 0;
-        border-radius: 25px 0 0 25px;
-        font-size: 1em;
-    }
-
-    .contact-form h2 {
-        color: black;
-        margin: 2% 0 2% 0;
-        font-size: 1em;
-    }
-
-    .text-input {
-        width: 95%;
-        height: 18px;
-        margin: 0 0 20px 0;
-        border: 1px solid #fafafa;
-        border-radius: 2px;
-
-    }
-
-    /* responsiveness footer section */
-
-    /* Head logo */
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 20%;
-        height: 20%;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 1.9em;
-        margin-top: 15%;
-        margin-left: 1%;
-        color: #f5f1e4;
-    }
-
-    /* Social media icons */
-    footer {
-        height: fit-content;
-        margin-top: 0;
-        padding-bottom: 5%;
-        text-align: center;
-        border: solid 1px #7a7a7a;
-    }
-
-    /* site maps links */
-
-    .site_map ul {
-        list-style-type: none;
-        margin: auto;
-        clear: both;
-        width: 97%;
-        float: right;
-    }
-
-    .site_map li {
-        float: none;
-        display: inline-block;
-        font-size: 1em;
-        padding: 3% 5% 5% 0;
-    }
-
-    .site_map a {
-        text-decoration: none;
-        color: #f5f1e4;
-        padding: 2%;
-    }
-
-    .site_map a:hover {
-        background-color: #f5f1e4;
-        color: #7a7a7a;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 98%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-        clear: both;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        text-align: center;
-        margin-left: -14%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding: 2% 0 0 5%;
-    }
-
-    .social_media_icons li .fa {
-        padding: 10px;
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
-
-}
-
-/*tablet responsive from 650px up to 950px) */
-@media only screen and (max-width: 950px) {
-    #menupage {
-        height: 90px;
-    }
-
-    #menupage ul {
-        list-style-type: none;
-        margin: 1% auto;
-        clear: both;
-        width: 100%;
-    }
-
-    #menupage li {
-        display: block;
-        font-size: 1em;
-        text-align: center;
-        padding: 15px 0 20px 0;
-        background-color: #252424;
-    }
-
-    #menupage a {
-        text-decoration: none;
-        color: #f5f1e4;
-    }
-
-    #menupage a:hover {
-        border-bottom: 3px solid #f5f1e4;
-    }
-
-    /* head logo vector */
-
-    #menupage {
-        height: 100px;
-    }
-
-    #menupage img {
-        width: 60%;
-    }
-
-    /* beside head logo with the text*/
-    #menupage .logo_text {
-        font-size: 1.5em;
-        margin: 4% 0 0 12%;
-    }
-
-    /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: 23px 25px 0 0;
-        float: right;
-        display: block;
-    }
-
-    .drop-btn {
-        background-color: #252424;
-        border: none;
-        width: 70px;
-        height: 70px;
-        color: white;
-        padding: 5px 8px;
-        font-size: 36px;
-        cursor: pointer;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: relative;
-        z-index: 1;
-        top: -2px;
-        margin: auto;
-        clear: both;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    /* Home section responsive */
-
-    section#home {
-        padding-bottom: 10%;
-    }
-
-    .home_wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .home_wrapper .Michael_art {
-        max-width: 90%;
-        height: auto;
-        margin: 0 auto 5%;
-        float: left;
-        border: solid 1em #a2a888;
-
-    }
-
-    .home_wrapper .background_text {
-        width: 86%;
-        height: fit-content;
-        margin-left: 0;
-        float: left;
-
-    }
-
-    .home_wrapper .text_Michael_legacy {
-        font-size: 1.5em;
-        word-spacing: 2px;
-        line-height: 1.6;
-        padding: 3%;
-    }
-
-    .home_wrapper h2 {
-        float: left;
-        width: 95%;
-    }
-
-
-    /* responsive about section */
-
-    #about_wrapper {
-        width: 95%;
-        height: 1250px;
-        margin: 0 auto;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        max-width: 93%;
-        height: auto;
-        margin: 0 0 5% 1.5%;
-        border: solid 1em #7a7a7a;
-    }
-
-    #about_wrapper h2 {
-        text-align: left;
-    }
-
-    #about_wrapper .text_about_Michael {
-        width: 90%;
-        float: left;
-        margin: 0 auto;
-    }
-
-
-    /* Timeline section responsiveness */
-
-    .container {
-        margin: 0;
-    }
-
-    section#timelines h2 {
-        text-align: center;
-        margin: 10% auto;
-        width: 80%;
-        font-size: 1.8em;
-    }
-
-    section#timelines h2 {
-        text-align: center;
-        margin-top: 1%;
-    }
-
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 0;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
-        left: 3.5%;
-    }
-
-    /* Full-width containers */
-    .container {
-        width: 90%;
-        padding-left: 70px;
-        padding-right: 25px;
-        margin-left: 21%;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
-        left: 0;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: -25%;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: -25%;
-    }
-
-    .content h2 {
-        font-size: 1.2em;
-        padding-top: 18%;
-    }
-
-    /* Museum section resposiveness */
-    section#museum {
-        background-image: none;
-        padding-bottom: 5%;
-    }
-
-    .museum_wrapper {
-        margin-top: -10%;
-    }
-
-    .museum_wrapper h2 {
-        font-size: 1.5em;
-        padding-top: 10%;
-    }
-
-    .img_and_text {
-        width: 90%;
-        height: fit-content;
-        font-size: 1em;
-        margin: 5% 0 5% 5%;
-    }
-
-    .img_and_text h3 {
-        font-size: 1.8em;
-    }
-
-    .img_and_text img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* contact section responsiveness */
-    .contact_and_img_wrapper {
-        width: 94%;
-        height: 590px;
-        background-color: #231f20;
-        margin: -3% auto 5%;
-        clear: both;
-        padding: 0;
-    }
-
-    .head_logo_contact_wrapper img {
-        width: 20%;
-        height: auto;
-        margin: 20% 0 0 10%;
-        position: sticky;
-    }
-
-
-    .contact-form {
-        width: 50%;
-        height: 530px;
-        border-radius: 25px 0 0 25px;
-    }
-
-    .contact-form h2 {
-        color: black;
-        margin: 2% 0 2% 0;
-    }
-
-    .text-input {
-        width: 95%;
-        height: 18px;
-        margin: 0 0 20px 0;
-        border: 1px solid #fafafa;
-        border-radius: 2px;
-
-    }
-
-    /* responsiveness footer section */
-
-    /* Head logo */
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 20%;
-        height: 20%;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 1.9em;
-        margin-top: 15%;
-        margin-left: 1%;
-        color: #f5f1e4;
-    }
-
-    /* Social media icons */
-    footer {
-        height: fit-content;
-        margin-top: 0;
-        padding-bottom: 5%;
-        text-align: center;
-        border: solid 1px #7a7a7a;
-    }
-
-    .site_map ul {
-        list-style-type: none;
-        margin: auto;
-        clear: both;
-        width: 97%;
-        float: right;
-    }
-
-    .site_map li {
-        float: none;
-        display: inline-block;
-        font-size: 1em;
-        padding: 3% 5% 5% 0;
-    }
-
-    .site_map a {
-        text-decoration: none;
-        color: #f5f1e4;
-        padding: 2%;
-    }
-
-    .site_map a:hover {
-        background-color: #f5f1e4;
-        color: #7a7a7a;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 98%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-        clear: both;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        text-align: center;
-        margin-left: -14%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding: 2% 0 0 5%;
-    }
-
-    .social_media_icons li .fa {
-        padding: 10px;
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
+    padding-top: 35px;
 }
 
 /* large devices large phones, from 450px up to 750px */
-@media only screen and (max-width: 750px) {
-
-    #menupage {
-        height: 100px;
-    }
-
-    #menupage ul {
-        list-style-type: none;
-        margin: 1% auto;
-        clear: both;
-        width: 100%;
-    }
-
-    #menupage li {
-        display: block;
-        font-size: 1em;
-        text-align: center;
-        padding: 15px 0 20px 0;
-        background-color: #252424;
-    }
-
-    #menupage a {
-        text-decoration: none;
-        color: #f5f1e4;
-    }
-
-    #menupage a:hover {
-        border-bottom: 3px solid #f5f1e4;
-    }
-
-    /* head logo vector */
-
-    #menupage img {
-        width: 80%;
-    }
-
-    /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: 26px 25px 0 0;
-        float: right;
-        display: block;
-    }
-
-    .drop-btn {
-        background-color: #252424;
-        border: none;
-        color: white;
-        padding: 5px 8px;
-        font-size: 36px;
-        cursor: pointer;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    /* Home section responsive */
-
-    section#home {
-        padding-bottom: 10%;
-    }
-
-    .home_wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .home_wrapper .Michael_art {
-        max-width: 92%;
-        height: auto;
-        margin: 0 auto 5%;
-        float: left;
-        border: solid 1em #a2a888;
-
-    }
-
-    .home_wrapper .background_text {
-        width: 86%;
-        height: fit-content;
-        margin-left: 0;
-        float: left;
-
-    }
-
-    .home_wrapper h2 {
-        float: left;
-        width: 95%;
-    }
-
-    /* About section responsive */
-
-    #about_wrapper {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        width: 89%;
-        height: auto;
-        margin: 0 0 5% 2%;
-        border: solid 1em #7a7a7a;
-    }
-
-    #about_wrapper h2 {
-        text-align: left;
-    }
-
-    #about_wrapper .text_about_Michael {
-        width: 85%;
-        float: left;
-        margin: 0 auto;
-    }
-
-    /* Timeline section responsiveness */
-
-    .container {
-        margin: 0;
-    }
-
-    section#timelines h2 {
-        text-align: center;
-        margin: 10% auto;
-        width: 80%;
-        font-size: 1.8em;
-    }
-
-    section#timelines h2 {
-        text-align: center;
-        margin-top: 1%;
-    }
-
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 0;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
-        left: 3.5%;
-    }
-
-    /* Full-width containers */
-    .container {
-        width: 90%;
-        padding-left: 70px;
-        padding-right: 25px;
-        margin-left: 21%;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
-        left: 0;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: -25%;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: -25%;
-    }
-
-    .content h2 {
-        font-size: 1.2em;
-        padding-top: 18%;
-    }
-
-    /* Museum section resposiveness */
-    section#museum {
-        background-image: none;
-        padding-bottom: 5%;
-    }
-
-    .museum_wrapper {
-        margin-top: -10%;
-    }
-
-    .museum_wrapper h2 {
-        font-size: 1.2em;
-        padding-top: 10%;
-    }
-
-    .img_and_text {
-        width: 90%;
-        height: fit-content;
-        font-size: 0.5em;
-        margin: 5% 0 5% 5%;
-    }
-
-    .img_and_text h3 {
-        font-size: 2.2em;
-    }
-
-    .img_and_text img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* contact section responsiveness */
-
-    .contact_and_img_wrapper {
-        width: 94%;
-        height: 590px;
-        margin: -3% auto 5%;
-        clear: both;
-        padding: 0;
-    }
+@media only screen and (max-width: 1192px) {
+    /* contact responsiveness to hide image of logo */
 
     .head_logo_contact_wrapper img {
-        width: 20%;
-        height: auto;
-        position: sticky;
-        margin: 28% 0 0 12%;
-    }
-
-    .contact-form {
-        width: 50%;
-        height: 530px;
-        border-radius: 25px 0 0 25px;
-    }
-
-    .contact-form h2 {
-        color: black;
-        margin: 2% 0 2% 0;
-    }
-
-    .text-input {
-        width: 95%;
-        height: 18px;
-        margin: 0 0 20px 0;
-        border: 1px solid #fafafa;
-        border-radius: 2px;
-
-    }
-
-    /* responsiveness footer section */
-
-    footer {
-        text-align: center;
-    }
-
-    /* Head logo */
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 20%;
-        height: 20%;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 1.2em;
-        margin-top: 12%;
-        margin-left: 3%;
-        color: #f5f1e4;
-    }
-
-    /* site maps links */
-
-    .site_map ul {
-        list-style-type: none;
-        margin: auto;
-        width: 100%;
-    }
-
-    .site_map li {
-        float: none;
-        display: inline-block;
-        font-size: 1em;
-        padding: 3% 0.5% 5% 0;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 100%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        width: 90%;
-        margin-left: -5%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding-right: 0;
-        margin: 1%;
-    }
-
-    .social_media_icons li .fa {
-        padding: 10px;
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
-
-    .RQ-designed {
-        max-width: 100%;
-    }
-
-
-}
-
-/* mobile standard responsiveness  for max 450px screen*/
-@media only screen and (max-width: 450px) {
-
-    /* Three dash for menu */
-    .drop-btn {
-        background-color: #252424;
-        width: 50px;
-        height: 50px;
-        border: none;
-        color: white;
-        font-size: 30px;
-        cursor: pointer;
-        margin: 58px 5px 0 0;
-    }
-
-    #menupage {
-        height: 80px;
-    }
-
-
-    /* head logo vector */
-    #menupage img {
-        width: 70%;
-    }
-
-    /* beside head logo with the text*/
-    #menupage .logo_text {
-        font-size: 1em;
-        margin: 30px 0 0 70px;
-    }
-
-
-    /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: -30px 20px 0 0;
-    }
-
-    .dash-menu {
-        width: 35px;
-        height: 4px;
-    }
-
-    /* home section responsive */
-    section#home {
-        padding-bottom: 15%;
-    }
-
-    .home_wrapper .Michael_art {
-        max-width: 95%;
-        height: auto;
-        margin: 0 0 5% 0;
-        border: solid 0.5em #a2a888;
-    }
-
-    .home_wrapper .background_text {
-        background-color: #a2a888;
-        width: 91%;
-        border: solid 0.5em #f4f3f3;
-        margin-left: 0;
-    }
-
-
-    /* about section resposiveness */
-
-    #about_wrapper {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        border: solid 0.5em #cdc3c3;
-        width: 95%;
-        height: auto;
-        margin: auto;
-    }
-
-    #about_wrapper h2 {
-        text-align: left;
-        font-size: 1.3em;
-        width: 97%;
-    }
-
-    #about_wrapper .text_about_Michael {
-        border: solid 0.5em #cdc3c3;
-        width: 89%;
-        margin-top: 8%;
-    }
-
-    /* Timline section resposive */
-
-    section#timelines h2 {
-        text-align: center;
-        font-size: 1.5em;
-        width: 90%;
-    }
-
-    .container {
-        width: 110%;
-        margin: 0 0 5% 20%;
-        clear: both;
-        padding: 0;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
         display: none;
     }
-
-    /* The circles on the timeline */
-    .container::after {
-        display: none;
-    }
-
-    /* contact section responsive */
-    .contact_and_img_wrapper {
-        background-color: #cdc3c3;
-    }
-
-    .head_logo_contact_wrapper img {
-        display: none;
-    }
-
-
-    .head_logo_contact_wrapper img {
-        display: none;
-    }
-
-    .contact-form {
-        width: fit-content;
-        border-radius: 2%;
-    }
-
-    /* responsiveness footer section */
-    footer {
-        text-align: center;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 1.2em;
-        margin-top: 12%;
-        margin-left: 3%;
-        color: #f5f1e4;
-    }
-
-    /* site maps links */
-
-    .site_map li {
-        padding: 3% 3% 5% 0;
-        display: inline-block;
-        width: 90%;
-        margin: auto;
-    }
-
-    .site_map a {
-        text-decoration: none;
-        color: #f5f1e4;
-        padding: 2%;
-    }
-
-    .site_map a:hover {
-        background-color: #f5f1e4;
-        color: #7a7a7a;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 100%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .social_media_icons span {
-        font-size: 1em;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        width: 90%;
-        margin-left: -9%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding-right: 0;
-        margin: 1%;
-    }
-
-    .RQ-designed {
-        font-size: 0.7em;
-        max-width: 100%;
-    }
-
-}
-
-
-/* smaller mobile responsiveness  for max 350px screen*/
-@media only screen and (max-width: 350px) {
-    /* nav bar */
-
-    /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: -50px 8px 0 0;
-    }
-
-    .drop-btn {
-        background-color: #252424;
-        border: none;
-        color: white;
-        padding: 5px 8px;
-        font-size: 26px;
-        cursor: pointer;
-    }
-
-    #menupage {
-        height: 60px
-    }
-
-    /* head logo vector */
-    #menupage img {
-        width: 70%;
-    }
-
-    /* beside head logo with the text*/
-    #menupage .logo_text {
-        font-size: 0.9em;
-        margin: 35px 0 0 60px;
-    }
-
-    /* home section responsive */
-    section#home {
-        padding-bottom: 15%;
-    }
-
-    .home_wrapper {
-        margin: -5% auto;
-        width: 93%;
-    }
-
-    .home_wrapper .Michael_art {
-        float: left;
-        max-width: 93.5%;
-        height: auto;
-        border: solid 0.5em #a2a888;
-        margin: -5% 0 5% 0
-    }
-
-    .home_wrapper .background_text {
-        background-color: #a2a888;
-        width: 89.5%;
-        border: solid 0.5em #f4f3f3;
-    }
-
-    .home_wrapper h2 {
-        width: 90%;
-        padding: 2%;
-        font-size: 1.2em;
-    }
-
-    /* responsive about section */
-
-    #about_wrapper {
-        margin: -5% auto;
-        width: 93%;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        width: 93%;
-        height: auto;
-        margin: 0 0 7% 0;
-        border: solid 0.5em #cdc3c3;
-    }
-
-    #about_wrapper h2 {
-        width: 100%;
-        text-align: left;
-        font-size: 1.2em;
-    }
-
-    #about_wrapper .text_about_Michael {
-        background-color: #a2a888;
-        border: solid 0.5em #cdc3c3;
-        width: 87%;
-        margin: 0 auto;
-    }
-
-    #about_wrapper .text_about_Michael p {
-        font-size: 1em;
-        word-spacing: 2px;
-        line-height: 1.6;
-    }
-
-    /* Timeline section responsiveness */
-
-    .container {
-        margin: 0;
-
-    }
-
-    section#timelines h2 {
-        text-align: center;
-        padding-top: 9%;
-        width: 90%;
-    }
-
-
-    /* Timeline section responsiveness */
-    section#timelines h2 {
-        text-align: center;
-        margin: -20% auto;
-        font-size: 1.2em;
-    }
-
-    .container {
-        margin: 24% 20% 0 20%;
-        width: 100%;
-        padding: 0;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
-        display: none;
-    }
-
-    /* The circles on the timeline */
-    .container::after {
-        display: none;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .timeline {
-        max-width: 100%;
-        margin-left: 10%;
-    }
-
-    /* Add arrows to the left container (pointing right) */
-    .left::before {
-        display: none;
-    }
-
-    /* Add arrows to the right container (pointing left) */
-    .right::before {
-        display: none;
-    }
-
-    /* Museum section resposiveness */
-    section#museum {
-        background-image: none;
-        background-color: #f4f3f3;
-    }
-
-    .museum_wrapper {
-        width: 90%;
-        margin: -25% auto 12%;
-
-    }
-
-    .img_and_text p {
-        font-size: 0.8em;
-        line-height: 1.2;
-    }
-
-    .img_and_text h3 {
-        font-size: 1em;
-    }
-
-    .img_and_text img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* contact section responsive */
-
-    .head_logo_contact_wrapper {
-        display: none;
-    }
-
-    .contact_head_Michael_logo {
-        display: none;
-    }
-
-    .contact_Doric_logo {
-        display: none;
-    }
-
-    /* form */
-    .contact-form {
-        width: 80%;
-    }
-
-
-    /* responsiveness footer section */
-
-    footer {
-        text-align: center;
-    }
-
-    .site_map li {
-        padding: 0 5% 5% 0;
-        font-size: 0.9em;
-        display: block;
-    }
-
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 20%;
-        height: 20%;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 1em;
-        color: #f5f1e4;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 100%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        width: 90%;
-        margin-left: -9%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding-right: 0;
-        margin: 1%;
-    }
-
-    .social_media_icons span {
-        font-size: 1.2em;
-    }
-}
-
-/* smaller mobile  responsiveness */
-@media only screen and (max-width: 320px) {
-
-    /* nav bar */
-    /* head logo vector */
-    #menupage {
-        height: 50px;
-    }
-
-    /* Three dash for menu */
-    #dash-menu-wrapper {
-        margin: -40px 10px 0 0;
-        float: right;
-        display: block;
-    }
-
-    .drop-btn {
-        background-color: #252424;
-        border: none;
-        width: 30px;
-        height: 30px;
-        color: white;
-        padding: 5px 8px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-
-
-    /* about section resposiveness */
-
-    #about_wrapper {
-        margin: -2% auto;
-        width: 90%;
-        background-color: #7a7a7a;
-    }
-
-    #about_wrapper .head_Store_Michael {
-        border: solid 0.5em #cdc3c3;
-        width: 94%;
-        height: auto;
-        margin: auto;
-    }
-
-    #about_wrapper h2 {
-        text-align: left;
-        font-size: 1.3em;
-        width: 97%;
-    }
-
-    #about_wrapper .text_about_Michael {
-        border: solid 0.5em #cdc3c3;
-        width: 89%;
-        margin-top: 8%;
-    }
-
-    /* form */
-    .contact-form {
-        width: 78%;
-    }
-
-    /* responsiveness footer section */
-
-    footer {
-        text-align: center;
-    }
-
-    .site_map li {
-        padding: 3% 0 5% 0;
-        font-size: 0.8em;
-        display: block;
-        margin: auto;
-    }
-
-    .site_map img {
-        float: left;
-        margin-top: 2%;
-        width: 20%;
-        height: auto;
-    }
-
-    .site_map .logo_text {
-        float: left;
-        font-size: 1.2em;
-        margin-top: 12%;
-        margin-left: 3%;
-        color: #f5f1e4;
-    }
-
-    /* Social media icons */
-    .social_media_icons {
-        width: 100%;
-        height: 32%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .social_media_icons ul {
-        list-style-type: none;
-        width: 90%;
-    }
-
-    .social_media_icons li {
-        float: none;
-        display: inline-block;
-        padding-right: 1%;
-        margin: 0.5%;
-    }
-
-    .RQ-designed {
-        font-size: 0.1em;
-    }
-
 }
